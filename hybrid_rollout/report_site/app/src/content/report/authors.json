@@ -1,0 +1,11 @@
+{
+  "authors": [
+    {"name": "Jiayi Su", "url": "https://shuyumo2003.github.io/", "equalContribution": true},
+    {"name": "Yixin Zheng", "url": "https://steveouo.github.io/", "equalContribution": true},
+    {"name": "Mi Yan", "url": "https://miyandoris.github.io/"},
+    {"name": "Li Yi", "url": "https://ericyi.github.io/", "correspondingAuthor": true},
+    {"name": "Zhizheng Zhang", "url": "https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en", "correspondingAuthor": true},
+    {"name": "He Wang", "url": "https://hughw19.github.io/", "correspondingAuthor": true}
+  ],
+  "affiliations": []
+}

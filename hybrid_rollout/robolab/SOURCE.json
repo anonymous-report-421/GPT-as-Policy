@@ -1,0 +1,62 @@
+{
+  "source_commit": "5ca55128677179be8b142747c349c8fa8941ebac",
+  "baseline_commits": [
+    "ad294ad",
+    "88da712",
+    "9c571f3",
+    "5ca5512"
+  ],
+  "runtime_imports_from_old_directory": false,
+  "copies": [
+    {
+      "source": "rlinf_robolab/gate_assessment.py",
+      "git_blob": "020b8ec11b873ffec5e26ef0cc06aebbcab28193"
+    },
+    {
+      "source": "rlinf_robolab/action_edit_pilot.py",
+      "git_blob": "2cdc2051bbedb684fac79f91c90722ea2df7aa9b"
+    },
+    {
+      "source": "rlinf_robolab/action_edit_server.py",
+      "git_blob": "c449418e41948e8ebb86c6fd61d9c5018955e3f0"
+    },
+    {
+      "source": "rlinf_robolab/server.py",
+      "git_blob": "c1b8cc69691c96ea6787c9d5f28f9d9e13038139"
+    },
+    {
+      "source": "rlinf_robolab/scene_recording.py",
+      "git_blob": "40c8a9fc97a81e3c27473651e115fadb390ecb03"
+    },
+    {
+      "source": "rlinf_robolab/eef_controller.py",
+      "git_blob": "a701327206cacfaf156ac570c71bb8871a895326"
+    },
+    {
+      "source": "rlinf_robolab/action_edit_kinematics.py",
+      "git_blob": "4ab815cd81dc14c99f5872d4c63b85bc62b1c1f8"
+    },
+    {
+      "source": "rlinf_robolab/protocol.py",
+      "git_blob": "b345ad17a7496692d8ef9b63cf5ebd4e39c9cc41"
+    },
+    {
+      "source": "rlinf_robolab/serve_openpi_jax.py",
+      "git_blob": "89eff024fc4b9cecd5d38dbcde2daf95c25d546f"
+    },
+    {
+      "source": "rlinf_robolab/openpi_training.py",
+      "git_blob": "4bb50c0b345f6aab248ccf8d7dce32cdb8e33208"
+    },
+    {
+      "source": "ops/robolab_runtime.sh",
+      "git_blob": "e5e5e970a543f0fccd1450c68a8799d770c0bade"
+    }
+  ],
+  "local_compatibility_changes": [
+    "Native OpenPI config name pi05_droid_jointpos",
+    "Disable inference client websocket ping timeout",
+    "Independent copied Codex JSON-RPC transport/schema from previous uncommitted implementation"
+  ],
+  "prompt": "skill/gate_prompt.md is the exact GATE_INSTRUCTION string copied from the colleague baseline."
+}

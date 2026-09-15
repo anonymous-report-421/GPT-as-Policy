@@ -1,0 +1,45 @@
+{
+  "title": "当 GPT 开始控制机械臂",
+  "subtitle": "GPT-6 具身策略测评 · 从独立控制到与 π0.5 协作",
+  "intervention_sentence": "混合策略中，85.6% 的控制步沿用 π0.5 动作，14.4% 由 GPT 修正。",
+  "tasks": {
+    "organize_table": ["整理桌面", "长程整理", "鼠标、键盘、摆件、闹钟和杂物散布在桌面。", "将指定物品放到各自位置，再打开抽屉收纳剩余杂物，最后归位双臂。"],
+    "classify_objects_by_language": ["按语言分类", "语义理解", "多个类别的物体混放，篮子的对应关系由当前指令给出。", "按照本条指令的类别—篮子映射放置全部物体，最后归位双臂。"],
+    "imitate_sorting_sequence": ["模仿排序顺序", "观察与记忆", "场景先提供一段物体排序示范。", "先观察并记住示范，再按照相同顺序放置相应物体，最后归位双臂。"],
+    "arrange_largest_number": ["排出最大数字", "语义与摆放", "数字块散落在目标垫附近。", "从左到右组成最大的数字，校正朝向并放在目标垫上，最后归位双臂。"],
+    "pack_objects_into_box": ["装箱", "容器操作", "多个不同形状的物体分布在箱子周围。", "将所有物体装进箱中，并满足指令要求的朝向，最后归位双臂。"],
+    "classify_objects": ["物体分类", "分类与搬运", "多种物体与三个分类篮摆在桌面上。", "把全部物体按类别分入三个篮子，最后归位双臂。"],
+    "build_tower": ["搭塔", "接触与稳定性", "木块与木板尚未组成塔。", "按要求搭建有支撑的层叠结构，并在归位双臂后保持稳定。"],
+    "make_kong": ["麻将杠牌", "顺序与精细操作", "手牌与弃牌区域已布置，等待任务中的弃牌。", "亮出匹配的牌并完成规定的杠牌操作序列，不扰动其他牌；此任务不是以双臂归位判定完成。"],
+    "fold_clothes": ["叠衣服", "柔性物体", "衣服在桌面展开，袖子和下摆尚未折叠。", "向内折袖子，再向上折下摆，形成符合要求的折叠形状，最后归位双臂。"],
+    "put_bottles_into_dustbin": ["瓶子入桶", "抓取与搬运", "桌面散放多个瓶子，旁边有垃圾桶。", "将所有瓶子放入垃圾桶，并归位双臂。"]
+  },
+  "featured": [
+    {"run_id":"fe2857368ce87ec2ffdcd4ac","clip":0,"section":"grounding","title":"把动作重新对准任务目标","analysis":"这段按语言分类的标注展示了对目标选择的修正。它提供行为证据，但不能单独证明对任意视觉变化都鲁棒。"},
+    {"run_id":"6f1191749b24df72921e800d","clip":0,"section":"grounding","title":"历史片段：重新定位数字块","analysis":"保留 v2 的代表性 grounding 片段，仅用于解释行为，不计入本文 v3 的成绩。"},
+    {"run_id":"182f98be14595fc71b02b377","clip":0,"section":"contact","title":"先拨动，再抓取","analysis":"GPT 不局限于直接夹取：先通过接触改变物体状态，再继续抓取。局部恢复不等于整个任务一定成功。"},
+    {"run_id":"4288645ef90dc53de13376eb","clip":0,"section":"contact","title":"困难状态下调整抓取","analysis":"展示在物体和夹爪的相对关系不理想时，主动调整接近方式。是否最终成功以该条原生结果为准。"},
+    {"run_id":"cbf8658bad76fd96fef01245","clip":1,"section":"reasoning","title":"看起来完成，还要再检查","analysis":"物体大致就位但仿真尚未结束，策略再次检查并调整。这是可见的反馈驱动行为，不是对模型内部思维过程的直接观测。"},
+    {"run_id":"5436877e6101be2b23b24fc2","clip":0,"section":"reasoning","title":"检查箱子后面的遗漏","analysis":"根据你的标注，策略在收尾阶段发现并尝试处理箱后物体及其朝向。该条最终未成功，因此这里只展示恢复尝试。"},
+    {"run_id":"cb2554914fe8187ac98e9e45","clip":0,"section":"failures","title":"理解目标，不代表留足净空","analysis":"容器边缘与夹爪、物体之间的碰撞会使搬运失败。知道该放到哪里，与选择可靠的接近和撤离路径，是两个问题。"},
+    {"run_id":"7ef164f7a8783f3af3eb9090","clip":0,"section":"failures","title":"动作段内部，反馈可能来得太晚","analysis":"策略在 chunk 边界观察；执行中的滑落或碰撞可能要到下一次反馈才被发现。此片段提示反馈粒度的限制，并非缺少整段原始录像。"},
+    {"run_id":"b34c1a832bb5123d6eb6a6af","clip":0,"section":"gpt-only","title":"没有 π0.5：尝试把瓶子扫进桶","analysis":"GPT-only 自行选择了非典型的扫落方案。动作有新意，但这条最终失败，不能把有趣的行为等同于有效控制。"},
+    {"run_id":"6ba3a538a3405206181aa6c6","clip":0,"section":"gpt-only","title":"控制遇到困难后，仍能尝试恢复","analysis":"数字摆放中的恢复片段展示了对控制反馈的适应。GPT 已收到本体状态；困难在于能否有效利用这些信息，而不是没有输入。"},
+    {"run_id":"71c12723687a550b770f36c0","clip":0,"section":"gpt-only","title":"动作可执行，不一定足够稳健","analysis":"没有候选动作作为参考时，GPT-only 可以提出不同的搭塔方式，但局部可执行与结构稳定并不等价。"},
+    {"run_id":"9e40a74ed6b0a356a421f53b","clip":0,"section":"gpt-only","title":"单臂还是双臂，也是一种策略选择","analysis":"你的标注指出，这段整理桌面的单臂操作不够稳定。它提示动作先验可能有帮助，但目前没有专门的因果消融。"}
+  ],
+  "references": [
+    {"id":"robodojo","label":"RoboDojo","title":"RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies","author":"RoboDojo team","type":"项目与公开成绩","url":"https://robodojo-benchmark.com/","summary":"官方任务及模型逐任务成绩；本文使用 2026-09-13 核验的公开快照，并按选定任务与场景配比重新加权。"},
+    {"id":"pi05","label":"π0.5","title":"A VLA with Open-World Generalization","author":"Physical Intelligence","type":"研究博客","url":"https://www.pi.website/blog/pi05","summary":"π0.5 的方法介绍。本文实际使用 RoboDojo 发布的任务微调权重，不把该权重描述为未经适配的通用模型。"},
+    {"id":"robolab","label":"RoboLab","title":"RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist Policies","author":"Jenai Xuning Yang, Rishit Dagli, Alex Zook, Hugo Hadfield, Ankit Goyal, Stan Birchfield, Fabio Ramos, Jonathan Tremblay","type":"2026. arXiv:2604.09860 / Robotics: Science and Systems (RSS)","url":"https://arxiv.org/abs/2604.09860","summary":"RoboLab 以高保真仿真评测通用机器人策略的视觉、程序与关系理解；论文评测采用 DROID 形态的单臂 Franka Panda。本文另选 10 个任务，每方法每任务 5 个最终评测槽位，不是 RoboLab-120 全榜复现。"},
+    {"id":"astra","label":"模型说明","title":"GPT-6 Astra Model","author":"OpenAI","type":"官方模型文档","url":"https://developers.openai.com/api/docs/models/gpt-6-astra","summary":"公开模型文档确认模型标识及图像输入能力。本文实际配置为 gpt-6-astra / xhigh；不以官方能力描述替代机器人实测。"},
+    {"id":"awesome","label":"社区案例索引","title":"Awesome Astra Embodied AI","author":"zjwzcx / 社区贡献者","type":"GitHub 案例汇编","url":"https://github.com/zjwzcx/Awesome-Astra-Embodied-AI","summary":"用户推荐的社区索引，区分仿真控制、真机控制、调用预训练策略、Real-to-sim 和环境/RL 构建。作为发现原始案例的入口，不把不同演示的结果混成统一基准。","verified":"read_index_2026-09-13"},
+    {"id":"robocurve","label":"机器人实测","title":"GPT-6 Astra on robotic manipulation","author":"Robocurve","type":"独立实验报告 · 2026-09-04","url":"https://openai.robocurve.org/gpt-6-astra/","summary":"YAM 机械臂实测：方块入碗 19/20 成功，精细拼图插入 2/20。任务、机器人和评分均不同于 RoboDojo，不直接横比百分比。","verified":"read_primary_2026-09-13"},
+    {"id":"axel","label":"移动操作演示","title":"In-context learning on mobile manipulation","author":"Axel / @ax_pey · Innate","type":"X 原帖 · 2026-09-11","url":"https://x.com/ax_pey/status/2098216469012283681","summary":"作者分享以演示记录为 context 的移动操作。原帖直连读取受限；帖文由公开索引及镜像定位，并核读作者团队关联的开源 PR。属于个例演示，不是多次成功率评测。","verified":"public_mirror_and_primary_code","supporting_url":"https://github.com/innate-inc/innate-os/pull/817"},
+    {"id":"innate-code","label":"演示模仿实现","title":"Imitate a recorded demonstration with GPT-6 Astra · PR #817","author":"DavidDobas / innate-inc","type":"开源实现说明","url":"https://github.com/innate-inc/innate-os/pull/817","summary":"团队说明了记录帧、机器人状态、实时相机、历史和动作校验如何组成演示模仿循环。所述模型 effort 与控制约束不同于本文，不当作同设置对照。","verified":"read_primary_2026-09-13"},
+    {"id":"gpt-policy-eval","label":"真机接触演示","title":"GPT-Policy-Eval: One-Shot Video Demonstration → Real-World Robot Execution","author":"cheng-haha / GPT-Policy-Eval","type":"项目演示","url":"https://github.com/cheng-haha/GPT-Policy-Eval","summary":"单次视频示范驱动真机插头插入、揭开遮挡后放置物体等例子。项目明确说明这些是精选单条演示，更广泛评测仍在进行。","verified":"read_primary_2026-09-13"},
+    {"id":"realsee","label":"可编辑场景重建","title":"How to Build an Editable Blender Scene from Realsee Galois Outputs with GPT-6 Astra","author":"Realsee","type":"实践博客 · 2026-09-11","url":"https://www.realsee.ai/blogs/news/how-to-build-an-editable-blender-scene-from-realsee-galois-outputs-with-gpt-6-astra","summary":"使用已有扫描模型、点云、全景与 CAD 等参考构建可编辑 Blender 场景，并进行人工核查。不是仅凭一张 RGB 图像恢复完整物理环境。","verified":"read_primary_2026-09-13"},
+    {"id":"fallingwater","label":"Blender 实践","title":"I Gave GPT-6 Astra Blender for Three Days. Here Is What It Built and What It Cost.","author":"AI for Mortals","type":"个人实践博客","url":"https://www.aiformortals.co/blog/gpt-6-astra-blender-fallingwater","summary":"作者记录建筑、工作室和机器人外观三类 Blender 制作过程、人工反馈与局限。这是 3D 内容制作经验，不是机器人控制实验。","verified":"read_primary_2026-09-13"}
+  ],
+  "community_references_status": "verified_with_x_access_caveat"
+}

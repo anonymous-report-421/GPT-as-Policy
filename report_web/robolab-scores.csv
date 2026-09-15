@@ -1,0 +1,11 @@
+task,task_label,episodes_per_method,pi05_only_successes,astra_pi05_successes,pure_astra_successes,cosmos_nano_policy_successes,dreamzero_successes
+BlocksInBinTask,Blocks into bin,5,0,5,5,2,0
+ClutterPumpkinTask,Pumpkins in clutter,5,0,4,5,0,0
+ButterAboveRaisinTask,Butter on raisin box,5,0,5,5,1,2
+BlockStackingSpecifiedOrderTask,Stack blocks in order,5,0,4,5,0,0
+ReorientRedMugTask,Reorient red mug,5,2,4,5,1,1
+LargerObjectRaisinBoxInBinTask,Larger raisin box into bin,5,3,4,4,0,0
+SauceBottlesCrateTask,Sauce bottle into crate,5,2,5,5,5,5
+CannedFoodInBinTask,Canned food into bin,5,4,5,5,4,4
+YogurtInBowlTask,Yogurt into bowl,5,2,5,5,0,0
+RubiksCubeTask,Rubik’s cube into bowl,5,5,5,5,5,5

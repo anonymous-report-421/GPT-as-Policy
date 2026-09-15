@@ -1,0 +1,186 @@
+{
+  "schema": "robolab.leaderboard.v2",
+  "as_of": "2026-09-13",
+  "methods": [
+    {
+      "id": "pi05_only",
+      "label": "π₀.₅",
+      "successes": 18,
+      "episodes": 50,
+      "color": "#e9a150",
+      "source_kind": "historical",
+      "source_run": "robolab120_pi05_jointpos_specific_10ep_20260603",
+      "source_sha256": "02c28bfe20c14fae5fe41ed92e5c06be03d7159523de1056375852bad710bf2d"
+    },
+    {
+      "id": "astra_pi05",
+      "label": "π₀.₅ + GPT 6 Astra",
+      "successes": 46,
+      "episodes": 50,
+      "color": "#3478f6"
+    },
+    {
+      "id": "pure_astra",
+      "label": "GPT 6 Astra Direct",
+      "successes": 49,
+      "episodes": 50,
+      "color": "#56b5a4"
+    },
+    {
+      "id": "cosmos_nano_policy",
+      "label": "Cosmos3-Nano-Policy",
+      "color": "#9270c4",
+      "successes": 18,
+      "episodes": 50,
+      "source_kind": "historical",
+      "source_run": "robolab120_cosmos3_official_specific_10ep_20260603",
+      "source_sha256": "a4e7ab29d53eff05f61e42c03c267f86dfca2afe23c71f9e325639770d2818de"
+    },
+    {
+      "id": "dreamzero",
+      "label": "DreamZero",
+      "color": "#7791a8",
+      "successes": 17,
+      "episodes": 50,
+      "source_kind": "historical",
+      "source_run": "robolab120_dreamzero_specific_10ep_torchattn_20260603",
+      "source_sha256": "e2e8b70be9d934df9ca75d6c6ef1c8beb21486c4296f0d1be2d065c9d542ef3f"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "BlocksInBinTask",
+      "label": "Blocks into bin",
+      "successes": {
+        "pi05_only": 0,
+        "astra_pi05": 5,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 2,
+        "dreamzero": 0
+      }
+    },
+    {
+      "task": "ClutterPumpkinTask",
+      "label": "Pumpkins in clutter",
+      "successes": {
+        "pi05_only": 0,
+        "astra_pi05": 4,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 0,
+        "dreamzero": 0
+      }
+    },
+    {
+      "task": "ButterAboveRaisinTask",
+      "label": "Butter on raisin box",
+      "successes": {
+        "pi05_only": 0,
+        "astra_pi05": 5,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 1,
+        "dreamzero": 2
+      }
+    },
+    {
+      "task": "BlockStackingSpecifiedOrderTask",
+      "label": "Stack blocks in order",
+      "successes": {
+        "pi05_only": 0,
+        "astra_pi05": 4,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 0,
+        "dreamzero": 0
+      }
+    },
+    {
+      "task": "ReorientRedMugTask",
+      "label": "Reorient red mug",
+      "successes": {
+        "pi05_only": 2,
+        "astra_pi05": 4,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 1,
+        "dreamzero": 1
+      }
+    },
+    {
+      "task": "LargerObjectRaisinBoxInBinTask",
+      "label": "Larger raisin box into bin",
+      "successes": {
+        "pi05_only": 3,
+        "astra_pi05": 4,
+        "pure_astra": 4,
+        "cosmos_nano_policy": 0,
+        "dreamzero": 0
+      }
+    },
+    {
+      "task": "SauceBottlesCrateTask",
+      "label": "Sauce bottle into crate",
+      "successes": {
+        "pi05_only": 2,
+        "astra_pi05": 5,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 5,
+        "dreamzero": 5
+      }
+    },
+    {
+      "task": "CannedFoodInBinTask",
+      "label": "Canned food into bin",
+      "successes": {
+        "pi05_only": 4,
+        "astra_pi05": 5,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 4,
+        "dreamzero": 4
+      }
+    },
+    {
+      "task": "YogurtInBowlTask",
+      "label": "Yogurt into bowl",
+      "successes": {
+        "pi05_only": 2,
+        "astra_pi05": 5,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 0,
+        "dreamzero": 0
+      }
+    },
+    {
+      "task": "RubiksCubeTask",
+      "label": "Rubik’s cube into bowl",
+      "successes": {
+        "pi05_only": 5,
+        "astra_pi05": 5,
+        "pure_astra": 5,
+        "cosmos_nano_policy": 5,
+        "dreamzero": 5
+      }
+    }
+  ],
+  "notes": [
+    "Each task has five final evaluation slots per method; all ten tasks are included.",
+    "Astra arms include retained historical results and explicitly authorized retries; initial states are not strictly paired across methods.",
+    "Model abandonment counts as failure. No incomplete slots remain.",
+    "The last two pure-Astra BlocksInBin retries used 500 decisions instead of 180; simulator horizon and success rules were unchanged.",
+    "These are descriptive results for the selected slots, not a uniform-budget, fresh, single-attempt paired benchmark.",
+    "All three historical baselines use the same June 2026 evaluation cohort as the existing pi0.5 reference, selecting the first five episodes per task by run, episode, env_id, including failures.",
+    "Task names and episode counts match; historical and Astra evaluations are not verified to share identical initial states, task versions or control settings.",
+    "Only scores are added for Cosmos3-Nano-Policy and DreamZero; the existing 150-video gallery is unchanged."
+  ],
+  "provenance": {
+    "audit_sha256": "5881f1d8aecc832ded9e8bdfda5c1bcc01722c83bed682ce04efb65221e18ff7",
+    "baseline_source_sha256": "02c28bfe20c14fae5fe41ed92e5c06be03d7159523de1056375852bad710bf2d",
+    "plan_sha256": "9a4bed6a79852bbde28970b87e4f9fbb007560568fc2a8b43eaff774458c87eb",
+    "raw_results_modified": false,
+    "private_responses_included": false,
+    "historical_baseline_sources": {
+      "pi05_only": "02c28bfe20c14fae5fe41ed92e5c06be03d7159523de1056375852bad710bf2d",
+      "cosmos_nano_policy": "a4e7ab29d53eff05f61e42c03c267f86dfca2afe23c71f9e325639770d2818de",
+      "dreamzero": "e2e8b70be9d934df9ca75d6c6ef1c8beb21486c4296f0d1be2d065c9d542ef3f"
+    }
+  },
+  "episodes_per_task": 5,
+  "historical_baseline_selection": "robolab-baselines.json"
+}

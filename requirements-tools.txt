@@ -1,0 +1,13 @@
+# Lightweight analysis, visualization and offline test dependencies only.
+# Install simulator/OpenPI dependencies in their separate upstream environments.
+numpy
+scipy
+Pillow
+matplotlib
+imageio
+imageio-ffmpeg
+fonttools
+msgpack
+PyYAML
+omegaconf
+pytest

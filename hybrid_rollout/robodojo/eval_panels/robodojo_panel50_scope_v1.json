@@ -1,0 +1,142 @@
+{
+  "schema": "hybrid_rollout.robodojo.campaign_scope.v1",
+  "plan_id": "robodojo_panel50_scope_v1",
+  "status": "count_confirmed_generalization_split_pending",
+  "source_panel_id": "robodojo_panel60_v1",
+  "source_panel_sha256": "9641fa252856c5ffc07b269c9fef4fed7f5bbc91b45ea0e93fe2a39fa73944b7",
+  "source_panel_manifest": "robodojo_panel60_v1.json",
+  "task_count": 10,
+  "target_rollouts_per_task": 5,
+  "target_total_cases": 50,
+  "rollouts_per_container": 1,
+  "includes_prior_completed_and_current_case": true,
+  "completion_rule": "Valid native termination counts whether success or failure; interrupted attempts remain evidence, not extra independent cases. No automatic retries.",
+  "preserve_current_job": "pt-hkfhgjyb",
+  "preserve_current_case_id": "classify_objects_by_language__standard__g0__l1",
+  "generalization_split": null,
+  "generalization_split_options": [
+    {
+      "standard": 3,
+      "random": 2
+    },
+    {
+      "standard": 2,
+      "random": 3
+    }
+  ],
+  "automatic_submission_authorized": false,
+  "tasks": [
+    {
+      "task": "organize_table",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "organize_table__standard__g0__l0",
+        "organize_table__standard__g0__l1",
+        "organize_table__standard__g0__l2",
+        "organize_table__standard__g0__l3",
+        "organize_table__standard__g0__l4"
+      ]
+    },
+    {
+      "task": "classify_objects_by_language",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "classify_objects_by_language__standard__g0__l0",
+        "classify_objects_by_language__standard__g0__l1",
+        "classify_objects_by_language__standard__g0__l2",
+        "classify_objects_by_language__standard__g0__l3",
+        "classify_objects_by_language__standard__g0__l4"
+      ]
+    },
+    {
+      "task": "imitate_sorting_sequence",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "imitate_sorting_sequence__standard__g0__l0",
+        "imitate_sorting_sequence__standard__g0__l1",
+        "imitate_sorting_sequence__standard__g0__l2",
+        "imitate_sorting_sequence__standard__g0__l3",
+        "imitate_sorting_sequence__standard__g0__l4"
+      ]
+    },
+    {
+      "task": "arrange_largest_number",
+      "target_cases": 5,
+      "generalization": true,
+      "selection_status": "awaiting_variant_split",
+      "case_ids": null
+    },
+    {
+      "task": "pack_objects_into_box",
+      "target_cases": 5,
+      "generalization": true,
+      "selection_status": "awaiting_variant_split",
+      "case_ids": null
+    },
+    {
+      "task": "classify_objects",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "classify_objects__standard__g0__l0",
+        "classify_objects__standard__g0__l1",
+        "classify_objects__standard__g0__l2",
+        "classify_objects__standard__g0__l3",
+        "classify_objects__standard__g0__l4"
+      ]
+    },
+    {
+      "task": "build_tower",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "build_tower__standard__g0__l0",
+        "build_tower__standard__g0__l1",
+        "build_tower__standard__g0__l2",
+        "build_tower__standard__g0__l3",
+        "build_tower__standard__g0__l4"
+      ]
+    },
+    {
+      "task": "make_kong",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "make_kong__standard__g0__l0",
+        "make_kong__standard__g0__l1",
+        "make_kong__standard__g0__l2",
+        "make_kong__standard__g0__l3",
+        "make_kong__standard__g0__l4"
+      ]
+    },
+    {
+      "task": "fold_clothes",
+      "target_cases": 5,
+      "generalization": true,
+      "selection_status": "awaiting_variant_split",
+      "case_ids": null
+    },
+    {
+      "task": "put_bottles_into_dustbin",
+      "target_cases": 5,
+      "generalization": false,
+      "selection_status": "selected",
+      "case_ids": [
+        "put_bottles_into_dustbin__standard__g0__l0",
+        "put_bottles_into_dustbin__standard__g0__l1",
+        "put_bottles_into_dustbin__standard__g0__l2",
+        "put_bottles_into_dustbin__standard__g0__l3",
+        "put_bottles_into_dustbin__standard__g0__l4"
+      ]
+    }
+  ]
+}

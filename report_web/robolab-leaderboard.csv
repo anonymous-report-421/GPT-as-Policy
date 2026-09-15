@@ -1,0 +1,56 @@
+scope,method,successes,episodes,success_rate_percent
+overall,π₀.₅,18,50,36.0
+overall,π₀.₅ + GPT 6 Astra,46,50,92.0
+overall,GPT 6 Astra Direct,49,50,98.0
+overall,Cosmos3-Nano-Policy,18,50,36.0
+overall,DreamZero,17,50,34.0
+BlocksInBinTask,π₀.₅,0,5,0.0
+BlocksInBinTask,π₀.₅ + GPT 6 Astra,5,5,100.0
+BlocksInBinTask,GPT 6 Astra Direct,5,5,100.0
+BlocksInBinTask,Cosmos3-Nano-Policy,2,5,40.0
+BlocksInBinTask,DreamZero,0,5,0.0
+ClutterPumpkinTask,π₀.₅,0,5,0.0
+ClutterPumpkinTask,π₀.₅ + GPT 6 Astra,4,5,80.0
+ClutterPumpkinTask,GPT 6 Astra Direct,5,5,100.0
+ClutterPumpkinTask,Cosmos3-Nano-Policy,0,5,0.0
+ClutterPumpkinTask,DreamZero,0,5,0.0
+ButterAboveRaisinTask,π₀.₅,0,5,0.0
+ButterAboveRaisinTask,π₀.₅ + GPT 6 Astra,5,5,100.0
+ButterAboveRaisinTask,GPT 6 Astra Direct,5,5,100.0
+ButterAboveRaisinTask,Cosmos3-Nano-Policy,1,5,20.0
+ButterAboveRaisinTask,DreamZero,2,5,40.0
+BlockStackingSpecifiedOrderTask,π₀.₅,0,5,0.0
+BlockStackingSpecifiedOrderTask,π₀.₅ + GPT 6 Astra,4,5,80.0
+BlockStackingSpecifiedOrderTask,GPT 6 Astra Direct,5,5,100.0
+BlockStackingSpecifiedOrderTask,Cosmos3-Nano-Policy,0,5,0.0
+BlockStackingSpecifiedOrderTask,DreamZero,0,5,0.0
+ReorientRedMugTask,π₀.₅,2,5,40.0
+ReorientRedMugTask,π₀.₅ + GPT 6 Astra,4,5,80.0
+ReorientRedMugTask,GPT 6 Astra Direct,5,5,100.0
+ReorientRedMugTask,Cosmos3-Nano-Policy,1,5,20.0
+ReorientRedMugTask,DreamZero,1,5,20.0
+LargerObjectRaisinBoxInBinTask,π₀.₅,3,5,60.0
+LargerObjectRaisinBoxInBinTask,π₀.₅ + GPT 6 Astra,4,5,80.0
+LargerObjectRaisinBoxInBinTask,GPT 6 Astra Direct,4,5,80.0
+LargerObjectRaisinBoxInBinTask,Cosmos3-Nano-Policy,0,5,0.0
+LargerObjectRaisinBoxInBinTask,DreamZero,0,5,0.0
+SauceBottlesCrateTask,π₀.₅,2,5,40.0
+SauceBottlesCrateTask,π₀.₅ + GPT 6 Astra,5,5,100.0
+SauceBottlesCrateTask,GPT 6 Astra Direct,5,5,100.0
+SauceBottlesCrateTask,Cosmos3-Nano-Policy,5,5,100.0
+SauceBottlesCrateTask,DreamZero,5,5,100.0
+CannedFoodInBinTask,π₀.₅,4,5,80.0
+CannedFoodInBinTask,π₀.₅ + GPT 6 Astra,5,5,100.0
+CannedFoodInBinTask,GPT 6 Astra Direct,5,5,100.0
+CannedFoodInBinTask,Cosmos3-Nano-Policy,4,5,80.0
+CannedFoodInBinTask,DreamZero,4,5,80.0
+YogurtInBowlTask,π₀.₅,2,5,40.0
+YogurtInBowlTask,π₀.₅ + GPT 6 Astra,5,5,100.0
+YogurtInBowlTask,GPT 6 Astra Direct,5,5,100.0
+YogurtInBowlTask,Cosmos3-Nano-Policy,0,5,0.0
+YogurtInBowlTask,DreamZero,0,5,0.0
+RubiksCubeTask,π₀.₅,5,5,100.0
+RubiksCubeTask,π₀.₅ + GPT 6 Astra,5,5,100.0
+RubiksCubeTask,GPT 6 Astra Direct,5,5,100.0
+RubiksCubeTask,Cosmos3-Nano-Policy,5,5,100.0
+RubiksCubeTask,DreamZero,5,5,100.0

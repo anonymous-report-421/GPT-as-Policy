@@ -1,0 +1,128 @@
+[
+  {
+    "id": "clip__fe2857368ce87ec2ffdcd4ac__0",
+    "section": "grounding",
+    "number": 1,
+    "caption": "按语言分类：将动作重新对准目标物体"
+  },
+  {
+    "id": "clip__6f1191749b24df72921e800d__0",
+    "section": "grounding",
+    "number": 2,
+    "caption": "数字摆放：修正目标位置"
+  },
+  {
+    "id": "clip__54ab2e9592bc1721a111b399__0",
+    "section": "grounding",
+    "number": 3,
+    "caption": "物体分类：纠正目标选择"
+  },
+  {
+    "id": "clip__0138af9ba9629776dbee7d6f__0",
+    "section": "grounding",
+    "number": 4,
+    "caption": "折衣：修正抓取目标"
+  },
+  {
+    "id": "imitate_sorting_sequence_a5_frames_493_1309",
+    "section": "contact",
+    "number": 5,
+    "caption": "模仿排序：三维关系判断、拨动与后续搬运"
+  },
+  {
+    "id": "clip__182f98be14595fc71b02b377__0",
+    "section": "contact",
+    "number": 6,
+    "caption": "先拨动物体，再完成抓取"
+  },
+  {
+    "id": "clip__220a8ec7845d68ca73248879__0",
+    "section": "contact",
+    "number": 7,
+    "caption": "将物体拨出，再交回 π0.5 抓取"
+  },
+  {
+    "id": "clip__4288645ef90dc53de13376eb__0",
+    "section": "contact",
+    "number": 8,
+    "caption": "调整接近方向与抓取姿态"
+  },
+  {
+    "id": "clip__cbf8658bad76fd96fef01245__1",
+    "section": "reasoning",
+    "number": 9,
+    "caption": "数字摆放：发现未终止，重新检查与微调"
+  },
+  {
+    "id": "clip__5436877e6101be2b23b24fc2__0",
+    "section": "reasoning",
+    "number": 10,
+    "caption": "装箱：发现箱后遗漏，并调整物体姿态"
+  },
+  {
+    "id": "clip__5f52fbae6ce02b95ed5346b2__0",
+    "section": "reasoning",
+    "number": 11,
+    "caption": "数字摆放：根据终止反馈继续修正"
+  },
+  {
+    "id": "clip__b0b8456f0b4d549bc4d56cfe__0",
+    "section": "reasoning",
+    "number": 12,
+    "caption": "搭塔：针对未满足的终态进行二次纠错"
+  },
+  {
+    "id": "clip__cb2554914fe8187ac98e9e45__0",
+    "section": "failures",
+    "number": 13,
+    "caption": "容器边缘净空不足，搬运时发生碰撞"
+  },
+  {
+    "id": "clip__7ef164f7a8783f3af3eb9090__0",
+    "section": "failures",
+    "number": 14,
+    "caption": "滑落发生在动作段内，纠错反馈滞后"
+  },
+  {
+    "id": "clip__5b7eb4161fbb1a8e5851cf52__0",
+    "section": "failures",
+    "number": 15,
+    "caption": "复杂抓取反复失败，消耗剩余步数"
+  },
+  {
+    "id": "clip__bd5f4382adb568ed22dfca47__0",
+    "section": "failures",
+    "number": 16,
+    "caption": "麻将操作错误未被及时识别"
+  },
+  {
+    "id": "clip__b34c1a832bb5123d6eb6a6af__0",
+    "section": "gpt-only",
+    "number": 17,
+    "caption": "零样本方案：尝试用机械臂把瓶子扫入桶中"
+  },
+  {
+    "id": "clip__71c12723687a550b770f36c0__0",
+    "section": "gpt-only",
+    "number": 18,
+    "caption": "零样本方案：单手抓板，搭建不够稳定"
+  },
+  {
+    "id": "clip__9e40a74ed6b0a356a421f53b__0",
+    "section": "gpt-only",
+    "number": 19,
+    "caption": "零样本方案：单臂操作的稳定性问题"
+  },
+  {
+    "id": "clip__faad002fd6c510f09db4c435__0",
+    "section": "direct-control",
+    "number": 20,
+    "caption": "本体信息未被有效利用，控制反复受阻"
+  },
+  {
+    "id": "clip__6ba3a538a3405206181aa6c6__0",
+    "section": "direct-control",
+    "number": 21,
+    "caption": "数字摆放：理解控制反馈后的精彩恢复"
+  }
+]

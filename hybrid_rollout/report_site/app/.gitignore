@@ -1,0 +1,4 @@
+node_modules/
+.npm-cache/
+dist/
+.data-app-offline/

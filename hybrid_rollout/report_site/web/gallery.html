@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>轨迹视频库 · GPT 6 Astra 具身策略评测</title><link rel="stylesheet" href="gallery.css"><script defer src="data.js"></script><script defer src="gallery.js"></script></head>
+<body><header><a href="index.html" id="back-report">← 评测报告</a><span>RoboDojo · 轨迹视频</span><button id="language" type="button">English</button></header>
+<main>
+<div class="page-heading"><p class="eyebrow">MODEL ROLLOUTS</p><h1>轨迹视频库</h1><p>选择任务与运行实例，查看完整操作过程。</p></div>
+<nav id="benchmark-galleries" aria-label="Video galleries" hidden></nav>
+<div class="library-tabs" role="group" aria-label="策略选择"><button class="method-tab" data-method="mix" aria-pressed="true">π0.5 + GPT 6 Astra</button><button class="method-tab" data-method="gpt" aria-pressed="false">GPT 6 Astra（direct）</button><select id="scope" aria-label="视频类别"><option value="cases">完整评测</option><option value="clips">行为片段</option></select></div>
+<div class="library-layout">
+<aside class="task-sidebar" aria-label="任务列表"><input id="search" type="search" placeholder="搜索任务…" aria-label="搜索任务"><p id="task-count"></p><nav id="task-list"></nav></aside>
+<section class="viewer" aria-label="轨迹播放器">
+<div class="task-heading"><div><h2 id="task-title"></h2><p id="task-id"></p></div><div class="task-average"><span id="average-label">Score / 成功率</span><strong id="task-average"></strong><small id="score-coverage" hidden></small></div></div>
+<p id="prompt"></p>
+<div class="rollout-row"><div id="rollout-list" aria-label="运行实例"></div><span id="count" aria-live="polite"></span></div>
+<p id="empty" hidden>没有符合条件的视频。</p>
+<button type="button" id="video-card" aria-label="放大观看当前视频"><video id="video" muted autoplay loop playsinline preload="metadata"></video></button>
+<p id="video-error" role="alert" hidden>视频暂时无法加载，请通过下载链接查看。</p>
+<div id="video-caption"><div><strong id="run-label"></strong><span id="result" class="result"></span></div><div class="actions"><button id="paired">同 seed 对照</button><a id="download" download>下载视频</a></div></div>
+<dl id="facts"></dl>
+</section></div></main>
+<dialog id="video-dialog" aria-label="放大视频"><div class="dialog-head"><span id="dialog-title"></span><button id="close-dialog" aria-label="关闭视频">关闭</button></div><video id="expanded-video" controls autoplay muted playsinline></video></dialog>
+<footer>RoboDojo 具身策略评测 · 完整过程与行为片段</footer></body></html>

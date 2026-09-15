@@ -1,0 +1,22 @@
+{
+  "schema": "hybrid_rollout.robodojo.source.v1",
+  "status": "native_integration_verified_company_backend_not_yet_run",
+  "code_root": "hybrid_rollout/robodojo",
+  "teacher_configuration": "hybrid_rollout/robodojo/settings.py + hybrid_rollout/robodojo/codex_backend/config.toml",
+  "teacher_provider": "LiteLLM@https://gateway.example.invalid",
+  "teacher_model_for_new_rollouts": "gpt-6-astra/xhigh",
+  "historical_build_tower_03_teacher": "gpt-6-astra/xhigh",
+  "method_origin": "Successful RoboLab full-agent hybrid pipeline and unchanged colleague gate",
+  "implementation_origin": "Reviewed copies of prior RoboDojo test implementation; no imports, launches or runtime dependencies on external test directories",
+  "baseline_commits": ["ad294ad", "88da712", "9c571f3", "5ca5512"],
+  "gate_sha256": "5bb54e0e5b39387d3873f4d4b3eed695a3a682ac28df0dd219f69176ade9e58d",
+  "robodojo_commit": "ee67a1468510da7624a089164402359f2afc72c8",
+  "openpi_commit": "432f82b1758c5b1202e42a3dfe014546dbc50871",
+  "checkpoint": {
+    "path": "/mnt/rollout/robodojo_mixed_control/checkpoints/RoboDojo-sim-arx_x5-joint-0/59999",
+    "config": "pi05_base_aloha_full_sim_arx-x5_seed_0",
+    "normalizer": "arx_x5_sim",
+    "previous_load_sha256": "d15fb8bd1d29cb30b69f01b71c66596cb0293c1a8a94111b343c1580dd3e3e5b",
+    "fresh_load_and_inference_required": true
+  }
+}

@@ -1,0 +1,4288 @@
+{
+  "schema": "public-source-release.v1",
+  "history": "new-root-commit",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 241,
+      "sha256": "b28af4eb4fb692a8a0131e0031f3edae5abfa323cb42838637b333fd0647ce3b"
+    },
+    {
+      "path": "CITATION.bib",
+      "bytes": 340,
+      "sha256": "31d31a254a8e01e52087382838858dfbf0d85c8d8a02c65960243da64bea8a5c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1085,
+      "sha256": "f66893b8bc9c42d5d765c1ce9b1f7069dc669df8c626de04f7a502b0ace2ea2e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8095,
+      "sha256": "aa0805d107e668aa25514bd218aa197bd93c7ce3fbb99b7ad91127cc36425d5f"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 637,
+      "sha256": "6973dd8c0d362c289a36f1c1d0cf8274982a1f5b85ea35caa726e9dce7f268dc"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1877,
+      "sha256": "eb99c4feed17ed34b06060f2a04c8194be6d227e77d658d71d3720808c3bcfa9"
+    },
+    {
+      "path": "hybrid_rollout/README.md",
+      "bytes": 116,
+      "sha256": "90c90b4300a34b5789144be23aca07bf4b391be0df3dec935c082c5ab743e848"
+    },
+    {
+      "path": "hybrid_rollout/__init__.py",
+      "bytes": 84,
+      "sha256": "aedf88cf648ca96259d9d86679f71f35c12fb57f0318288fe1fc603cbd30d503"
+    },
+    {
+      "path": "hybrid_rollout/annotation_dashboard.py",
+      "bytes": 27951,
+      "sha256": "33eb1559a58fe360c17fff1f3c45598bdd6b9350edae63e77dbd7275e3a8bca8"
+    },
+    {
+      "path": "hybrid_rollout/annotation_ui/app.js",
+      "bytes": 26071,
+      "sha256": "2a89f5a834151b9238d1ca312c6521b10f35e52db2f3ad9bce1398d7e843b736"
+    },
+    {
+      "path": "hybrid_rollout/annotation_ui/browser_smoke.cjs",
+      "bytes": 9487,
+      "sha256": "01d998fd843d72411c87c61764e5d07ad465608999d33b7d530bac813c55e177"
+    },
+    {
+      "path": "hybrid_rollout/annotation_ui/index.html",
+      "bytes": 8945,
+      "sha256": "a2e33164d6ac5b3ea6aeef9eb5c98af051713736cd6d479034e17cb724e14463"
+    },
+    {
+      "path": "hybrid_rollout/annotation_ui/style.css",
+      "bytes": 6006,
+      "sha256": "37b2c6739823008f92917153af091fe0b692d24d10b2d7c944d1503ef5e19ef0"
+    },
+    {
+      "path": "hybrid_rollout/assets/fonts/LICENSE",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "hybrid_rollout/assets/fonts/NotoSansCJKsc-Regular.otf",
+      "bytes": 16437364,
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+    },
+    {
+      "path": "hybrid_rollout/assets/fonts/README.md",
+      "bytes": 493,
+      "sha256": "a58e1f61642e6b88fef5bd5c85fcc04e3a6723d0bb3aed7e0cffba2acdfad5e2"
+    },
+    {
+      "path": "hybrid_rollout/dashboard.py",
+      "bytes": 12523,
+      "sha256": "64b1af6e836e713b831f6ea251627ac5abbbd712654d3b49be29cbc2f367474f"
+    },
+    {
+      "path": "hybrid_rollout/history_dashboard.py",
+      "bytes": 16908,
+      "sha256": "a875a033f62386261362178674d15c0450295457f3d8dcc0a6f62f0104c29ab9"
+    },
+    {
+      "path": "hybrid_rollout/report_server.py",
+      "bytes": 4164,
+      "sha256": "dd2498626b2cc475dd2ecb75c6238db79002877d40b1db0d0ac53826adc980cd"
+    },
+    {
+      "path": "hybrid_rollout/report_site/README.md",
+      "bytes": 116,
+      "sha256": "0d087a92446704304b6f3493b15dd3361aff690243eedc2afc3a8daa4ef53a07"
+    },
+    {
+      "path": "hybrid_rollout/report_site/__init__.py",
+      "bytes": 73,
+      "sha256": "06c1d6bb95fbdd90f88f37e60900ab056a6c65e7323cb8e476d232aef4f22726"
+    },
+    {
+      "path": "hybrid_rollout/report_site/academic_revision.py",
+      "bytes": 5440,
+      "sha256": "e3134c0dfeb0b3e47d6d21c169f0fe21c7fa772852f89a99f0979f10c1d854c4"
+    },
+    {
+      "path": "hybrid_rollout/report_site/academic_smoke.cjs",
+      "bytes": 6011,
+      "sha256": "610d8f05822ded9966f39aa7a36854781e6dfde815d0a4df06915840b10d6228"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/.gitignore",
+      "bytes": 51,
+      "sha256": "6f8897efda9f87e4a776e5c13826ba763db17795f6f7e081bc2f330a697602ed"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/.openai/hosting.json",
+      "bytes": 31,
+      "sha256": "89610cb100afd3db32d865423a69a3fe2de1da54150570ea979a63143a6d5bdd"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/AGENTS.md",
+      "bytes": 11327,
+      "sha256": "215baf947a82508f9aa349acce5fb747e43aaf874ddf7b9b11436b80fab50240"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/README.md",
+      "bytes": 3109,
+      "sha256": "c24c56d48a2b491a0a648ec0beee10f43d12c8d7fe2b5e74d89879fd31879419"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/async-data.md",
+      "bytes": 3910,
+      "sha256": "ddd293d4e1200a3c4814e520443dd9e22c1214b102deef877e0eb7da132cfb7d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/bar-presentations.md",
+      "bytes": 3350,
+      "sha256": "3ec11931b0d05ec75282d3b23f77b348a271fff4dfad3379890cea35fff9309a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/charts.md",
+      "bytes": 11033,
+      "sha256": "85f8c4106b1693994590f11d2fc4ef557c8ee00502c3bef1d831171b2cd74217"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/comparison-formatting.md",
+      "bytes": 2727,
+      "sha256": "35faa7cc51b5e7f3a00ee2b155343589b62c645cf9ae4f053118c72c528959e9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/controls.md",
+      "bytes": 4703,
+      "sha256": "697c4e56b377e535c263220acbf4a4b4c05f8b072a47126051aa85dff8f3ea99"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/filtering.md",
+      "bytes": 9179,
+      "sha256": "7820b3d916b4c3c74243d98be96e819f7bd0a828e466e9621127a32c2bf6c1b9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/funnels.md",
+      "bytes": 1417,
+      "sha256": "bc6f858194ad820b4b62123191d9603847f4f860ca3428d08816457323f79ed3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/layout.md",
+      "bytes": 6138,
+      "sha256": "da9013b89a528bfee18235581de33da73d6aefd5695851f3e808d84b53446bd1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/reports.md",
+      "bytes": 4446,
+      "sha256": "a698727d6993ce703ca4b33749cce9313aece525ce91132f2433f39fe3894cf0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/sortable-layout.md",
+      "bytes": 9002,
+      "sha256": "fd0f9bfae34a9aa1563e17699a8591f1c24f7579303c176dcb27f45e6dc7bf96"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/sources.md",
+      "bytes": 1923,
+      "sha256": "2e6efcd576ec195c64895ded0aa29d629d94154fcc437828d2288a9440c31202"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/docs/components/tables.md",
+      "bytes": 2137,
+      "sha256": "bad26c41789c621c24e25748111e20c6a100533477ef582c175a1edca12380f3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/index.html",
+      "bytes": 397,
+      "sha256": "314bb3975bdcd7322067d234f99398b06f609c67c2321554eda742f2338b3c5e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/package-lock.json",
+      "bytes": 133149,
+      "sha256": "bc2586a97478cb40c124cb3ab5dbeb3e832dfd0e98f2397b97f44203ab7916cc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/package.json",
+      "bytes": 1199,
+      "sha256": "e467102f45892aa0f8f6ab692f7eda7c21cc944e93cb857d55c92a36781f5501"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/protected-runtime.json",
+      "bytes": 25758,
+      "sha256": "fdcdb84522db9228ee19b64cd34c109ce7591aa29b06cd2620cc2d9309622a33"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/scripts/authorize-protected-change.mjs",
+      "bytes": 3135,
+      "sha256": "9b9f012d65c34a1f9ac4d107ba226f82aadabde72980c2d393c63e9d68eff6a3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/scripts/protected-file-digest.mjs",
+      "bytes": 4822,
+      "sha256": "2583e42fafb0d0fab7342b8dca163fe0d6771928dc41c830fbdfdee3af821822"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/scripts/verify-protected-runtime.mjs",
+      "bytes": 13008,
+      "sha256": "47d95847a9135cd125581a4b994208adc3822cbef4a2c8bfaf562f0d2ef3a9af"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/App.jsx",
+      "bytes": 566,
+      "sha256": "2f4b8f28c24ee9498c8de670a7f9c7fb79a584c67f67d88b782ec301838cc54b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/DataAppContext.jsx",
+      "bytes": 1050,
+      "sha256": "309d971e9fd4494b2f704087c81ded8837ec955ae4a57898f54dd776c8fca30f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/DataAppRuntime.jsx",
+      "bytes": 4035,
+      "sha256": "3008a08c2a79c90a5ea5cb3f91b7f77113dfca1e8c4578bf47c34bd9932bd088"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/DataAppShell.jsx",
+      "bytes": 53922,
+      "sha256": "3a03333d7f9e70d468c7e19fee2aabc469a40bb71ee62127f24dc3c1bd1aa181"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/block-layout.js",
+      "bytes": 30063,
+      "sha256": "385da9c5081f9a24ee3eb8948b87aa7a6c6b0f1b7b37d26c91ae07fb01a81c8b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/build-state.js",
+      "bytes": 1004,
+      "sha256": "1fe7e56e5e8173e0da5d432600f385b13d9133cbeb243ef26edd97985babf6d8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/card-image.js",
+      "bytes": 11359,
+      "sha256": "b91c236f6e3b1c1bf5d7ca8085a4378770336b671dc3e36e403efa91995e851c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/chart-export.js",
+      "bytes": 3887,
+      "sha256": "f3eecf07f28799612c5e5b246e0cbd83d20850eac66599d29a72df7db92a69a3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/chart-image.js",
+      "bytes": 28078,
+      "sha256": "c48da8343b765813bc1294bcd81967fcd0b2bfe94f18174a1e3d4db6c44d1936"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/chart-permalink.js",
+      "bytes": 6763,
+      "sha256": "de7b01a00bc0d2b478a63f50c0716272af7567283b793d908e2d8750a59a8458"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/BarFamilyRenderer.jsx",
+      "bytes": 31772,
+      "sha256": "235811f05967f5a1931c020b65e9a9ed6faf950c50e3c71a9868d4167a9c52c2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/CategoryAxisTick.jsx",
+      "bytes": 3358,
+      "sha256": "e9f70ac3997d76125a58221dc0778a3437781947f2ef27722a171f2ea0a66561"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/ChartAnnotations.jsx",
+      "bytes": 12380,
+      "sha256": "8da6f704a1e8850873e99a4f778ebec29215a6df329bbdb11b46b01c09f8a022"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/ChartFrame.jsx",
+      "bytes": 6394,
+      "sha256": "bb0925854283f32cc398144a79e69113e4874018375ddf4e241d3f5fd06ddcf0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/ChartMark.jsx",
+      "bytes": 5866,
+      "sha256": "bad3bfefaef82395ea67aaef44c75941d6087eb45137214bb78d04b2978565b1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/ChartRenderer.jsx",
+      "bytes": 71427,
+      "sha256": "7bddb0960e32543751afa5b21b5ddae69a701f19e66dacd910a31210f5cd4731"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/ChartState.jsx",
+      "bytes": 3220,
+      "sha256": "ad5b28521894d219e36027fcfc2640d0c0b8b290f55b4f6d1215ef2c9f2a7d46"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/ChartTooltip.jsx",
+      "bytes": 15666,
+      "sha256": "51303b729ff7adbf0405e67523a09c6aa89e40e144b61e717103b71b7c39a8bb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/FunnelRenderer.jsx",
+      "bytes": 11171,
+      "sha256": "1103ec5a1a88f1a14622d5e6e30cf2e9b58d03d9cb6f21f973c62c6e7cd1309f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/HeatmapRenderer.jsx",
+      "bytes": 9438,
+      "sha256": "2034e2e3d9a6d3c86256de1abbd73da7473401232e777e12d9d2de23c79a84b2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/MetricSparkline.jsx",
+      "bytes": 2244,
+      "sha256": "9a5aae5cbd27b96baecc406bb69f91fc76cc9d5fc2aaa9e7e356d68d8c7ac08d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/NumericAxes.jsx",
+      "bytes": 3118,
+      "sha256": "5eb37be4711efdb03eaa70225089fd6c4f4f597d3aa7faf81c3a55793d1aa883"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/PieRenderer.jsx",
+      "bytes": 3129,
+      "sha256": "fc1265bf867154c239ddb14b539c63751ab7716fb19903b535ccd9c06ca8a0cc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/SankeyRenderer.jsx",
+      "bytes": 19195,
+      "sha256": "48c412a1e6394f152ae6bf8fef5023f76d6347844abb0a3710aa0f48f748a9c2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/SelectedChartRegion.jsx",
+      "bytes": 764,
+      "sha256": "1717361a56edb81e2f00bbdc57db66be844d02de43d5ce27cae7cd8f5722b0e7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/TableSparkline.jsx",
+      "bytes": 1195,
+      "sha256": "466d91f5de2fab7f1fd8654e2ad800c56d0b6d6a71adc058405985a59a918da1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/TemporalXAxis.jsx",
+      "bytes": 4346,
+      "sha256": "ef2ba3b476b1887416ede87fb577450ec0d54524b54c3cec3e2dbbc659c752d6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/bar-family.js",
+      "bytes": 5975,
+      "sha256": "c31e44122f8d2e14b3f09bbeabe26fadea115a5488be2311720ff2bc54e7fbda"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-annotation-layout.js",
+      "bytes": 27093,
+      "sha256": "09cd7715da2191c0257ccce4f900141dc4f3c5bf62a83bb5bec04ad23e4e96d2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-annotations.js",
+      "bytes": 10059,
+      "sha256": "bf8fd4fc8f5d586daa18c315855d9f67083ea2978860b7a5d64b7f713352098c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-data-shape.js",
+      "bytes": 26933,
+      "sha256": "4c1dea15118a8dffd68bfa3c0b6291a691d1929862a32a02edb8c711dc1fcedc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-editor-state.js",
+      "bytes": 7872,
+      "sha256": "57e1439926bff4e9aab3847b3e1bf92f1ab5554f53688112da56344c5a9cc0b8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-extrema.js",
+      "bytes": 428,
+      "sha256": "ab4bd4a9adb25d2648ac95f8bf6388c5fe9eadbf7115a545925dedd7611a1850"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-mark-interactions.js",
+      "bytes": 773,
+      "sha256": "d93877eb6ef8324f0109277754e04affac135769a18f2d2d99d51d8382abb726"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-overrides.js",
+      "bytes": 601,
+      "sha256": "09e15338c86d93f7fb9845757d0ba223f71705d540ec467c18d32df7b10bb8f9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-spec-validation.js",
+      "bytes": 3166,
+      "sha256": "a293a06bc346734f25742f79d100ce45c45d107ec5c368965f931bf2d7b5c5f8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-theme.js",
+      "bytes": 21046,
+      "sha256": "21367c8f24bd4122e85efe4bac43e2e6fa8567a0d098cf8d03158dd183342cb9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/chart-transforms.js",
+      "bytes": 16407,
+      "sha256": "782d55023ec8dddfb99e7c5584c39cc23e102317aa3ca1e4668043c8814c3e86"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/experimental-bar-chart.css",
+      "bytes": 14023,
+      "sha256": "b9117bdd6cd0f441f23b82a6d79fd17fc3e13e2f2003d631afc0827b2cf8174e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/charting/table-data.js",
+      "bytes": 3193,
+      "sha256": "2e61118fccdba5c565e1995fab213da44750817d9a7da85593776d5793234ef2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/chrome-contrast.js",
+      "bytes": 4592,
+      "sha256": "f18b05b03ec11c1f405527216ac1dc9c403074c22208bc7534008b8e4062d2e6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/chrome-layout.js",
+      "bytes": 1058,
+      "sha256": "3027c569c6266762f6d90268df1650768777b1b5cecb1405820d22bbd8588fb7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Chart.jsx",
+      "bytes": 601,
+      "sha256": "bb3193138a46e22fa0c3e3bc342fdfa539f03371cf1d628bef624a6a357e7e52"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/ChartEditor.jsx",
+      "bytes": 9713,
+      "sha256": "485f6b405d310b11e6e784893971ae78e38d2fa68cd8f8be16a2c459c5be7208"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/ChartExplorer.jsx",
+      "bytes": 31757,
+      "sha256": "e23683cddd6efe4d323844fa97cc5a6fdfef665cd7312c5fece80618696c56d3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/ChartExportDialog.jsx",
+      "bytes": 16974,
+      "sha256": "d54792a80ac79f67249d4332b80ef71b3b320d55cc3256b15532bf011dd6045e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Controls.jsx",
+      "bytes": 8155,
+      "sha256": "d9077aac0dd095dcc26f8accb904ce834db130c4d6700a73ab6732c30c815602"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/CustomBlockHost.jsx",
+      "bytes": 1180,
+      "sha256": "b7bfec00a46435291b07d32ff39a2ec65e309aa532902fd94e9b1c72a8994a32"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DashboardAsk.jsx",
+      "bytes": 53014,
+      "sha256": "5664289776e4ed8544ffb45474691908e2bff1c520e88a467b288a26822ac94d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DashboardTabs.jsx",
+      "bytes": 8006,
+      "sha256": "5490439c56960f12f62cc99bdadcb8d24e60707a0aa901b3225346fb8b1f5f5b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DataAppChrome.jsx",
+      "bytes": 49772,
+      "sha256": "6eae567b93a5f5c1ca4eccecfbdf3d85398f181e2e7d2f3e3447b6f5ade50233"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DataAppHandoffDialog.jsx",
+      "bytes": 3404,
+      "sha256": "3bd1db7e4c0a5804d2dbed3625b096f3b25b1d4dc8441e8817a278355faea2bb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DataAppLoadingContent.jsx",
+      "bytes": 1386,
+      "sha256": "bcfec0818ea0c90f75697f35a0f8e5d3b649314ad9daaadaabfecb945d6a3483"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DataAppToast.jsx",
+      "bytes": 772,
+      "sha256": "1c80d8723f951755c132c5b1e51fab8dafd38cd6312ad7bc9e5a98d4403c2213"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DataComponent.jsx",
+      "bytes": 14089,
+      "sha256": "8b4c886d78d833ca621e9c2d7eaa14e80df550306aa224f936682713a90a96bf"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DataTable.jsx",
+      "bytes": 13279,
+      "sha256": "dbaa4b2de52daefdbe288032efca399fedf9e03f53313746553077e21465adde"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/DateRangePicker.jsx",
+      "bytes": 10045,
+      "sha256": "8a2d61e55b89e7b994433d8ca4b2f8ddd86769d741d3b4ccd5d886e55e7d42a2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Dropdown.jsx",
+      "bytes": 5324,
+      "sha256": "e7761601666fd1a948541502e1ccc1985ebd30673237aecb865208e927533299"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/EditableText.jsx",
+      "bytes": 179,
+      "sha256": "d86a22e16e067f284bd51ae7b96a6d5b0af51b8098f267a0790b0962dfe38ad0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/EvidenceChart.jsx",
+      "bytes": 1157,
+      "sha256": "3b836656e696325fc402535fe7a8dcd95b5e0ada6c3363aa64fc1cb3e1da79c5"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/ExecutiveSummary.jsx",
+      "bytes": 1861,
+      "sha256": "375a8bc90881e493690d55838e677877a6ff27b6c585dad9af5dfbf0705c4e38"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Icon.jsx",
+      "bytes": 1241,
+      "sha256": "3181d5f82f887b5a7cf4a1c5b1fcb50d6ffc1a06d082ce9f3f569bc26b4341a6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/MetricCard.jsx",
+      "bytes": 7224,
+      "sha256": "d12e774297ff9e002dc243cfbf3541c54469da98dc24d77c093ad34b326745ac"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/PublishReviewDialog.jsx",
+      "bytes": 3675,
+      "sha256": "02894bfb21d21f8605e92230f8553007b2c843c17560bc852375a62c57363d8b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/QueryDataBoundary.jsx",
+      "bytes": 1994,
+      "sha256": "a5229b8f6142652f6ac16bcf35ba10b0753206a54fff2cc74e21565620aec2e0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/RefreshSetupCoachmark.jsx",
+      "bytes": 3961,
+      "sha256": "5007f4f0878b0e6c9c924c47625386ba922aec57dd69c8633996b7d67ca7fc77"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/RichMarkdown.jsx",
+      "bytes": 7613,
+      "sha256": "30109791815d8c463be49479cf7f1074d316c4682824d4669f5dc809dfc81d9c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/RichTextFormatToolbar.jsx",
+      "bytes": 12720,
+      "sha256": "3ee14b50554fee37d94e28a9c208188affb4ac66d3c4b33b60fcb49008e2e11b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Section.jsx",
+      "bytes": 3032,
+      "sha256": "bee8342892fe825b1e208a81b85dfc0f32811698dfb5cf11bc7b7aed46c7c708"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SectionNavigator.jsx",
+      "bytes": 7850,
+      "sha256": "d25fde954fb369abb828872ae842ced37c4713a18908ad80c2e63cb58e57bea3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SegmentedControl.jsx",
+      "bytes": 2179,
+      "sha256": "34bcc4601dc3538a2c5dae36be7d0b6d81d0059c2b1c53626024cda9feaf2b10"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Slider.jsx",
+      "bytes": 16023,
+      "sha256": "2db4c7b93269d2c80f6ad7b49cefedd02f824e83c4f7dbf5191f48c2b743ee5d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SmoothCardSurface.jsx",
+      "bytes": 3107,
+      "sha256": "ed917e8cc1f0f59ba49c2085bbc719ce85da62d4c9d0e3aa632f38a1b941cdd1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SortableRegion.jsx",
+      "bytes": 40700,
+      "sha256": "5a2f9f62f2c3505a4806946f96b48458fe3c158e4b54b8265867bd01721aeffd"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SourceInspector.jsx",
+      "bytes": 44125,
+      "sha256": "7f29201a5cf83472fb62b99b55a192b3ac723c1a7e230553e4c52331c3c225cb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SourcePreviewCardContent.jsx",
+      "bytes": 482,
+      "sha256": "0422f3d1bcbc82a72718c75a5dfc5094e87f5698a2c73eafb6568f188902f23a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SourcePreviewLink.jsx",
+      "bytes": 5440,
+      "sha256": "46e0121daa5ef023774b04ad035e6bb0e59c02efe8cf752400fcc2631244f5c2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SourceProviderIcon.jsx",
+      "bytes": 1239,
+      "sha256": "fb4ea0956e8410c9820cbb41fcbdc187a9b1a0e8323e643bc24521302ea4b73a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/SourcesReceipt.jsx",
+      "bytes": 11873,
+      "sha256": "9485a522cf62c4ed35e89dcf500344d0ba6618ee41147564d0c6cc46b5174a3d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/Switch.jsx",
+      "bytes": 623,
+      "sha256": "38010aef242d32133274db12e1d91323204630b47875af874b68cb81bc19b23d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/chart-color-utils.js",
+      "bytes": 4323,
+      "sha256": "87402e606a497cf3d2bbe4262640988f9a2ed70f25c029b2f41fc108e663c2dd"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/chart-export.css",
+      "bytes": 7962,
+      "sha256": "5169a041e8e7de337915d5b39f3d6c7208c0c587ef15744f8813308476fa1c4f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/contained-ui.jsx",
+      "bytes": 5918,
+      "sha256": "da4daa991f8df9421a4290ca33709fb8bb055280c0558a4de1153b698472a789"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/data-app-handoff.css",
+      "bytes": 1859,
+      "sha256": "6edd7a036016ba2c80c122f1322f3f1f3a01bf333e36c5ebbab79313c870ba05"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/data-app-loading.css",
+      "bytes": 5939,
+      "sha256": "8ce37185b00f9a9c12563cec73ebafcd4612230a7f4d5afc09736b6f9c468074"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/dropdown-model.js",
+      "bytes": 1153,
+      "sha256": "c70414249e31d44177bdf2c81deb93ae564ccb2833f01e4fefbe37df5d597177"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/executive-summary.css",
+      "bytes": 3021,
+      "sha256": "70205776df61151a771da83d7a87dfbc24c4128fc9978270a43d2cbd160911c7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/form-controls.css",
+      "bytes": 13648,
+      "sha256": "4cd65b3a53eef43d1f9b32dd62ebf44555c887ed92aee484dc080ba384349f7b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/convert-icon-google-docs.svg",
+      "bytes": 557,
+      "sha256": "c5f417c7896dde4a45cf61778f1d66053825bc5fbc75252ebae63b7c0ea48987"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/convert-icon-google-slides.svg",
+      "bytes": 386,
+      "sha256": "233363b561f4152765bdc78a8386ad6f4a4f0afc1e504cedb9962f68a561ccbd"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/convert-icon-jupyter.svg",
+      "bytes": 1551,
+      "sha256": "58938f5b71c10a73982ef00caa43a01ceae35b2817df547012e4ae8ed25d2fb6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/convert-icon-pdf.svg",
+      "bytes": 1177,
+      "sha256": "63b5fda9c3657b7b7fb4af31c3d2f16fc19ce8b1ceed2cddf5e4fe12947beae6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/convert-icon-powerpoint.svg",
+      "bytes": 3325,
+      "sha256": "71a7a6a82eda7e671a66cd6c25b5814e39cc5be7a3db8365b0237398eef30978"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/convert-icon-word.svg",
+      "bytes": 3033,
+      "sha256": "6db6f1fdfc0805fdf017c319affe5a9b91bf337b52b0bd6a0bec4ecfed3c6b7c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-alertBell.svg",
+      "bytes": 1725,
+      "sha256": "bbd96bd8458604bee4ffcaa2a33655cb0aba521f0608d9a02625e80e372e924b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-arrowDown.svg",
+      "bytes": 617,
+      "sha256": "ac89a7e1fd41d146e34d7c15be393a7b829774ffb8fbaa1df378f16bdb3d29e1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-arrowUp.svg",
+      "bytes": 679,
+      "sha256": "14ac5376283ecac668371746948f1dbcc14c1db3d811c81dcd334416ca1d7e1a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-arrowUpRight.svg",
+      "bytes": 703,
+      "sha256": "bcf1918ca943a7b982458fbd0be0c2feb3a517cce3debc551c0afbe2b25617a0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-bold.svg",
+      "bytes": 701,
+      "sha256": "91ca0e11fdacbf2db830a6d613da09788056b6ea7c9b5fa17851d575dc695feb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-building.svg",
+      "bytes": 874,
+      "sha256": "489056608adf36a9f512821518af60e80b9f8089d498b82121875b3090496f34"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-calendar.svg",
+      "bytes": 2631,
+      "sha256": "b6e0e5a4f8220c2e5c0d460f9aae103d757fac724f079cfa0e4c9b555ec24aa2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-chatBubble.svg",
+      "bytes": 761,
+      "sha256": "e9258804a30e890a6f66154115bd0fb5ee168c5073db54ca7e232c719fbfdf7c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-chatgpt.svg",
+      "bytes": 370,
+      "sha256": "cba78c1e4e72b24a7db4fc0778cb1cb9e1564850997a43e25735ef75c35b68c4"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-check.svg",
+      "bytes": 572,
+      "sha256": "fa1dbd3611b7b9381d473f5fc5aafcaef17480e13d9afcba8138b10262e43fee"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-checkboxChecked.svg",
+      "bytes": 1567,
+      "sha256": "fff85250d9f1edbac7a61d23e5a780b348c76bc58d70fbb2343223876823e69d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-checkboxUnchecked.svg",
+      "bytes": 2287,
+      "sha256": "e202fd75b51a08be2bc3ff7e47fe883c0b8f45d9eb877d7684f19660223795b5"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-chevronDown.svg",
+      "bytes": 482,
+      "sha256": "d0e76111ab03cc7790eda06a1184e6622a458d4058baef39c19e3f21c70f601d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-chevronLeft.svg",
+      "bytes": 495,
+      "sha256": "8ee2e9be16b5aaf8523b0cb2f45266262d14a808c61d8bd4f073ccfa5a5dc948"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-chevronRight.svg",
+      "bytes": 501,
+      "sha256": "b140e7a8852d56e0734ffc5d795dd4c62bfdd158c5ff3b6579dcb1bf9916baea"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-close.svg",
+      "bytes": 717,
+      "sha256": "5ed5dea467dc8f02cb9d95627d300af8e9e1c7ddac1a117e3d37978732bd7acf"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-convert.svg",
+      "bytes": 669,
+      "sha256": "4a76b31c0a2621b5980e5a024b9a0128b30a8e39c4113232ddda295739ddccbc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-copy.svg",
+      "bytes": 3978,
+      "sha256": "ce35441b3c8b98cb51a73b3720cf970a2f707aa629cba1a9a8e36c0901e92afb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-cross.svg",
+      "bytes": 720,
+      "sha256": "85f94b605c8e61ab57ce2cc7a9118233c68299594055c86db531d3e3731ba0e5"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-database.svg",
+      "bytes": 2456,
+      "sha256": "efede7507d2f9dc2efc2f970ba44635f6de45a94860e111652fe27c549eebcf2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-documentRefresh.svg",
+      "bytes": 1646,
+      "sha256": "917f75208b97799fa0ead171601b476640bf39cef8abfb4595c4afdd41cb1822"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-download.svg",
+      "bytes": 1989,
+      "sha256": "1a36951ac27c386de68db6e8fea94b10f94c7b18a8c78078acf3d1cbf3dd5122"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-edit.svg",
+      "bytes": 1719,
+      "sha256": "6d87e17048723e18d025a78578cbe9bb6c7ae0678d384ab314a4ba4cb30e652a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-eye.svg",
+      "bytes": 1633,
+      "sha256": "d4bd76a4bbaaacbbd88ed2b9bbc29c1e510c8c1e591b35b7ea34dec701b9f6b4"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-globe.svg",
+      "bytes": 1554,
+      "sha256": "6b0d8c4310da06e63f2d9933a4d4d09dbdf5c59736f9c7a9929bd8e2c4cc184f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-info.svg",
+      "bytes": 943,
+      "sha256": "f5bdae0061d89fb8ebe61b99e56afeb74c2eb16acc529735fcd0b432b9f88e70"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-italic.svg",
+      "bytes": 584,
+      "sha256": "7bc323dabc86a5a4804df4343228c83d98f844833f9a51949fe4986b2faca2e3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-link.svg",
+      "bytes": 1456,
+      "sha256": "eee0f5946f827869adff8b4a7844dcf0f804aeed678f9bb4bce71f8c71cab796"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-lock.svg",
+      "bytes": 1776,
+      "sha256": "3e29a543cd126e32581fe676f447c51552599cf39d23a898c66145d10afdbe10"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-monitor.svg",
+      "bytes": 836,
+      "sha256": "f72107e48efee8a64f9617fff594b4e3a3834793e6b6fe2e9d70f53cd03192eb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-moon.svg",
+      "bytes": 911,
+      "sha256": "fd4904e4b3b937ab24e126d856fbea4c36e1dbc7598702289316640b01c1cfc4"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-more.svg",
+      "bytes": 872,
+      "sha256": "6239574c52f752c2f56798078c707e7fb13b11b28d6ba3702d3f01444fb8744e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-palette.svg",
+      "bytes": 1861,
+      "sha256": "29b4e9c8dd944d6cd597204a02d38cada61b53efd8f192bde0e5e5ca93837aeb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-plus.svg",
+      "bytes": 577,
+      "sha256": "6be74c224110551d27eaeb946e3230ea6f873fc183694fb2f029a98e029d6002"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-refresh.svg",
+      "bytes": 1646,
+      "sha256": "917f75208b97799fa0ead171601b476640bf39cef8abfb4595c4afdd41cb1822"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-remix.svg",
+      "bytes": 1088,
+      "sha256": "b15cea131c81cc4bf22389ec4d9af1c509e8e5a3b6cf6bd3efd2517dfb19c580"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-search.svg",
+      "bytes": 784,
+      "sha256": "50f34bb3c31c88f067ddef77ee905d169c174115f3902efb96714385d03a1365"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-sendUp.svg",
+      "bytes": 590,
+      "sha256": "01bab7cee85f6f8d10792872b240854f1a3f1ae43166440395229b0fe74abd3b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-settings.svg",
+      "bytes": 396,
+      "sha256": "6167badd421c478ab855eeca26d3ea4762af36cc1ee091829140690bb202ac23"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-shieldCheck.svg",
+      "bytes": 537,
+      "sha256": "914d474f40a27479ce1277685509d47a1b31d5e9cf46b20304b1240ce426817e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-sites.svg",
+      "bytes": 1996,
+      "sha256": "200345e38648750c5a3943bbca030e25c82b0162a4d22e2525e5be485a07f02f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-sliders.svg",
+      "bytes": 1476,
+      "sha256": "7155043b9fc09130b06da1e2f11c54f0fbdff7ba026c0bb1851fff67ff045549"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-spinner.svg",
+      "bytes": 581,
+      "sha256": "922606ecce4da0d88f02e09d1c1b1c4e954bcdd78a2abed56b9c791f3f7807be"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-stop.svg",
+      "bytes": 316,
+      "sha256": "bbf3a955167cbe58a8e89c4b9c169015567e3396bbd5ad0425499aa5b5171f67"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-summaryBubble.svg",
+      "bytes": 1569,
+      "sha256": "b3e045b3418a4ba33c20c785dc7eb3073887e4eb67b7b84976912fd2e886a4b0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-sun.svg",
+      "bytes": 2811,
+      "sha256": "744c94ee224f3fa62344164927d56719de26590b32498f0ca13ed297c0fc3b7a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-textDocument.svg",
+      "bytes": 1106,
+      "sha256": "a4f7ccc2425115911af1cddddbff83864045aa7cc0add8d22f8135b27a9085f0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-theme.svg",
+      "bytes": 1861,
+      "sha256": "29b4e9c8dd944d6cd597204a02d38cada61b53efd8f192bde0e5e5ca93837aeb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-trash.svg",
+      "bytes": 1470,
+      "sha256": "3ee541a3937fe1f1d41b607da8e602ecbbfe8a5f60333b82ce8ab67bd7461f8b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/dashboard-icon-undo.svg",
+      "bytes": 782,
+      "sha256": "bebef36b99f928445155a3f1b2e8b331ca215fafbcb025c2c83ef32d9dd196e3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-chart.svg",
+      "bytes": 1098,
+      "sha256": "f0a5cc90d98ed7252b6deabb38384303f0014e6f98862616e00645148a2d6872"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-document.svg",
+      "bytes": 3035,
+      "sha256": "3eb5b50ae68bb2b591259f15dfac0c932da21ad848035a0dff5f276fc4aa672c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-file-audio.svg",
+      "bytes": 1362,
+      "sha256": "d10f139b197624b2ac005606db4800da745c07c2001d890bba41d3f3671cd15d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-file-code.svg",
+      "bytes": 1135,
+      "sha256": "72c6a797ed6dd0e3a8650e4c978982912505483f919359480afa8ee3d99ef780"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-file-image.svg",
+      "bytes": 1140,
+      "sha256": "5d7f10c0d06473434b93fd8f993728733ad649d9d374830ce2b6b03116066b23"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-file-presentation.svg",
+      "bytes": 2489,
+      "sha256": "d66a94e724adffac73374312f5bacb4c28910bb85669876192df9ffcda66bc78"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-file-video.svg",
+      "bytes": 2551,
+      "sha256": "ebc49ae92ea9ed8484f6d52080b0f205f31e56b993f7a052a14967a38d134b27"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-file.svg",
+      "bytes": 936,
+      "sha256": "58a0f5a1ea78a0c114fc74c44160c0708c92e41ffd6f14e829173f5fe047b71a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-link.svg",
+      "bytes": 1472,
+      "sha256": "61b98747b27424feca44c0ff694c445e2ad74228e483b953fea722c55e706acf"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/receipt-icon-table.svg",
+      "bytes": 2272,
+      "sha256": "cba9c8de3a1dd0546cad18b09b6907f82bf68ec28d65513219308c40f3d60742"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/source-icon-github.svg",
+      "bytes": 1322,
+      "sha256": "1a6f230a6debcc742730be9d8419766eb670b96f454fbefb71ecac89cf64e081"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/source-icon-google-drive.svg",
+      "bytes": 1378,
+      "sha256": "4b413acdf0642e710741d531a3c19582a9bec50de64b398b17f3cb7b0ce0fa06"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/source-icon-google-sheets.svg",
+      "bytes": 659,
+      "sha256": "165b4c145808a18f4052dd51bf0e84b68901cd41a89099dbb5a57cfe639bbecf"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/source-icon-notion.svg",
+      "bytes": 1564,
+      "sha256": "eef8f46b63fb120abd63ca2e58e7f4be0a230c3e30276e6e438897b66b695508"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/icons/source-icon-slack.svg",
+      "bytes": 1800,
+      "sha256": "b5a8d11655966384c3884e011232a2c83ab5f813187e3c0e49d4410b145b65f1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/publish-review.css",
+      "bytes": 3932,
+      "sha256": "0483af589681e7e22b58dbc41d0c39dba4ff6e04f350b04109c14fac0bbd8c9d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/section-navigator.css",
+      "bytes": 2689,
+      "sha256": "841d9893a1b70b3740f548d1a1b535eb707b8152c9ece8854a75e505e0ed3ba7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/slider-math.js",
+      "bytes": 8302,
+      "sha256": "91e4d29a312e30ef03474fff062e8d12310a112d623d3c2cf13c7f8aa20c0320"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/source-inspector.css",
+      "bytes": 6413,
+      "sha256": "8f33b97393bbf736360e6b7998af38078d94b23181cc85d7652fee8635813c86"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/topbar-mode-controls.css",
+      "bytes": 713,
+      "sha256": "1b7c542c1fedbd6a469a2ebd5eb445eb39412f7cc1e19b192792c2af3d6829d8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/touch-release-trigger.js",
+      "bytes": 1207,
+      "sha256": "5269c96d07196290c9eaa91397b78aba7f662740a4bc1917479ef0bdb8beafdc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/components/ui.jsx",
+      "bytes": 29597,
+      "sha256": "d07d561a0876bb899eb16ac68a70781a96fcd6a6427c34b1bc023091eaa472c8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/NotoSerif-LICENSE.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/README.md",
+      "bytes": 179,
+      "sha256": "1a17117302d00a4301c95b0562c12a244e38efe35aa508831ea404e7051556d7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/SourceSerif-LICENSE.txt",
+      "bytes": 4491,
+      "sha256": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/galbot-logo.jpg",
+      "bytes": 19468,
+      "sha256": "4b66f6b70c5b8f6f6dee8fbce250f987d36b2a4429700f2f5d1326e5dc4d01e8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/galbot-logo.png",
+      "bytes": 94675,
+      "sha256": "760f9afbd645287eae72e67665b8e290f137ed7032c4171be071aa8e559fa9ba"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/galbot-wordmark-source.md",
+      "bytes": 1051,
+      "sha256": "7b5a692e0e6f08ab21b71d47ee57a61261f2d1e475917a1a8ee7ba81d8a0d146"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/galbot-wordmark.svg",
+      "bytes": 25347,
+      "sha256": "78ff7309207722d2d76d16b37ea60f00c37aaaec6f5806a978e503fe94f85179"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/report-cjk.woff",
+      "bytes": 265504,
+      "sha256": "33d0a35976f5f75bea8414d568cede08212c41ffdc52189ff00f72a31eae60bc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/report-latin.woff",
+      "bytes": 22924,
+      "sha256": "35ff719c220f7e4e99277fca68ef73a609bf58997229f8afa8a7308ed4263c6a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/report-song.woff",
+      "bytes": 431172,
+      "sha256": "23714067322f4dd79e538139e33382412fe6cd3b53fb46f69596409f7643d73d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/assets/robodojo-logo.png",
+      "bytes": 329027,
+      "sha256": "f8a6d60c317b5dc4ad92dfbbaf29b58417f2ae5e60a03a9cb32277c87ed9ad0a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/dashboard/DashboardContent.jsx",
+      "bytes": 131,
+      "sha256": "da9e572b197d8bc2fd7bc7833cf695e2c54e649f124fbd36e2953bb6c8ed491e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/dashboard/dashboard.css",
+      "bytes": 52,
+      "sha256": "f9d9b7ca1cf0f79f421e08f7fb33abec6755a44afc400a72ba8ab6bcfa1aea7a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/Citation.jsx",
+      "bytes": 740,
+      "sha256": "8c9e1c4135641746a8bc1337287587f8319d0ef603fb4554b8c981433c60f114"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/Language.jsx",
+      "bytes": 2693,
+      "sha256": "b41a72c6ac1c001e13d8340f021ca8d23217db17d33e1b7b8ac22d3cc2f8d645"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/LeadingRanking.jsx",
+      "bytes": 1635,
+      "sha256": "4138a29c268ee32ce2556d9aa950d481f6f254aacb35204bbeea997911d52251"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/LeadingRoboLabRanking.jsx",
+      "bytes": 1812,
+      "sha256": "3e67c617cf0cacc8d03f82d7d676871fd9ecd273819cffac78d9456e77f923cf"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/Math.jsx",
+      "bytes": 1162,
+      "sha256": "df6df7c3c129727f3366aa7e1368163dc265df5f2706a220eab29cc0d38034f3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/ModelChart.jsx",
+      "bytes": 3377,
+      "sha256": "217e41c15c127905f1f12c9861584e4e6c7c957f75679787b9dea37fa1c6c371"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/ReportContent.jsx",
+      "bytes": 16608,
+      "sha256": "50d335b92cea14f31b9ea7c92536d894b3485bce7ba99ba4f52f1f9247234944"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/RoboLabResults.jsx",
+      "bytes": 2638,
+      "sha256": "d7f2d11040dcb436eb544d0b7aef9f5d2b9ef3d5a4d53fc707a0a8adb26e0f34"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/SkillDetails.jsx",
+      "bytes": 3058,
+      "sha256": "44956323220e774b2c0da4f27cf521f33fbeda87bb2ed3425113159425dbc6f1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/VideoCard.jsx",
+      "bytes": 2932,
+      "sha256": "31ecfd6ff751088c47c4ec6861781c23b91cf4d44feca8ccebbe762122786fb3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/article-copy.en.json",
+      "bytes": 27921,
+      "sha256": "38c2d48136e716976cb5b6a9be6fdfbfd055362a4a9b81245981140974afb2e9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/article-copy.json",
+      "bytes": 22797,
+      "sha256": "c9d3f553b76a2e6665c4b842d37b187407cfe4abe664a61d231616fed74fb504"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/authors.json",
+      "bytes": 607,
+      "sha256": "ea27baf58f6ea6a59a3f5df9aa85b97c2e80d0cab3c8d1f89bbb2beaeae76773"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/locale.en.json",
+      "bytes": 18211,
+      "sha256": "05ca3e96c088522aa1509844a30b6f1692065fc162b94872f333b3dfc65f79e5"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/model-logos.json",
+      "bytes": 985464,
+      "sha256": "21273ed89d357a7fb7604f67e0bc116e9dfebe69e8f88c87ae7468837ef74b0b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/publication.json",
+      "bytes": 453,
+      "sha256": "72243b402a4d8b9cfd67192043616a918007917adf0e11f02c5de9d0baf733e2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/reference-notes.json",
+      "bytes": 1831,
+      "sha256": "fa1594ad412907a4f8e72f9820d3e5beaa37cd031bdea686f68d573cf876b8eb"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/report.css",
+      "bytes": 20225,
+      "sha256": "ba0069defce3cc97e8cfd2a98f5f60db8d65cdcd024936a5eee8d9643ab406f1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/robolab-locales.json",
+      "bytes": 612,
+      "sha256": "74070996e9ac73c256eaac1905ecf63471f48473059d8cde45df8b142caa54ed"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/robolab-official-overall.json",
+      "bytes": 1348,
+      "sha256": "37adfba6d35e5ba61893f28138b4345d3e45a483745591b6e931a76a905f6179"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/skill-documents.json",
+      "bytes": 24418,
+      "sha256": "21f98feb61e6166fd22dbfb8b75f80df0ef6808c67868405a76fc6807a8e022b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/takeaway-copy.json",
+      "bytes": 825,
+      "sha256": "5ca99554a220dd271ea98f33965cfbd418b35ab092f8ac4277b02a5be055dc9d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/report/video-selection.json",
+      "bytes": 3462,
+      "sha256": "f44dfd7820fa7fba87e12b588bc842109ae2736162cb957f0fc75bf632d3120a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/shared/README.md",
+      "bytes": 192,
+      "sha256": "36ae02985b054edb3e526dd75d89d019c4ac6ec14d70f58b40c83d439c6dbf8f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/shared/ReportDisclosure.jsx",
+      "bytes": 861,
+      "sha256": "f559abc00fbd4e01f8276d9df8ed2c7db3ea001a0068119c0d82b4243991b746"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/shared/ReportTaskLink.jsx",
+      "bytes": 833,
+      "sha256": "7fc3cabbab44aee60a98b22038842704f7b097d9cb417f38be58133ea4305f88"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/shared/SortableDashboardLayout.jsx",
+      "bytes": 7788,
+      "sha256": "e072e1e11812bfc3cac5ebd040f2c0cebbe22f04a9034ce84e3d49e7271f3a99"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/shared/report-disclosure.css",
+      "bytes": 653,
+      "sha256": "64e07e80151cd95e175185510f1c5e20331223bd786f1f12a56c51cc8c6841bd"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/content/shared/report-task-link.css",
+      "bytes": 1060,
+      "sha256": "708b794f8f635ea9328b93d5ed5cdc8a6cca7b04215390ac6eb5616532f7a747"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/dashboard-ask.js",
+      "bytes": 7864,
+      "sha256": "8155067359e92c805691a2d01845b84cd49f15a62fe156b00d9eae85cb3e6a9f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/dashboard-url-state.js",
+      "bytes": 14470,
+      "sha256": "7548d0752f11d003255649bc7bdb57062c97f6b82014a86c349b06e86355e932"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/dashboard-view-state.js",
+      "bytes": 2091,
+      "sha256": "4c1ad1fc94e563a64716f0587477ba40b0e8c84e92836f7a75a0cfe864a8c225"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-actions.js",
+      "bytes": 30219,
+      "sha256": "2e8bdb2f89506664c45a8648eb8388e746e85d27e3dfbbae3e099084653637b9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-context-tools.js",
+      "bytes": 12430,
+      "sha256": "614a1e5877cac998929ba38cb3c0d703fe3da28c8d11f350e00001bdf816d322"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-handoff.js",
+      "bytes": 1720,
+      "sha256": "c99ca50617f37efd5171381a2ea126817ecd9c73c6c59283e4ac4e8921250b37"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-image-tools.js",
+      "bytes": 7959,
+      "sha256": "9201f93c3cfc884ee6573f93eaa6fd5db5d1a48087a8459c220fb92a5500eb5e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-owner.js",
+      "bytes": 203,
+      "sha256": "1d20906e87792e64f7df9ba1aaf95243746bb7528bc244e139407c07d17aad40"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-public.jsx",
+      "bytes": 2320,
+      "sha256": "57a22be28ed6172c7f0a1f9f2881d3afa3069cd4da9128fdfada8c803ddbba94"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-schedule.js",
+      "bytes": 2185,
+      "sha256": "fd7bd84121f2e4eeac1a8b5b11b44b181c91a8aa1d91a9ce490f8bd5514ca275"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data-app-worker.js",
+      "bytes": 22808,
+      "sha256": "acabf5aaa262e38c4f8157aecb9c40e4a810d6e7433cfadca84676b68afcf38f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/data.json",
+      "bytes": 207013,
+      "sha256": "e1a4e6d8fba53513ed088e1b10706c4387e211b48832128e5781d86bb0947457"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/date-range.js",
+      "bytes": 1657,
+      "sha256": "d6cfe752cd461c32556e3644f780628274e664282f94c434b49a540c979f461c"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/foundation.css",
+      "bytes": 4042,
+      "sha256": "9b503667f9e8451c53940cede8a8855fefe74cb4ea8ad0e0accc8d9584721836"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/handoff-preference.js",
+      "bytes": 1684,
+      "sha256": "521a83c4f57ac7ef55bdb02e45758e7cd4fbd0dee5e7983dc2791d944c6efb5a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/hosted-query-bootstrap.js",
+      "bytes": 1585,
+      "sha256": "ef1c0d0f8cdce0e1efc0892375283d38d505a2b13ed659859c2cd4e2e6fc77b9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/main.jsx",
+      "bytes": 904,
+      "sha256": "cbb6a40a785d8c9a867a7684cdba60c930ff6a3d8eda3137cee458c4bc3a43cc"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/object-snapshot-storage.js",
+      "bytes": 19124,
+      "sha256": "f4b2838453460b409ea080410d549d6f4fe5896fea94cd6be16ea235470dd734"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/owner-email.js",
+      "bytes": 339,
+      "sha256": "4bf602cf4a5fc05bebbadc0202366c8dec28fc3df621df29efa40a7dd43ac1d2"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/prebuilt-runtime-entry.jsx",
+      "bytes": 3051,
+      "sha256": "821610a53bbbaaee8adccab9a9ab09ee1f2ca859db7346fae0de6c6ba5890f42"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/presentation-state.js",
+      "bytes": 19388,
+      "sha256": "9aafd1df54b454d3b141c46caef320750d2ef733b0570776e3e7676c6581e6f6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/print.css",
+      "bytes": 4633,
+      "sha256": "8a3f83b3d4b453bc660d87027684e70ce053401c0d327e72247fc90f848966ac"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/publish-review.js",
+      "bytes": 327,
+      "sha256": "a2de03b6d885f33e6ac4bdaf13a7d5770e37b9d94595a844dd53d72c1121540a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/query-data-store.js",
+      "bytes": 5448,
+      "sha256": "0dc9edc7302359ee54b8b9c92a8adc7f15694e986461b8046b8b427a9e1ecc65"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/refresh-coachmark.js",
+      "bytes": 2802,
+      "sha256": "07700a3ac6d8e8204982479b35f5b9fd958c7876f7c8cd651cc662f856ee61d6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/report-date.js",
+      "bytes": 666,
+      "sha256": "7a29073e2f4498fb81af321c39344952cc08b9c3fe3caee020a908d3914aaed1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/report-follow-up.js",
+      "bytes": 13562,
+      "sha256": "81f4fee1f7300a10167946a1f430900f92e708c6c0b768790e152b29e54b8aad"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/runtime-environment.js",
+      "bytes": 11313,
+      "sha256": "6f568c79bff45a67571681c0d8ed5f2e6f7450e1af6a01f0dfeaa75ef00d3e4d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/snapshot-storage.js",
+      "bytes": 23065,
+      "sha256": "58a7a4f0d405a0d1f6bdabdf50e5fe0877ee202354a2f8225bf1ece421a229e1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/source-preview.css",
+      "bytes": 1501,
+      "sha256": "92b71fb63191feb8a11c788aa76f1c00a1c1f36603dc57b3590384f8adce0690"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/source-preview.js",
+      "bytes": 3637,
+      "sha256": "46be983664c5219ad84c2a8f507bc6aa959d3e9bef308961ddde145ede23f001"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/source-provenance.js",
+      "bytes": 35030,
+      "sha256": "0cc0f174aa47eecbdb9e15bd473432280c880f547f9756e9bd03153f43b4210b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/streaming-json.js",
+      "bytes": 15299,
+      "sha256": "5fa4ab801f008c755d1d956034b82af9df8ad0ffe8d0178a67d006fa5573a7ce"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/styles-foundation.css",
+      "bytes": 39264,
+      "sha256": "6f29f5247d6b45ed8bec0d4ad9f11f7d571698dec6bbef7e6189b637d9db7b08"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/styles.css",
+      "bytes": 132007,
+      "sha256": "12a2ca74a48280d066eba6c77efe184afbc6c96c6b598782ebb80ae61dd13b03"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/theme-picker.css",
+      "bytes": 3837,
+      "sha256": "b22f11215761446109be855f9d3afcfab80a7da8209c1eba4c48e57b3a20232f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/theme-presets.js",
+      "bytes": 6096,
+      "sha256": "3eebb82ee338aa0949be479c6ca86bf7c483d5a0e8dcd7ad0935f157aa8b2876"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/theme-runtime.js",
+      "bytes": 1746,
+      "sha256": "e5ffd0fb34db599a30425e43a871312145f9f332a16f6b8d43facbd7466848f0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/theme.css",
+      "bytes": 1195,
+      "sha256": "c973c141a0da6ee5312f3fcbc1692166c9e111fbb8efd4a55efa2b70f7d6df31"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-data-app-context-tools.js",
+      "bytes": 406,
+      "sha256": "98110fa97f332df8e244944416e776a3398df73826885f46e1997b9d30735504"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-data-app-image-tools.js",
+      "bytes": 1621,
+      "sha256": "1bff800a840b2771e0f130aad22e5732db2ef34e5b542f822cbb9ed70e3a8fa7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-data-app.js",
+      "bytes": 16299,
+      "sha256": "699f86eabcd0bb506162862e76b81951e4e0c875a1e78c276d39843bc3bb7702"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-inline-editing.js",
+      "bytes": 12033,
+      "sha256": "4c4e250b34fcc57299d7c892bededbec648df7b221cc5004b85ae39f72ebf25e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-presentation.js",
+      "bytes": 7527,
+      "sha256": "d8f4a92a74807b6cd9a130927423b0361d6f62f118c71e8aee21bb9826d2d544"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-section-filters.js",
+      "bytes": 3275,
+      "sha256": "271e18f770a642064277ddc0d52523acacebc21a35b99788e14778c8dd5193f3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/use-sortable-blocks.js",
+      "bytes": 29880,
+      "sha256": "5462804b0f62fcfc7fad6a581b1025057f827a368a0c528d218000c7928ba666"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/verification-reminder.js",
+      "bytes": 1596,
+      "sha256": "9c135c75d15ef1a43aa98efd5db51aed44afbacb86206d073608cdb764957bc0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/src/worker.js",
+      "bytes": 229,
+      "sha256": "bc859b3fcb14dc269367d5aecbbea5f6d307a477a607b3e376f992a8748b30f7"
+    },
+    {
+      "path": "hybrid_rollout/report_site/app/vite.config.js",
+      "bytes": 3623,
+      "sha256": "da62d7d91fbf0e75f234a3f8e6d5adf91914babe53926972eeff6ac0f9544e1b"
+    },
+    {
+      "path": "hybrid_rollout/report_site/audit.py",
+      "bytes": 2075,
+      "sha256": "272458e5e5af2823c483da32f1f33bd5b563d97dbabac7b91b223e827fce788d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/authors_smoke.cjs",
+      "bytes": 9305,
+      "sha256": "f399211689c35d3786733b81b32ef01cd73945c620f157472ad1d231ef141042"
+    },
+    {
+      "path": "hybrid_rollout/report_site/browser_smoke.cjs",
+      "bytes": 5981,
+      "sha256": "927c265b6ff4542dcc93f656574c96cf09f08706bdb53e21dafbc291d345b56a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/build.py",
+      "bytes": 20885,
+      "sha256": "f2a83e43065ae7c194bf0ff844553c0603dd6b4d8794f06e15119cba595cf408"
+    },
+    {
+      "path": "hybrid_rollout/report_site/capture_leaderboard.cjs",
+      "bytes": 1454,
+      "sha256": "c6e096711d9c20e831fe5afe1d86ff8dd8071e6aeca41836f70a630ff68728d1"
+    },
+    {
+      "path": "hybrid_rollout/report_site/content.json",
+      "bytes": 10926,
+      "sha256": "7ff028428954dd32f78d8e6cecc004a634f39925ae1028698358e414a875aa7d"
+    },
+    {
+      "path": "hybrid_rollout/report_site/fresh_smoke.cjs",
+      "bytes": 7774,
+      "sha256": "50b1cd34c4034e1e76500a72bb17f3b3b8227f7cf3b60d4f4889a9084999de23"
+    },
+    {
+      "path": "hybrid_rollout/report_site/i18n_smoke.cjs",
+      "bytes": 11860,
+      "sha256": "2fdc173673305ec4b4029c48809e54c547494d8745834de67b39641b8640e047"
+    },
+    {
+      "path": "hybrid_rollout/report_site/link_smoke.cjs",
+      "bytes": 3188,
+      "sha256": "9a2ea9c8a2806978f0709be66134220c2d5ebb2ba2cae33b39855640ed68908a"
+    },
+    {
+      "path": "hybrid_rollout/report_site/opening_chart_smoke.cjs",
+      "bytes": 5792,
+      "sha256": "1e2f2f93a337e6f1f439eb1da264405f9e48e463f2470f69cb6d01d5199f7864"
+    },
+    {
+      "path": "hybrid_rollout/report_site/package.py",
+      "bytes": 1581,
+      "sha256": "86bac862da0c85848697a441a85fa9615d0d9066c4eb346bd2bb16418ceb8823"
+    },
+    {
+      "path": "hybrid_rollout/report_site/package_article.py",
+      "bytes": 16287,
+      "sha256": "9876c5c01a3caa71252fb500b7bc83f9b102bd0621f8b04fa1cfcf1ee3c2c64f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/paper_smoke.cjs",
+      "bytes": 18691,
+      "sha256": "6ea3d03c7fa31985448c9ca4a45da2775f7d1ecaddabd3af512e14567cd14aa9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/prepare_font.py",
+      "bytes": 1632,
+      "sha256": "ae585127a12b1ed6148c2a33ecc85c8cfd6d205da03a9d2e567a92b7f467dc4e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/prepare_formal_fonts.py",
+      "bytes": 1248,
+      "sha256": "ddd1ed680321393e1f39fb206373e7e0b856146c6c300552d87a58aa6bdea496"
+    },
+    {
+      "path": "hybrid_rollout/report_site/prepare_model_logos.py",
+      "bytes": 2318,
+      "sha256": "cf569c14ec69eb524700c4f5ce4aa39f2c0bf560a083de3983cd1305961cd60f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/preview.py",
+      "bytes": 4037,
+      "sha256": "63e810e7b36b2fddcb086db7d3e7b8bcba778965181ccbd869dde3774417c1c8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/publication_smoke.cjs",
+      "bytes": 7211,
+      "sha256": "7d06b8d2a762502abd6a5a5ad9520ec779059bd599f9861a6e2e8869ffd608b9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/robolab_gallery.py",
+      "bytes": 10711,
+      "sha256": "be169536f07a03fd89b6387e0b1384ab00e9502832ccd73ef5b4c55cd0ea48c6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/robolab_gallery_smoke.cjs",
+      "bytes": 6113,
+      "sha256": "7492d047e2087aa607d19b658a807ddfc041de96b35b4bff4e6c0eac60046ab0"
+    },
+    {
+      "path": "hybrid_rollout/report_site/robolab_opening.py",
+      "bytes": 2738,
+      "sha256": "8ac9e36b071958ea36e6e9ff03ef92f7394e61a5ab4a287a2db800ebcbd1b896"
+    },
+    {
+      "path": "hybrid_rollout/report_site/robolab_revision.py",
+      "bytes": 4056,
+      "sha256": "446486451955966a05324afe18ab87b23124574b10956a59dcd9e92e1fe982e9"
+    },
+    {
+      "path": "hybrid_rollout/report_site/security_smoke.test.mjs",
+      "bytes": 1854,
+      "sha256": "d1fd8fa9f84aa0be76c39dfa9f64e7069f5c5bd41b1a4dad93b777c8edaac1d8"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_academic_revision.py",
+      "bytes": 3028,
+      "sha256": "c550a0b8b704482e5ff35a9b0655b2e88c225464a58838f13001fff1b9f42dae"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_editorial_revision.py",
+      "bytes": 2853,
+      "sha256": "7ab63b2e54928f2448ae8a92f3637feaf6145f2981add198c843772757a818a3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_i18n.py",
+      "bytes": 12514,
+      "sha256": "f6c7b736196170d3cab564bc7ddfdeea49ce8ee80cca75341d10c1279b452ba3"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_preview.py",
+      "bytes": 919,
+      "sha256": "c5edb4306d2f79a89debef07be49d4d75df4e184e040680ed9b9afe2458e1b9f"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_publication.py",
+      "bytes": 11068,
+      "sha256": "7fccff64a989df53539b03e91d638c8981ea9cbdc8b41abe68b27c65d223a9f6"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_report_data.py",
+      "bytes": 3475,
+      "sha256": "76a842f40a6f38a19b2efbd7d4cfb1c2c59c41657fb0c2ff66c1af1fd385b354"
+    },
+    {
+      "path": "hybrid_rollout/report_site/test_robolab_gallery.py",
+      "bytes": 5755,
+      "sha256": "df2c2073e4f58b55deaa70ed275bc02a423aac6454c91423df671ce530a0b90e"
+    },
+    {
+      "path": "hybrid_rollout/report_site/web/gallery.css",
+      "bytes": 6030,
+      "sha256": "e1dd9be7a8a3608a5aead6b9eda57458e20abec80c48d52f84eb8f640ffc6826"
+    },
+    {
+      "path": "hybrid_rollout/report_site/web/gallery.html",
+      "bytes": 2759,
+      "sha256": "34d9ff05bc1d07ee2414bbd216bf2b53a97c982ae04468d2e0d8c3fd60cfa6fe"
+    },
+    {
+      "path": "hybrid_rollout/report_site/web/gallery.js",
+      "bytes": 9999,
+      "sha256": "729610c98f6bad45a1fbddb8d900dbab8d46d17ca06c84503c6cbe5b2a2bebef"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/README.md",
+      "bytes": 113,
+      "sha256": "28a99fd159cba24c6a9082539fba59a99c72d7319716eac3c39c50f8ae64969f"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/SOURCE.json",
+      "bytes": 1352,
+      "sha256": "63656da94951231bd493181bc7db176cf21cb355241bcbeb2b1e47cc7e6db7b7"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/__init__.py",
+      "bytes": 49,
+      "sha256": "1e8476463fbf6a79f8930dd8aec926a716f92db3cf95fb7db97bc220cd9daf90"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/acp.py",
+      "bytes": 17127,
+      "sha256": "d997c0248c1d67c020a2a72c01ae3cd21a3236f14a2d7be977db3f4ec467dfe5"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/acp_query.py",
+      "bytes": 1488,
+      "sha256": "e7760e2368a4de2335c8d932a75e23a498f4264e4038beb8e9c9ea9fa173cbd8"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/acp_startup.sh",
+      "bytes": 3016,
+      "sha256": "9f603548225c115195924d74b06c6e6dd9310a3fb75ffecbbbe3a267f7dfe50f"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/activate_input_recovery.py",
+      "bytes": 11529,
+      "sha256": "2e62e0c7ed49e1cd5a38fcdb73b351f501bb8581487e67383a91a6cd4348e149"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/adjudicated_archive_audit.py",
+      "bytes": 7528,
+      "sha256": "7bbafe4d2af7748446fd404d32413901b5d5f2a9a1d1bc5389b2771eddf84e5d"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/archive_audit.py",
+      "bytes": 5191,
+      "sha256": "0639d51ecca8ec9528e5eda1c97333ee0bac19ebe4c5adbf9805a560b8d4e5de"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/artifact_manifest.py",
+      "bytes": 8639,
+      "sha256": "696809f608fb47fac80a3edade9e7c05f0e1499faee7e61f4b3d0c6282ba7bbe"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/audit_follow.py",
+      "bytes": 8291,
+      "sha256": "55051a3a0ad77385c9b6c2dee6818238e292da86eab4728eeac16ce944553ec1"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/audit_idle_handoff.py",
+      "bytes": 6117,
+      "sha256": "a46a0306dd72b307fd6cf45b997468d018424b5ce4dd7636406a591f4fc48627"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/batch.py",
+      "bytes": 11455,
+      "sha256": "ea938bab79d76e1257780fd76e9ba62c9db6f779fd4824d1495eb9a32d878133"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/campaign.py",
+      "bytes": 36184,
+      "sha256": "3589e5472ca34b0a6359d0e0f213e5ab545d43663a4fe708217859832b37ae52"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/case_ledger.py",
+      "bytes": 15069,
+      "sha256": "0318274338d9327f4a06075fce8cabbf526c453c61d207fda8bfbc283ca06cff"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/cluster.env.example",
+      "bytes": 4672,
+      "sha256": "86090a0c70b98f7b821d212fcf68466a370f17a1ad6fe008c89c4ec9eef4e240"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/cluster_entrypoint.sh",
+      "bytes": 5110,
+      "sha256": "efb071d6e26f2955228b0724ca455d034fbfef81acb5731ef11a883480b7d048"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/codex_backend/__init__.py",
+      "bytes": 66,
+      "sha256": "cb0d484010906344c1bd2e5696445b0e4019c568e1c66b2f67ecb25f8ecefeaa"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/codex_backend/config.toml",
+      "bytes": 655,
+      "sha256": "13fc1865475f2420749b50fd085db4aab783e5ccce3ff0b22609a1a840bedb5d"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/codex_backend/profiles.py",
+      "bytes": 13282,
+      "sha256": "956c498f3111b65de4ac1d3f915381ee8b61a6201fc3db3965479e9ddf3081da"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/codex_backend/validate.py",
+      "bytes": 4446,
+      "sha256": "b38642920bde1de2eff8f0e254baea881eac9aa315dc179e028c6b7e1515b51a"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/context_migration.py",
+      "bytes": 10225,
+      "sha256": "5043b6352ee524e34aa472af4abe48d75bfb5cccfb4888b1ada63c54f8561aa0"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/elastic_dispatch.py",
+      "bytes": 4656,
+      "sha256": "b93e466f395ed1992ae632049b3bc7bcd87752304afb5386fa2f731d608cf2d9"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/episode_entrypoint.sh",
+      "bytes": 5087,
+      "sha256": "cb68b9862c01b6251a7dcc3bbc76bce695522055d6c3d9507b0e64e2ad731cb8"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/eval_panels/robodojo_panel50_scope_v1.json",
+      "bytes": 4458,
+      "sha256": "76f62c2e2e8271d79cfab98fb1cf4101f2b9285277145714af4a265ed27205f5"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/eval_panels/robodojo_panel50_scope_v2.json",
+      "bytes": 31853,
+      "sha256": "05767f60ef548f62b9b7ede442efafd7854d09628cf63d28f4c09ff6767e1928"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/eval_panels/robodojo_panel60_v1.json",
+      "bytes": 67454,
+      "sha256": "8218ab8a8b3a30d286a58130e8770a169e6133021f01e338ee5c6610ef93021b"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/evaluation.py",
+      "bytes": 9395,
+      "sha256": "e0a0c458f7f8abb7e263b52f5d58f010511b7a0cb5e33d9e399f294b7072d7e8"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/expand_campaign.py",
+      "bytes": 10077,
+      "sha256": "4e0b12171c18c7701cc5842e1d7ab3b64f393084c3296c1537e196d82b9af7d3"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/final_debug_export.py",
+      "bytes": 13125,
+      "sha256": "2d43bfe5b21bd05a72acae682b1501e69e9e36ea43755987194b6a04b2f4a1d7"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/finalize_watch.py",
+      "bytes": 12485,
+      "sha256": "42216d36c0cf353927e64b052d2c15475147655d5b614d22b6b851240b2d24e3"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/idle_timeout_handoff.py",
+      "bytes": 11857,
+      "sha256": "8f67567a3b2131ff73d7f53771428cd2c64e735f973ccc4d6fda0954c30a5707"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/idle_timeout_policy.py",
+      "bytes": 11901,
+      "sha256": "815e861ad867f8f5eb74606ca25060dc1c85055f270624d4327c297a44373afe"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/input_guard_queue.py",
+      "bytes": 8626,
+      "sha256": "7b073b062f7568c0278f818c11c77168c333669978c3d5bf004f8b1493392521"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/io.py",
+      "bytes": 1285,
+      "sha256": "435a890912dc11ac1c5f600078e239bf4b5e8b2a1ef4bf12b7efec9743bb4105"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/job_matrix.py",
+      "bytes": 1414,
+      "sha256": "c37ed1520400bab92b077e10e7d8856820a41628390e1abfee5b41485ae15a66"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/login_pool15.sh",
+      "bytes": 1156,
+      "sha256": "c5dc93e283d91fae51ba2097f4c04dd685b9957022d6caabec24a7e219c8f0c1"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/method.py",
+      "bytes": 368,
+      "sha256": "6108b67f15a6d1da214a7b1687239bc7bff5bfaec6b730e07d695b3421407bb4"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/overnight.py",
+      "bytes": 16731,
+      "sha256": "fcda9cb3f0169bf3069f2cf37b0749fc67c77ec8b4e02dd6317ffe79d575b2ee"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/paired_evaluation.py",
+      "bytes": 10092,
+      "sha256": "ee34f5417ac0661b35d1ef0f2feb9bcd0dd8cbd331821b96674fbcfb69dd73ac"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/paired_initial_audit.py",
+      "bytes": 10867,
+      "sha256": "8162a4d6d5d60504ab67836e45205e4f2432bc3c4a9195f71923b1ab30e538e5"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/phase_gate.py",
+      "bytes": 3276,
+      "sha256": "e75f9f1c524c59c1212d1dcbc8423888180c2869230cd6df0d13f65f4cf32391"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/pi05_server/__init__.py",
+      "bytes": 49,
+      "sha256": "1e8476463fbf6a79f8930dd8aec926a716f92db3cf95fb7db97bc220cd9daf90"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/pi05_server/checkpoint.py",
+      "bytes": 1852,
+      "sha256": "ba7dfa9f112abb369d1bee98e711f8783dce70505feb508c746c82e0d8a4e1ae"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/pi05_server/client.py",
+      "bytes": 3084,
+      "sha256": "88ab39d0aa9bc94acb449e0eb7993b46a43b932720ca4f4f963651573d10445b"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/pi05_server/server.py",
+      "bytes": 2217,
+      "sha256": "7214c06d07ede9d19b87342612881fad893f73ce868f952ad19dba56726f30c4"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/plot_score_comparison.py",
+      "bytes": 18790,
+      "sha256": "b86e2bf60264cdc8c2c4b2fb7f501628c69b6d9bd3c809af22c8328c7bf5b8e1"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/pool15_quota.py",
+      "bytes": 10018,
+      "sha256": "b10263800eb835322c1efeb00fc2084eec6d31092325a737236b1bd3356fa35a"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/prepare_input_recovery.py",
+      "bytes": 6014,
+      "sha256": "3f3ceec00eece55557bb1a004da9432f0973fca09ade18fbe5c63d38fd628e00"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/prepare_network_continue.py",
+      "bytes": 9832,
+      "sha256": "e1efd1acb392b169efff65abca83eafe4c8243303c8e672cb7a82a4de145d409"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/prepare_v3.py",
+      "bytes": 7585,
+      "sha256": "b378838201da11f9349a178504676b2d141e94d7479e3f483be10d5ab787cb22"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/prompt_context.py",
+      "bytes": 1527,
+      "sha256": "85414b8abe770138c22d53de10a2a7b5967124ce96814db795a38e13dcbaf95d"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/proxy_config.py",
+      "bytes": 3815,
+      "sha256": "9e222507a1866647ed1cfe7887287d88f048f12be8520365b5a52c4130a0293a"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/quota_guard.py",
+      "bytes": 14580,
+      "sha256": "ffa28a5d3bb590da419c1c9885697b8ccfd3c74383807a04f49b82dd657948a6"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/quota_rpc.py",
+      "bytes": 5200,
+      "sha256": "6ac4b494b0da3d4754a5e4edc479abdb29c9927f98f315cbec6ac2238eaa1567"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/refill_campaign.py",
+      "bytes": 14094,
+      "sha256": "82205b315ef98ca9a357b1bb8d2f736fe800ceadf14e29d7c0758997583388f4"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/release_guard_slots.py",
+      "bytes": 5148,
+      "sha256": "6a10fc687c3cb339b436cea9b4bcd5864f63bffcd9bc78203a8e0fe21caa575f"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/render_report_batch.py",
+      "bytes": 33934,
+      "sha256": "93c0ec654b9161b118435771a5eff5650de73188ce4d43c7b361c03b80a80807"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/repair_accounts.py",
+      "bytes": 10429,
+      "sha256": "eb071dfbdc24936ca2d2f74f61506dbdd3e1221f595b9ca2dd8b71e0fbe5635e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/repair_io_campaign.py",
+      "bytes": 8602,
+      "sha256": "323e812f73bb5d4ccb3690300fd25ee2a3d104d09621b5520b56570f2124a645"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/requeue_deferred.py",
+      "bytes": 10867,
+      "sha256": "ebaad0aeb5d5bf889c6c9d351549f27dbf5d3b498d1ae003cf36ac69c1aa6bd4"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/restore_pinned_codex.py",
+      "bytes": 6306,
+      "sha256": "3f95c0c4f41a84934d1ed0b13135fb51c243a39881e2a217f550f7b312ee2edd"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/retire_interrupted.py",
+      "bytes": 5104,
+      "sha256": "06171d3827563840b4c28bacea6abccd6ab64d35de478b492126fb5a6fb01771"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo-gpt-only-rollout/SKILL.md",
+      "bytes": 4184,
+      "sha256": "999513d63e474e20e9523523b774ce970efbe91f9d41465f9eca0a1d72d1f2eb"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo-gpt-only-rollout/context/eef_control.md",
+      "bytes": 2319,
+      "sha256": "f6282af9ac5772adbf53b83dd8c5ee675185f20f688db0e5e75cff9d99d9492c"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo-gpt-only-rollout/context/teacher_context.md",
+      "bytes": 1796,
+      "sha256": "fe9c9801764fa972eaf21365717d6425d1955206d3e7999805bd6bb0a67de326"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/__init__.py",
+      "bytes": 72,
+      "sha256": "47261268db821bd1731426dec477fb97111e49f8b957930b77ddfc8ffd8bf5d9"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/action_edit_kinematics.py",
+      "bytes": 2123,
+      "sha256": "c2087834b36a8d10e032baf8668ac6089af0455697cff91e25049831d9182fd3"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/client.py",
+      "bytes": 19274,
+      "sha256": "b0f3d490f7cbd736204f5c1b4198cec29ac4e3884fa33901b82543b88800b7b8"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/debug_recorder.py",
+      "bytes": 20488,
+      "sha256": "2f07b2150e2a47b762215318a9b4e3387a8931e022261d3f980fb74ee4684219"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/decision_log.py",
+      "bytes": 4083,
+      "sha256": "01e8826f3ebde70f1b2fe83312517a12620168464accf05f964bb2f1e5cc3cc4"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/gate_assessment.py",
+      "bytes": 4748,
+      "sha256": "f783e760e679ce1f0cf7db7fd4bd5058f0f580048c3a25aefa10f8114f7f83ae"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/gpt_only_client.py",
+      "bytes": 8949,
+      "sha256": "11484ca34bb27c073dc2f10aa2336d37ff64738c9049a3d9c6e86ed600b122d3"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/kinematics.py",
+      "bytes": 7317,
+      "sha256": "8282d1be051efd800c44ffcda18946c45078eaf89fc2b23878f1a94d92e1fd12"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/proposal_diagnostics.py",
+      "bytes": 2443,
+      "sha256": "ff1225d1738f02e1ab0145d4b146135d674536ba3b8d85728313850afa2dba91"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/protocol.py",
+      "bytes": 3663,
+      "sha256": "815c2ee8b6a5086825b057ddeff3261c37411eabd6a2a5541e297307cf3c4942"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/rpc.py",
+      "bytes": 1685,
+      "sha256": "1c7ce6463586393b3077dc973e4d63579ea24641b95073c6d0ae427f53c8b7b4"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/runtime.sh",
+      "bytes": 1116,
+      "sha256": "ddfd7db654daf305d338ace56fa8fa8636d1512adebe66f51cc37e5e1990bdf1"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/server.py",
+      "bytes": 5629,
+      "sha256": "532dd84466aa8c7c91e0e215d0ff96b9b53bb27c4beea20a99a10eaac2b9d435"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/session.py",
+      "bytes": 13572,
+      "sha256": "b359ed9e3ab6b6f092f89420bf0a18356180372e7f3f7079e0d5638699e3d015"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/validation.py",
+      "bytes": 3211,
+      "sha256": "487dd38ece545d962c8dd96df207fce65e2ec31715a5c3e2a51f406da772e079"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/video_panel.py",
+      "bytes": 9424,
+      "sha256": "fbc2525578df57f38a7a2a4efce0ad4b849be46d4c2c683d22df6bc5dfb5311d"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/video_panel_paper.py",
+      "bytes": 5476,
+      "sha256": "1ca24af90d75b0e3f591d0c54da0bdcfbfa78d8c7ee261fc32280a80baf07e69"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/robodojo_server/video_projection.py",
+      "bytes": 15035,
+      "sha256": "c669fdc5a49462bdc698bfe93925b121230becb9cd94687b818a4251e82d9e2e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/run_local.sh",
+      "bytes": 9730,
+      "sha256": "8b1aa26f6da2278bf084946c3b8ea35bcf7f88edf97be8e30eab53d0d52c1820"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/runtime_manifest.py",
+      "bytes": 5730,
+      "sha256": "85e7c4ccac3284b877ee8771a7acd8766399f648c6150e099e121397cc88fd42"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/score_table.py",
+      "bytes": 4030,
+      "sha256": "9cffd565302d18003522dbf4f52550ac21c82a03113bb3523818471551e2ddb8"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/settings.py",
+      "bytes": 410,
+      "sha256": "9c2d71a8e2429902b4dbe0e68b337a4d222c68e91136609b0ab0e348bcda2185"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/SKILL.md",
+      "bytes": 6257,
+      "sha256": "4314afdd4439f3f7b38da4d98561c6acab5c85459a9659400be10dc843331ff5"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/__init__.py",
+      "bytes": 49,
+      "sha256": "1e8476463fbf6a79f8930dd8aec926a716f92db3cf95fb7db97bc220cd9daf90"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/context/eef_control.md",
+      "bytes": 3547,
+      "sha256": "b483f5d76b51a8f027d4d6cbae1e6fe57ad9dcc6cb22160377de8dd6fc6a008d"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/context/teacher_context.md",
+      "bytes": 2116,
+      "sha256": "5f4e13050326eca382dd207b32736b2f125c11694f0f39bde286bf98b6424989"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/gate_prompt.md",
+      "bytes": 2022,
+      "sha256": "5bb54e0e5b39387d3873f4d4b3eed695a3a682ac28df0dd219f69176ade9e58d"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/image_preview.py",
+      "bytes": 1726,
+      "sha256": "32cc6e609d018b252a56ea105d12fab6837acc1e78111e127b55d27c9b17fb13"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/network_recovery.py",
+      "bytes": 1309,
+      "sha256": "6d24136460ea6a6054c0ecf05eb8c47cbe4ac21283416640e59ee9a77f0d18b1"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/run.py",
+      "bytes": 27220,
+      "sha256": "807ee734702943f242680c0627ffc91232657dac0e81293c69102202de8d72c0"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/schema.py",
+      "bytes": 2182,
+      "sha256": "1a1c673366d480a0a08709f337457dc9d92f7a1c9d9efca1fc8e61126d851a55"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/transport.py",
+      "bytes": 5511,
+      "sha256": "29be5ecc930e8f3f1356138f46dbb13757490a1f3fe705aa618ab0b034cad839"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/skill/workspace.py",
+      "bytes": 3796,
+      "sha256": "cabfd886c79188eeb77d23b0f6bd8cebccb7cef158bb0ec4e5ab98c806f3c88a"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/subscription_migration.py",
+      "bytes": 14948,
+      "sha256": "131f4bd3dffc2c944978d6464f6fdb939c8903284269609fb719e9c7eed47f00"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_acp_query.py",
+      "bytes": 1896,
+      "sha256": "15adc64b0f1bf33de6845da6aee8df9817129cd09e290a2c68cf2bcb338cae58"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_activate_input_recovery.py",
+      "bytes": 2011,
+      "sha256": "49ed5f49c6c40143fda6dde20c3ed7e1077fd34cf7f983694f926cc64f2d65a2"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_adjudicated_archive_audit.py",
+      "bytes": 3746,
+      "sha256": "a1841cd3a686a0aabbfe9bf2415ac881400cf8bdc733d3007f1c39a2e23a0cac"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_audit_follow.py",
+      "bytes": 5003,
+      "sha256": "5312968d500ce8e44ac366b551c9624ecf3442c9eb96861d8aafef0f4a41ef59"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_auth_profiles.py",
+      "bytes": 10546,
+      "sha256": "94d6513b2a703f81923f25f96df3424c7d2860a806ba4aa26400b732a8609e1c"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_batch.py",
+      "bytes": 5302,
+      "sha256": "887fb74dd94784fe1cf35d10bb965e24c39220b8ddf5bc91557482f1ea392b5f"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_campaign.py",
+      "bytes": 17622,
+      "sha256": "a2b3d216af1267f9ad3bd0d7bd773716e336b82faecd66c06e588219b03c8e19"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_case_ledger.py",
+      "bytes": 3831,
+      "sha256": "f8b9f7bde396d13483fc8e9566310fa3f678769795ba78574c5797064e47ca05"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_cluster_runtime.py",
+      "bytes": 8405,
+      "sha256": "12458be86ab9b28b8d5d51fc5672f1fd23ea05f98d416d1f20910ffe45227c0c"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_contract.py",
+      "bytes": 11923,
+      "sha256": "7d6d8b070b9d4596bb3f7ec7666dfe2aaf415c470fca3d4050ccf444c7981c93"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_elastic_dispatch.py",
+      "bytes": 11476,
+      "sha256": "5e5127e5a56362f409f19493663181e7659722cee38fa1a2025f6ee3509c5674"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_evaluation.py",
+      "bytes": 4740,
+      "sha256": "2c94656e432143e157fe4ae0cc8532bc9a3dd4e2ec797f0cb01df3e45a24af79"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_final_debug_export.py",
+      "bytes": 6682,
+      "sha256": "278f32a514c68ff4c9156e146f5413457fc73529932eb35da74ea6e4a5bf17b1"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_finalize_watch.py",
+      "bytes": 9269,
+      "sha256": "be475e3b4e31e9f120844af112a988c364f91a896e2391914dbdc2413354efb0"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_gpt_only.py",
+      "bytes": 6628,
+      "sha256": "183f327d838ff7bc3e323e2b7d04f3ddcee12098cbc843b0f2e378f3bd56fbda"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_idle_timeout_policy.py",
+      "bytes": 7777,
+      "sha256": "dbb37500ccc4326eef0d1311dc2a39c27b4e904c00f3324c5f58e00d5425d7e5"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_image_preview.py",
+      "bytes": 5812,
+      "sha256": "af9ee60203f36953e6b9c1ab158cfd90f2f7364caa2358bee918a2c3688c68ae"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_input_guard_queue.py",
+      "bytes": 9032,
+      "sha256": "085be04d9e79b6703c09b7ee2babeb09b17b6ae1e8715f1b2688d9372b9485cf"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_io.py",
+      "bytes": 2502,
+      "sha256": "90af9c48aab82fb8b0cbf82f30cea1c8fa8b2a2ae648479b63332a8a9226fc8f"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_native_evaluation.py",
+      "bytes": 4405,
+      "sha256": "b480dd8106c5e2b33dc08017a48ed9c96ba1de76851971472f14e715666ae442"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_network_continue.py",
+      "bytes": 6670,
+      "sha256": "5f8b21394beb5a94f7c7af6f35d88f82355d0798cc136757915ddf838ec2ee54"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_overnight.py",
+      "bytes": 11650,
+      "sha256": "a23606f391da689a1cfb103fcdc4990f3815d4cf2d602bf992f5030b11cf3045"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_paired_initial_audit.py",
+      "bytes": 6959,
+      "sha256": "b36627cef88261f7ade12235b8b3b403a9af8af4c6e01057d90a50a8efae0b4e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_plot_score_comparison.py",
+      "bytes": 4820,
+      "sha256": "30fa56d48c359385b316ed50ed2ea785def8c7afb9054b4fa9634b19d344aa60"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_prepare_network_continue.py",
+      "bytes": 5481,
+      "sha256": "248362c0f829484ff06ba82e7bd40e6e2fc8bd9ecf29028cdf579d966c93a9be"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_prepare_v3.py",
+      "bytes": 5669,
+      "sha256": "bd3803f6efcfe4967e7286044da534168c14dfeb0257df9e2feb845f7b6dcec9"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_prompt_context.py",
+      "bytes": 7193,
+      "sha256": "67aab548fb2f7e50e087bb65d45b42431c4b8183fc9dbd181de833656f472e59"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_proposal_diagnostics.py",
+      "bytes": 4839,
+      "sha256": "36a7dfe600ef9dd06631dd6383cef141d8893a249c70a129123c567a33ce3d63"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_proxy_config.py",
+      "bytes": 1736,
+      "sha256": "21ef4b0cbc926ee5e571f73fdab52fbaaed55900b299422660dd2b820df87624"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_quota_guard.py",
+      "bytes": 8844,
+      "sha256": "2f2960da26a14a0596f2307f59298750a61e3e8dded2a2562b8c2d1f4ecf83df"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_recoverable_tool_input.py",
+      "bytes": 4314,
+      "sha256": "6c437abc21f7b938c03ad68079d2dd03c4b6176ec3dc6c79bc5cc730b842cf91"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_refill_campaign.py",
+      "bytes": 4891,
+      "sha256": "50f25c78ccbf871aa07f120cbf0864f76fd2a0ec74c93da7b6a90a2baf9123db"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_release_guard_slots.py",
+      "bytes": 1754,
+      "sha256": "51db9b844529f34e7af707d91c085cd4b408958646cb93dc27dd7983d5bf5f3e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_render_report_batch.py",
+      "bytes": 5459,
+      "sha256": "02af827418f2032e92207583ec5c2eee8cd51130f93a0ada6a8126d9a11d8d8e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_repair_io_campaign.py",
+      "bytes": 2372,
+      "sha256": "665816f68a3e9d765306f8f1f5196b347b8fab78efb050d23caf57bfa89ce50e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_requeue_deferred.py",
+      "bytes": 4582,
+      "sha256": "7e89ca662faa5d70adcdccde5958d4df803dd7a5efecbcc3553434b902903cd0"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_retire_interrupted.py",
+      "bytes": 1190,
+      "sha256": "e5ff3c38256f6482dd138e390e596100a99067340f36ce22dfe2f669a1d89a66"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_score_table.py",
+      "bytes": 1715,
+      "sha256": "00063be7cdee1968963cab0863e7ffd419fe09762a7942ee59c6661334e20fbb"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_subscription_migration.py",
+      "bytes": 7991,
+      "sha256": "9f8e4898ffa71edbb5fa3c6331c48c0c10519f28a42d4d25d0f0ebf17fbb6e53"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_two_stage.py",
+      "bytes": 9181,
+      "sha256": "77e2a2d56bff5d4faba55a97e29529d68024269ee5cb439a628f944779880355"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_video_projection.py",
+      "bytes": 3733,
+      "sha256": "3fe1c0362253b972de02bd9aa8fe02b2d12b8db6dd3c4d9a1acdc388f9a1538e"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/test_video_terminal_labels.py",
+      "bytes": 885,
+      "sha256": "fd960fcf83ec0ef992f25ff322b4a203cc6b4109bb18c9544a5ef5dbce5041cb"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/tool_environment.sh",
+      "bytes": 306,
+      "sha256": "59b7f62dd8f113562500550467f11e9c27e4d45cddde766629e2adf60e16e973"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/tool_preflight.py",
+      "bytes": 1880,
+      "sha256": "ab590b446f5bb188da29526cbbe37591e08f6ac8602cc1c81ef1599914562c2a"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/two_stage.py",
+      "bytes": 17340,
+      "sha256": "6c050ba8cfab17367e36bc3a47c0730acf9ba84f30aa3c5255859def19f011bf"
+    },
+    {
+      "path": "hybrid_rollout/robodojo/unattended_recovery.py",
+      "bytes": 3380,
+      "sha256": "496991376febf009e6cb4c520a3801d0f17ccec73a34bf33200761a94da1289c"
+    },
+    {
+      "path": "hybrid_rollout/robolab/README.md",
+      "bytes": 112,
+      "sha256": "9ed457fcd57e9f2cdc0732f5ddca697f38a316d6ab6529cd6ad537ccea995df1"
+    },
+    {
+      "path": "hybrid_rollout/robolab/SOURCE.json",
+      "bytes": 1946,
+      "sha256": "d71030029be1cce295e0fe8dbba2f79c1906d8581cb1d3845885d62f12182503"
+    },
+    {
+      "path": "hybrid_rollout/robolab/__init__.py",
+      "bytes": 77,
+      "sha256": "b10ab027ca5b5d1d3bd7a430dfbf06c46955670a504a5df75264179ce1d52c47"
+    },
+    {
+      "path": "hybrid_rollout/robolab/io.py",
+      "bytes": 879,
+      "sha256": "bc5d5d519cdbad60e269a6c2597766e226cb1ebf2a26e9f6120fb8f97d7c072d"
+    },
+    {
+      "path": "hybrid_rollout/robolab/pi05_server/__init__.py",
+      "bytes": 48,
+      "sha256": "02c5a9d83b7dd8a21e8dd153353e2d76925ca6efa4b92229dfc1826e2e8e973c"
+    },
+    {
+      "path": "hybrid_rollout/robolab/pi05_server/checkpoint.py",
+      "bytes": 1676,
+      "sha256": "6f97d9cdcb696d37eaf7a77801ba42a6adff2d1757fc0c15a129cccb22f3877e"
+    },
+    {
+      "path": "hybrid_rollout/robolab/pi05_server/client.py",
+      "bytes": 2902,
+      "sha256": "5fbdcaef8c6de190f1aa389da98d4dd41d19ccb7ccf6b8d2adbb492787b107b6"
+    },
+    {
+      "path": "hybrid_rollout/robolab/pi05_server/server.py",
+      "bytes": 2198,
+      "sha256": "2c6580d71450d060ded432a8e344b642ce71f58e9c76333bced981c5d4694005"
+    },
+    {
+      "path": "hybrid_rollout/robolab/report_baselines.py",
+      "bytes": 7360,
+      "sha256": "c79c72abca235f300110dde3fef191c7ba859570c425fbcc94f526bcc112e429"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/__init__.py",
+      "bytes": 48,
+      "sha256": "02c5a9d83b7dd8a21e8dd153353e2d76925ca6efa4b92229dfc1826e2e8e973c"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/action_edit_kinematics.py",
+      "bytes": 5442,
+      "sha256": "352828243f093a16a5dff7d37ee3feed092ecb142fd688f2979c0aa07fb76d16"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/client.py",
+      "bytes": 14454,
+      "sha256": "e444302ddc960cb83fabdd9cd314ad41c3f867992383e0626ac673388c0a63ca"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/debug_recorder.py",
+      "bytes": 15587,
+      "sha256": "55781e6cb101fda5172379fa391fe9f3ec6b38b776b14061861a7fb6b2a55941"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/decision_log.py",
+      "bytes": 3933,
+      "sha256": "3421b6b8b653b9acefc451dbe9e778c87f9282e55cfcf525e5b0c08cae13dfc9"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/eef_controller.py",
+      "bytes": 16934,
+      "sha256": "199e1a47d1e1db0667be7742444267430c389e670e99179f60523bc7d23e69c2"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/gate_assessment.py",
+      "bytes": 4748,
+      "sha256": "f783e760e679ce1f0cf7db7fd4bd5058f0f580048c3a25aefa10f8114f7f83ae"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/protocol.py",
+      "bytes": 3663,
+      "sha256": "815c2ee8b6a5086825b057ddeff3261c37411eabd6a2a5541e297307cf3c4942"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/runtime.sh",
+      "bytes": 1115,
+      "sha256": "3d7fe4b9e52f32d7bdb0edcc011a4fe8aed5ccb059395e58be8ee0116127ddfe"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/scene_recording.py",
+      "bytes": 29778,
+      "sha256": "80f8b0d81116e495a58b7ea0355be7ffa0978513c916005b66999a67392699c3"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/server.py",
+      "bytes": 8924,
+      "sha256": "05e7ba2b33fb358dd94b8f565e7046b14879894624cbe9a4716d00b2a3cc8475"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/session.py",
+      "bytes": 31326,
+      "sha256": "6a22517737b6cb0ed80b581f7540fe5c052e2dee6c58b8da05e16dad2f48e675"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/validation.py",
+      "bytes": 2258,
+      "sha256": "7ed194808c244d537b3e182438fe730bfcc87712bef68b60b75d86c9e843a2ab"
+    },
+    {
+      "path": "hybrid_rollout/robolab/robolab_server/video_panel.py",
+      "bytes": 8726,
+      "sha256": "a25ac252c3a9a244cb6f172d61bd5a9bddf238d6402729a314120a67426cd29a"
+    },
+    {
+      "path": "hybrid_rollout/robolab/run_local.sh",
+      "bytes": 6177,
+      "sha256": "c59e8f95c0f93127affb9cf0f30a669b457cbcf4b7b4edbff27c43e6cce194bf"
+    },
+    {
+      "path": "hybrid_rollout/robolab/settings.py",
+      "bytes": 103,
+      "sha256": "7e7d46342260b5fbd7e5b93f11f4f5516c62780fb4090674dc5ac23575cadcc4"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/SKILL.md",
+      "bytes": 5654,
+      "sha256": "c9a68f8d765cc7867b49bdafe01ed22f4194229e83e841d8c36bedeaa2cfcceb"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/__init__.py",
+      "bytes": 48,
+      "sha256": "02c5a9d83b7dd8a21e8dd153353e2d76925ca6efa4b92229dfc1826e2e8e973c"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/context/eef_control.md",
+      "bytes": 3887,
+      "sha256": "96cd0b818eaf1c5ea2cb934fc2b9e7a27c1cbd3d159bb99cca5723e47fd7601f"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/context/teacher_context.md",
+      "bytes": 4651,
+      "sha256": "455ffe8fb3bd5fcc8a79c3b38fbe17f740d3db28725a350007fbd5a1cd7328dc"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/gate_prompt.md",
+      "bytes": 2022,
+      "sha256": "5bb54e0e5b39387d3873f4d4b3eed695a3a682ac28df0dd219f69176ade9e58d"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/run.py",
+      "bytes": 15298,
+      "sha256": "dc2524ad85194afc429787d883c36f2f1bc3acd5a837cdc7a2fd95368d41ee60"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/schema.py",
+      "bytes": 1710,
+      "sha256": "9353ea576ca9c6983d0b2d761708e12f2a84c94d9d2e0d9908d8f10c01cad426"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/transport.py",
+      "bytes": 5511,
+      "sha256": "29be5ecc930e8f3f1356138f46dbb13757490a1f3fe705aa618ab0b034cad839"
+    },
+    {
+      "path": "hybrid_rollout/robolab/skill/workspace.py",
+      "bytes": 2993,
+      "sha256": "64305f798745c745e3036e39e3aca5fec4c9095040e395a11039562fcb9bfd12"
+    },
+    {
+      "path": "hybrid_rollout/robolab/test_agent_workspace.py",
+      "bytes": 6905,
+      "sha256": "7c69da6ca9e3446b7411e74d2c82f08f40bcf50a6296d16bdf387e4360dd08c3"
+    },
+    {
+      "path": "hybrid_rollout/robolab/test_contract.py",
+      "bytes": 9908,
+      "sha256": "807ee8e0b737c9070e15f46576f769145609a137d4052b029fcfee2ed85987c4"
+    },
+    {
+      "path": "hybrid_rollout/robolab/test_debug_recorder.py",
+      "bytes": 9310,
+      "sha256": "318595f6699919be2ccf0b54c0c862f2b532d12b57257dd5f1612e157f89edb0"
+    },
+    {
+      "path": "hybrid_rollout/robolab/test_decision_log.py",
+      "bytes": 3237,
+      "sha256": "2d95fc61284f041a3bd4cf3e4366f67a83b1f0b9a5ae530a5cf6aca78ab012d8"
+    },
+    {
+      "path": "hybrid_rollout/robolab/test_report_baselines.py",
+      "bytes": 2252,
+      "sha256": "7a19457aecb17659a2addbabdf6d18449ef89e2a081b1e29814640405eb87d11"
+    },
+    {
+      "path": "hybrid_rollout/run_review_dashboard.sh",
+      "bytes": 1305,
+      "sha256": "104155b2ce6d82e6d07aba9ca838624e9eb98b9ec3b2e5e2c7f2cb2374efaf6e"
+    },
+    {
+      "path": "hybrid_rollout/settings.py",
+      "bytes": 122,
+      "sha256": "8727497ae2f5a192d3556b97e8f39d5b6b71895f19267d61e16c315c14daca88"
+    },
+    {
+      "path": "hybrid_rollout/test_annotation_browser.py",
+      "bytes": 2089,
+      "sha256": "2330dffbe6478b227c64298931e925d4f1ef8eab14219c9f3ba309b957793d5b"
+    },
+    {
+      "path": "hybrid_rollout/test_annotation_dashboard.py",
+      "bytes": 14545,
+      "sha256": "764084135dccb5464e29076fef28c7f6230fb3a00b688a105b82feb5237ad70a"
+    },
+    {
+      "path": "hybrid_rollout/test_dashboard.py",
+      "bytes": 3534,
+      "sha256": "59126f98e15f86fea7a4a65412a9e4ac1733e65c0fbdfe0149a06eba87a4271b"
+    },
+    {
+      "path": "hybrid_rollout/test_history_dashboard.py",
+      "bytes": 3890,
+      "sha256": "10452b370e87cc4802588a90a01f385c15f5cc4f2c3e58ec9e6185caa928ba3e"
+    },
+    {
+      "path": "hybrid_rollout/test_layout.py",
+      "bytes": 2029,
+      "sha256": "f55390f15190df61ec760c7b22002e4b99c363d99a1e3448b6260df7e13fb4da"
+    },
+    {
+      "path": "hybrid_rollout/test_report_server.py",
+      "bytes": 3321,
+      "sha256": "1175ce93fac984b756a876d2e1006218b40c1ad3bc5de3f03f62f02d32eb26d3"
+    },
+    {
+      "path": "licenses/Data-app-third-party-notices.txt",
+      "bytes": 201626,
+      "sha256": "9c35d834e6cf78672ab2f94cfc9531cc31cb5fb2fa76e150e31ab025997690d9"
+    },
+    {
+      "path": "licenses/frontend/@floating-ui/core/LICENSE",
+      "bytes": 1089,
+      "sha256": "0e4c9a9b6c71019cbbea3bdc20b01223110a9035700f9c960c8fcbf78c2325ce"
+    },
+    {
+      "path": "licenses/frontend/@floating-ui/dom/LICENSE",
+      "bytes": 1089,
+      "sha256": "0e4c9a9b6c71019cbbea3bdc20b01223110a9035700f9c960c8fcbf78c2325ce"
+    },
+    {
+      "path": "licenses/frontend/@floating-ui/react/LICENSE",
+      "bytes": 1089,
+      "sha256": "0e4c9a9b6c71019cbbea3bdc20b01223110a9035700f9c960c8fcbf78c2325ce"
+    },
+    {
+      "path": "licenses/frontend/@floating-ui/react-dom/LICENSE",
+      "bytes": 1089,
+      "sha256": "0e4c9a9b6c71019cbbea3bdc20b01223110a9035700f9c960c8fcbf78c2325ce"
+    },
+    {
+      "path": "licenses/frontend/@floating-ui/utils/LICENSE",
+      "bytes": 1089,
+      "sha256": "0e4c9a9b6c71019cbbea3bdc20b01223110a9035700f9c960c8fcbf78c2325ce"
+    },
+    {
+      "path": "licenses/frontend/@lexical/clipboard/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/code-core/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/devtools-core/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/dragon/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/extension/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/hashtag/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/history/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/html/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/link/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/list/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/mark/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/markdown/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/overflow/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/plain-text/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/react/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/rich-text/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/selection/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/table/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/text/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/utils/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@lexical/yjs/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/@oxc-project/types/LICENSE",
+      "bytes": 1119,
+      "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+    },
+    {
+      "path": "licenses/frontend/@preact/signals-core/LICENSE",
+      "bytes": 1086,
+      "sha256": "a11fc89e4c6b118854c7a667734a0b2e6bf2af5e45c6686de31adbccc8f3ae8d"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/primitive/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-arrow/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-collection/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-compose-refs/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-context/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-dialog/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-direction/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-dismissable-layer/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-dropdown-menu/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-focus-guards/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-focus-scope/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-id/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-menu/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-popper/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-portal/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-presence/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-primitive/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-roving-focus/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-slot/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-callback-ref/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-controllable-state/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-effect-event/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-is-hydrated/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-layout-effect/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-rect/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/react-use-size/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@radix-ui/rect/LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "path": "licenses/frontend/@reduxjs/toolkit/LICENSE",
+      "bytes": 1069,
+      "sha256": "49784961ec6c4941437b7a2c54d8977d0528076a9e7c73dd40f7d0942b8f106d"
+    },
+    {
+      "path": "licenses/frontend/@rolldown/pluginutils/LICENSE",
+      "bytes": 1106,
+      "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+    },
+    {
+      "path": "licenses/frontend/@standard-schema/spec/LICENSE",
+      "bytes": 1071,
+      "sha256": "653b779005a3a4d64a7288c940f7b9a0e8f0b1e0375f6aa6af9473caf131e564"
+    },
+    {
+      "path": "licenses/frontend/@standard-schema/utils/LICENSE",
+      "bytes": 1069,
+      "sha256": "9cf2166507311f427e083ef7671da566949391cb745789abcff8bd43ac26d1f1"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-array/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-color/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-ease/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-interpolate/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-path/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-scale/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-shape/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-time/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/d3-timer/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/debug/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/estree/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/estree-jsx/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/hast/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/katex/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/mdast/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/ms/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/react/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/trusted-types/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/unist/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@types/use-sync-external-store/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/@ungap/structured-clone/LICENSE",
+      "bytes": 765,
+      "sha256": "dc6d4961d8b6ee747231582ae9c53ce1d66bf76bc9f5a28f554c0e97210953bf"
+    },
+    {
+      "path": "licenses/frontend/aria-hidden/LICENSE",
+      "bytes": 1071,
+      "sha256": "30f0cfddf483d1128e3610205020f2041a6c5e837aa999e0aa82e5576187d4a9"
+    },
+    {
+      "path": "licenses/frontend/bail/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/braces/LICENSE",
+      "bytes": 1091,
+      "sha256": "35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2"
+    },
+    {
+      "path": "licenses/frontend/ccount/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/character-entities/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/character-entities-html4/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/character-entities-legacy/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/character-reference-invalid/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/clsx/license",
+      "bytes": 1104,
+      "sha256": "9a9edad7baae52622bddf3c15b2ef8a33d2c89f2d25408ad13e8a7481c6b0c97"
+    },
+    {
+      "path": "licenses/frontend/comma-separated-tokens/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/commander/LICENSE",
+      "bytes": 1098,
+      "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b"
+    },
+    {
+      "path": "licenses/frontend/csstype/LICENSE",
+      "bytes": 1062,
+      "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+    },
+    {
+      "path": "licenses/frontend/d3-array/LICENSE",
+      "bytes": 731,
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+    },
+    {
+      "path": "licenses/frontend/d3-color/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "path": "licenses/frontend/d3-ease/LICENSE",
+      "bytes": 1504,
+      "sha256": "b989d9085148d21ff64a75e14462aefa06b2589a55553b07b1460c70081c7d08"
+    },
+    {
+      "path": "licenses/frontend/d3-format/LICENSE",
+      "bytes": 731,
+      "sha256": "2a6d2d5f32ba0b755ddbc1c833f766e30cdbe6ebe9a6d4e3e24427721f0b63d3"
+    },
+    {
+      "path": "licenses/frontend/d3-interpolate/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/d3-path/LICENSE",
+      "bytes": 731,
+      "sha256": "a09b0d6d76e768fca2085fad05743ee81ddd11946bcda160a3cf5e1081a479aa"
+    },
+    {
+      "path": "licenses/frontend/d3-scale/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/d3-shape/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "path": "licenses/frontend/d3-time/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "path": "licenses/frontend/d3-time-format/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/d3-timer/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/debug/LICENSE",
+      "bytes": 1139,
+      "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+    },
+    {
+      "path": "licenses/frontend/decode-named-character-reference/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/dequal/license",
+      "bytes": 1114,
+      "sha256": "306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+    },
+    {
+      "path": "licenses/frontend/detect-libc/LICENSE",
+      "bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "licenses/frontend/detect-node-es/LICENSE",
+      "bytes": 1068,
+      "sha256": "54b32293ea560d22cd9b62af9b2cda1a030d910a48c6601d227c5ff2338d95f8"
+    },
+    {
+      "path": "licenses/frontend/devlop/license",
+      "bytes": 1099,
+      "sha256": "6f296a5eccc1dc96714bb94ebaa9cac25b0a1467d74cc5263ac4d0646ab01f62"
+    },
+    {
+      "path": "licenses/frontend/entities/LICENSE",
+      "bytes": 1260,
+      "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164"
+    },
+    {
+      "path": "licenses/frontend/es-toolkit/LICENSE",
+      "bytes": 1077,
+      "sha256": "51f3674294d988d89dbebd31273baaeb3c697a15482d9699b14d1fded2e132a7"
+    },
+    {
+      "path": "licenses/frontend/estree-util-is-identifier-name/license",
+      "bytes": 1099,
+      "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+    },
+    {
+      "path": "licenses/frontend/eventemitter3/LICENSE",
+      "bytes": 1082,
+      "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf"
+    },
+    {
+      "path": "licenses/frontend/extend/LICENSE",
+      "bytes": 1081,
+      "sha256": "97af7428f93afbab9bf79cd09254da1357161794f4255eb1b4599f04dd2d2e7c"
+    },
+    {
+      "path": "licenses/frontend/fdir/LICENSE",
+      "bytes": 1053,
+      "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+    },
+    {
+      "path": "licenses/frontend/figma-squircle/LICENSE",
+      "bytes": 1065,
+      "sha256": "13eb4acc1fc901948e57ba3e7e48c3b3022d6eac689db2fd81c1d1336531e92f"
+    },
+    {
+      "path": "licenses/frontend/fill-range/LICENSE",
+      "bytes": 1091,
+      "sha256": "35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2"
+    },
+    {
+      "path": "licenses/frontend/get-nonce/LICENSE",
+      "bytes": 1071,
+      "sha256": "acf3b087b348d2f2e731b9d4131af185aad694c1204ce14a46909483fd42da05"
+    },
+    {
+      "path": "licenses/frontend/hast-util-from-dom/license",
+      "bytes": 760,
+      "sha256": "c01b44788e1829e81cb20d621c93c07a08ea010063118b956739f2ab050d17ca"
+    },
+    {
+      "path": "licenses/frontend/hast-util-from-html/license",
+      "bytes": 1099,
+      "sha256": "e620971c29d750df627f71f4e629618ef8fcbbea134ab95b344fc0c1a757cad1"
+    },
+    {
+      "path": "licenses/frontend/hast-util-from-html-isomorphic/license",
+      "bytes": 1101,
+      "sha256": "fb5678944a6345b1d30a8fe006aef2be2f6bb1c22431a7cc92674fb0944a7578"
+    },
+    {
+      "path": "licenses/frontend/hast-util-from-parse5/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/hast-util-is-element/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/hast-util-parse-selector/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/hast-util-to-jsx-runtime/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/hast-util-to-text/license",
+      "bytes": 1099,
+      "sha256": "691115fe0234b1f05cb52a9c4aded367e389784a6501af824e85a7e54ca47d38"
+    },
+    {
+      "path": "licenses/frontend/hast-util-whitespace/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/hastscript/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/html-to-image/LICENSE",
+      "bytes": 1066,
+      "sha256": "9fe73723f7a9e91057f73aafc9b6a3c3b2174db2b3ddc0a3a6a8ddf2bad68e37"
+    },
+    {
+      "path": "licenses/frontend/html-url-attributes/license",
+      "bytes": 1070,
+      "sha256": "e18cf5173e928f808f0cd208097fee8fbec9d28fc0255213938e4c559e29ff58"
+    },
+    {
+      "path": "licenses/frontend/immer/LICENSE",
+      "bytes": 1074,
+      "sha256": "99cf22f6960a6fe228ec84ea9aefb0d75b27999ece83a3a9801e1c2081fa270b"
+    },
+    {
+      "path": "licenses/frontend/inline-style-parser/LICENSE",
+      "bytes": 1098,
+      "sha256": "395c95f20598da653ff1eb1cb9d74947c7fac689697147f1d192fd0242a0e635"
+    },
+    {
+      "path": "licenses/frontend/internmap/LICENSE",
+      "bytes": 726,
+      "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+    },
+    {
+      "path": "licenses/frontend/is-alphabetical/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/is-alphanumerical/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/is-decimal/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/is-hexadecimal/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/is-number/LICENSE",
+      "bytes": 1091,
+      "sha256": "35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2"
+    },
+    {
+      "path": "licenses/frontend/is-plain-obj/license",
+      "bytes": 1117,
+      "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+    },
+    {
+      "path": "licenses/frontend/isomorphic.js/LICENSE",
+      "bytes": 1108,
+      "sha256": "dd6488c9c1a4ce2dc978ecee067e5b6a725b52e6057a450b24f1a23bc373b057"
+    },
+    {
+      "path": "licenses/frontend/katex/LICENSE",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "licenses/frontend/lexical/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/lib0/LICENSE",
+      "bytes": 1108,
+      "sha256": "5446db1e43fe52faf3faab7e9959fe3762ac11bdc61c0945934c498affd52d73"
+    },
+    {
+      "path": "licenses/frontend/lightningcss/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "path": "licenses/frontend/lightningcss-linux-x64-gnu/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "path": "licenses/frontend/lightningcss-linux-x64-musl/LICENSE",
+      "bytes": 15648,
+      "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+    },
+    {
+      "path": "licenses/frontend/longest-streak/license",
+      "bytes": 1106,
+      "sha256": "9f084fac69d8cf1e6ce983ba5a3499c7695ed74a26ec625c38f0fd19fddd5e10"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-from-markdown/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-math/license",
+      "bytes": 1099,
+      "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-mdx-expression/license",
+      "bytes": 1099,
+      "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-mdx-jsx/license",
+      "bytes": 1099,
+      "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-mdxjs-esm/license",
+      "bytes": 1099,
+      "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-phrasing/license",
+      "bytes": 1150,
+      "sha256": "b6d1a4e1831b177acc96f22a817d4f0f4c18419355badc3125754445fc69e3a7"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-to-hast/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-to-markdown/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/mdast-util-to-string/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/micromark/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-core-commonmark/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-extension-math/license",
+      "bytes": 1099,
+      "sha256": "536804b3adbff17dbbb9ed0d2bf9655b78f07640278581e37e3d7475282d5e61"
+    },
+    {
+      "path": "licenses/frontend/micromark-factory-destination/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-factory-label/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-factory-space/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-factory-title/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-factory-whitespace/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-character/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-chunked/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-classify-character/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-combine-extensions/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-decode-numeric-character-reference/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-decode-string/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-encode/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-html-tag-name/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-normalize-identifier/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-resolve-all/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-sanitize-uri/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-subtokenize/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-symbol/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromark-util-types/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/micromatch/LICENSE",
+      "bytes": 1091,
+      "sha256": "35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2"
+    },
+    {
+      "path": "licenses/frontend/micromatch/node_modules/picomatch/LICENSE",
+      "bytes": 1091,
+      "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+    },
+    {
+      "path": "licenses/frontend/ms/license.md",
+      "bytes": 1079,
+      "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+    },
+    {
+      "path": "licenses/frontend/nanoid/LICENSE",
+      "bytes": 1095,
+      "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+    },
+    {
+      "path": "licenses/frontend/parse-entities/license",
+      "bytes": 1101,
+      "sha256": "5d0698266086f217bb11ea0499d33453e401fe479fb9126ad04e625e63d3557b"
+    },
+    {
+      "path": "licenses/frontend/parse-entities/node_modules/@types/unist/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "licenses/frontend/parse5/LICENSE",
+      "bytes": 1109,
+      "sha256": "8c535800331e1e4439835555b3f9edc7fe9dee2fab0d8bbbd5a982e8b8343d4d"
+    },
+    {
+      "path": "licenses/frontend/picocolors/LICENSE",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+    },
+    {
+      "path": "licenses/frontend/picomatch/LICENSE",
+      "bytes": 1091,
+      "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+    },
+    {
+      "path": "licenses/frontend/postcss/LICENSE",
+      "bytes": 1095,
+      "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+    },
+    {
+      "path": "licenses/frontend/property-information/license",
+      "bytes": 1101,
+      "sha256": "5d0698266086f217bb11ea0499d33453e401fe479fb9126ad04e625e63d3557b"
+    },
+    {
+      "path": "licenses/frontend/react/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/react-dom/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/react-error-boundary/LICENSE",
+      "bytes": 1078,
+      "sha256": "2cdb493db15b320c5787535f9dadd37b13cae6fe0a1cdd7849ccfbce70c389fd"
+    },
+    {
+      "path": "licenses/frontend/react-is/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/react-markdown/license",
+      "bytes": 1079,
+      "sha256": "f6196c64e144f9a6fa9154c3a80bc8b89615a9567934b83a8951879f06ba2aef"
+    },
+    {
+      "path": "licenses/frontend/react-redux/LICENSE.md",
+      "bytes": 1086,
+      "sha256": "f2da73c752c6b87624755edacf927cbd915fa76555d383e74494bad4a5155ab3"
+    },
+    {
+      "path": "licenses/frontend/react-remove-scroll/LICENSE",
+      "bytes": 1071,
+      "sha256": "30f0cfddf483d1128e3610205020f2041a6c5e837aa999e0aa82e5576187d4a9"
+    },
+    {
+      "path": "licenses/frontend/react-style-singleton/LICENSE",
+      "bytes": 1071,
+      "sha256": "30f0cfddf483d1128e3610205020f2041a6c5e837aa999e0aa82e5576187d4a9"
+    },
+    {
+      "path": "licenses/frontend/recharts/LICENSE",
+      "bytes": 1084,
+      "sha256": "2d3aa48a8d1d3b93093680e8e68d3a64cfb590c3ade377ffcaefc69dac7c2ce5"
+    },
+    {
+      "path": "licenses/frontend/redux/LICENSE.md",
+      "bytes": 1086,
+      "sha256": "f2da73c752c6b87624755edacf927cbd915fa76555d383e74494bad4a5155ab3"
+    },
+    {
+      "path": "licenses/frontend/redux-thunk/LICENSE.md",
+      "bytes": 1107,
+      "sha256": "635da794c92d278f8355428be0f9922d643f556d4f75f33fe4aca6b98d27affe"
+    },
+    {
+      "path": "licenses/frontend/remark-parse/license",
+      "bytes": 1099,
+      "sha256": "413654b0a78b98661dce96d2aff2e4d075603d220b8483e28b1aa010ccc138b4"
+    },
+    {
+      "path": "licenses/frontend/remark-rehype/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/reselect/LICENSE",
+      "bytes": 1093,
+      "sha256": "e98047a5dee068b33f82e8c4b7a63037b5108c93393198efd4097753004af5dd"
+    },
+    {
+      "path": "licenses/frontend/rolldown/LICENSE",
+      "bytes": 1302,
+      "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+    },
+    {
+      "path": "licenses/frontend/scheduler/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/source-map-js/LICENSE",
+      "bytes": 1526,
+      "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+    },
+    {
+      "path": "licenses/frontend/space-separated-tokens/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/stringify-entities/license",
+      "bytes": 1106,
+      "sha256": "9f084fac69d8cf1e6ce983ba5a3499c7695ed74a26ec625c38f0fd19fddd5e10"
+    },
+    {
+      "path": "licenses/frontend/style-to-js/LICENSE",
+      "bytes": 1110,
+      "sha256": "bbb380e5c1a717079378d6ea4d33c8a5a81655d4612b749f882e34e46712aab5"
+    },
+    {
+      "path": "licenses/frontend/style-to-object/LICENSE",
+      "bytes": 1110,
+      "sha256": "896c9fd6b5fc48ac31800b9d29a6e3ffcb0c2d534ed077ebfa5c2fa388cc38b7"
+    },
+    {
+      "path": "licenses/frontend/tabbable/LICENSE",
+      "bytes": 1079,
+      "sha256": "8e714750725e75c8b31172ef84c0805f94873f86e3b5cfca8a948553f0778fa1"
+    },
+    {
+      "path": "licenses/frontend/tiny-invariant/LICENSE",
+      "bytes": 1073,
+      "sha256": "b1c501095de70182748cb8e8d97ac5577701a4ef3b755ba30d59fd87b24bdb0f"
+    },
+    {
+      "path": "licenses/frontend/tinyglobby/LICENSE",
+      "bytes": 1076,
+      "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+    },
+    {
+      "path": "licenses/frontend/to-regex-range/LICENSE",
+      "bytes": 1091,
+      "sha256": "e7d1fee7347ffddccc5fd03327ffdb50f8c112be0d5016d62388a92c4ae6e7a9"
+    },
+    {
+      "path": "licenses/frontend/trim-lines/license",
+      "bytes": 1106,
+      "sha256": "9f084fac69d8cf1e6ce983ba5a3499c7695ed74a26ec625c38f0fd19fddd5e10"
+    },
+    {
+      "path": "licenses/frontend/trough/license",
+      "bytes": 1099,
+      "sha256": "6c03fd41cfd7c92d8aa8a2fa521b94b2683f059123281dcf921ddea9216b6254"
+    },
+    {
+      "path": "licenses/frontend/tslib/LICENSE.txt",
+      "bytes": 655,
+      "sha256": "210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751"
+    },
+    {
+      "path": "licenses/frontend/unified/license",
+      "bytes": 1099,
+      "sha256": "05811400116ed61f1a7693b78fe8ca6598c155a12f3978e609db4df648a4cb3d"
+    },
+    {
+      "path": "licenses/frontend/unist-util-find-after/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/unist-util-is/license",
+      "bytes": 1099,
+      "sha256": "82974dbf2639d13edab95c32ed9cb6c0867ede272cd2e07ce47ce8548fe55c05"
+    },
+    {
+      "path": "licenses/frontend/unist-util-position/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/unist-util-remove-position/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/unist-util-stringify-position/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/unist-util-visit/license",
+      "bytes": 1099,
+      "sha256": "63cb98b3f6abfb3c3592c16f88253c1bdc834087bf52671e8ce5609e4eb693cf"
+    },
+    {
+      "path": "licenses/frontend/unist-util-visit-parents/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/use-callback-ref/LICENSE",
+      "bytes": 1071,
+      "sha256": "30f0cfddf483d1128e3610205020f2041a6c5e837aa999e0aa82e5576187d4a9"
+    },
+    {
+      "path": "licenses/frontend/use-sidecar/LICENSE",
+      "bytes": 1071,
+      "sha256": "30f0cfddf483d1128e3610205020f2041a6c5e837aa999e0aa82e5576187d4a9"
+    },
+    {
+      "path": "licenses/frontend/use-sync-external-store/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "path": "licenses/frontend/vfile/license",
+      "bytes": 1099,
+      "sha256": "05811400116ed61f1a7693b78fe8ca6598c155a12f3978e609db4df648a4cb3d"
+    },
+    {
+      "path": "licenses/frontend/vfile-location/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/vfile-message/license",
+      "bytes": 1094,
+      "sha256": "dd1081884a92952802f4803110a6bb543acea9a814c786d58605b4c1219b5ebb"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-array/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-color/LICENSE",
+      "bytes": 731,
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-ease/LICENSE",
+      "bytes": 1504,
+      "sha256": "b989d9085148d21ff64a75e14462aefa06b2589a55553b07b1460c70081c7d08"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-format/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-interpolate/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-path/LICENSE",
+      "bytes": 731,
+      "sha256": "0ab21426fad1e8b819ea8ab4c7faf5a24d4fca9c01572fe722490d600bba0d22"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-scale/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-shape/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-time/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-time-format/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-timer/LICENSE",
+      "bytes": 731,
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/d3-voronoi/LICENSE",
+      "bytes": 2656,
+      "sha256": "ad6cf57648385d6c40a29f73c55e42922dd793823df5ea265ccd834873bf09b9"
+    },
+    {
+      "path": "licenses/frontend/victory-vendor/lib-vendor/internmap/LICENSE",
+      "bytes": 726,
+      "sha256": "9ea8903938dab5f12c4572d60725069bec2d1b0dc3bcc210b09bae946a5ebb1f"
+    },
+    {
+      "path": "licenses/frontend/vite/LICENSE.md",
+      "bytes": 110976,
+      "sha256": "b1d741c26b53de1bbc0d4d7d3365b79888f9fe511527544a8a7b8e24dec43147"
+    },
+    {
+      "path": "licenses/frontend/vite-plugin-singlefile/LICENSE",
+      "bytes": 1088,
+      "sha256": "6da5d0711dc4cb59f9d492f3207d3fde685c185b655c48f0423ee6d0f4f60833"
+    },
+    {
+      "path": "licenses/frontend/web-namespaces/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "licenses/frontend/yjs/LICENSE",
+      "bytes": 1211,
+      "sha256": "341baa53605ed85d6f95782322854cca56c655ebc7fd4712649b8e7afc6020ff"
+    },
+    {
+      "path": "licenses/frontend/zwitch/license",
+      "bytes": 1099,
+      "sha256": "ca4662cb5d1b738fbe5350c0d5485ba11773b4b7208974082ae6e129a52d631d"
+    },
+    {
+      "path": "public_results/data.json",
+      "bytes": 277423,
+      "sha256": "0c4be006a2a0dc1ca2559e4421c45680eec94d466f390ea34b2ea055af9bd74e"
+    },
+    {
+      "path": "public_results/evaluation_cases.json",
+      "bytes": 122390,
+      "sha256": "b2ef651cc5d4c90375165a852030a3864b33d9410986dafedde7b04253f1c39a"
+    },
+    {
+      "path": "public_results/provenance.json",
+      "bytes": 1383,
+      "sha256": "d8b4550e5225cfcf5c1ede083b0955a8520d42dcaa858d1231e7695ba4d04d8f"
+    },
+    {
+      "path": "public_results/scores.csv",
+      "bytes": 6817,
+      "sha256": "8042446b354b5c554b1a3ec9a5b145545bce3a98703844297577d25d72fdce99"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 78,
+      "sha256": "c0de55edf65dbb977e05c6891a5ff41740ec17c7404283c034a46ed67af29bf5"
+    },
+    {
+      "path": "report_web/build-manifest.json",
+      "bytes": 157,
+      "sha256": "ad68b150f5bdf9ff2b99a16645cdd9758c01397cf55ef4458d173ad8ad6af965"
+    },
+    {
+      "path": "report_web/citation.bib",
+      "bytes": 340,
+      "sha256": "31d31a254a8e01e52087382838858dfbf0d85c8d8a02c65960243da64bea8a5c"
+    },
+    {
+      "path": "report_web/data.json",
+      "bytes": 207013,
+      "sha256": "e1a4e6d8fba53513ed088e1b10706c4387e211b48832128e5781d86bb0947457"
+    },
+    {
+      "path": "report_web/index.html",
+      "bytes": 6496448,
+      "sha256": "22217261a4ea81bdb64970ad7cb3b96325e6b26703d6602c34fdacacaf34ef21"
+    },
+    {
+      "path": "report_web/licenses/NotoSerif-LICENSE.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "report_web/licenses/SourceSerif-LICENSE.txt",
+      "bytes": 4491,
+      "sha256": "c21d7293d87b6d7ab1d0229a2f55b77f33a7613a6a4e66f6693d68d7d8d09464"
+    },
+    {
+      "path": "report_web/media/clips/clip__0138af9ba9629776dbee7d6f__0.mp4",
+      "bytes": 772303,
+      "sha256": "efd5c67fd881dfae3be6eeab3a58580d5600943fcdcfcef285d0596e1750e83a"
+    },
+    {
+      "path": "report_web/media/clips/clip__182f98be14595fc71b02b377__0.mp4",
+      "bytes": 1698225,
+      "sha256": "2ba371337604a5ef4eb396a9a0224ac6e174443a8eba1f64e0683ee3c2373b94"
+    },
+    {
+      "path": "report_web/media/clips/clip__220a8ec7845d68ca73248879__0.mp4",
+      "bytes": 3203839,
+      "sha256": "721d0de36a3c97194cad09f50b6bbc77150a2e7ddfca6cbd8cbc5267d2e3e229"
+    },
+    {
+      "path": "report_web/media/clips/clip__4288645ef90dc53de13376eb__0.mp4",
+      "bytes": 3340829,
+      "sha256": "b4f02b61d861d41e0abe23f4e1104bba3c718ff3a0754492c6b46963c7a47f8a"
+    },
+    {
+      "path": "report_web/media/clips/clip__5436877e6101be2b23b24fc2__0.mp4",
+      "bytes": 3173120,
+      "sha256": "18a0a9a4edb4d321349fb9f3796f2dd3957918bc65d700bba8acafe7ea830e9c"
+    },
+    {
+      "path": "report_web/media/clips/clip__54ab2e9592bc1721a111b399__0.mp4",
+      "bytes": 5478523,
+      "sha256": "1bb2b88bfded9869f47e0e7766c20180aa54e2411cd003d4f0a61f5015e9cf71"
+    },
+    {
+      "path": "report_web/media/clips/clip__5b7eb4161fbb1a8e5851cf52__0.mp4",
+      "bytes": 4080063,
+      "sha256": "96a27169cdaca680dbe52636982250364aa6da2805dc89c1a2e21cc6e4e8cae3"
+    },
+    {
+      "path": "report_web/media/clips/clip__5f52fbae6ce02b95ed5346b2__0.mp4",
+      "bytes": 4199008,
+      "sha256": "eded0467ea8b3a1896e13b5d006e0cf7765e9d39ff34853e690295e09169fb9b"
+    },
+    {
+      "path": "report_web/media/clips/clip__6ba3a538a3405206181aa6c6__0.mp4",
+      "bytes": 2485527,
+      "sha256": "a47220a3a46f654ffe4b38c833645910fd43166e77f8aefacd99234f7d20e97a"
+    },
+    {
+      "path": "report_web/media/clips/clip__6f1191749b24df72921e800d__0.mp4",
+      "bytes": 1180114,
+      "sha256": "a2e7d50147aca8095e1c248a1a4a44ec13968c54936dde23413879487b37cb06"
+    },
+    {
+      "path": "report_web/media/clips/clip__71c12723687a550b770f36c0__0.mp4",
+      "bytes": 1893221,
+      "sha256": "a22a8bde36988ee7aa09d572730e8dbe166a12cd2b52ee18d14252aee40adf82"
+    },
+    {
+      "path": "report_web/media/clips/clip__7ef164f7a8783f3af3eb9090__0.mp4",
+      "bytes": 3015439,
+      "sha256": "33dd8e13d8f72dbb6c1e9959da0f0228762ebe0e52b893fa3c020a2a7cbfc830"
+    },
+    {
+      "path": "report_web/media/clips/clip__9e40a74ed6b0a356a421f53b__0.mp4",
+      "bytes": 2386453,
+      "sha256": "52d44abf7ffc74a7c5cf250019043e173c3fd4556f229ddaf6df1c5273687591"
+    },
+    {
+      "path": "report_web/media/clips/clip__b0b8456f0b4d549bc4d56cfe__0.mp4",
+      "bytes": 1217658,
+      "sha256": "6d5447238da6c5bd24b6fbd992db20c74d5df7462ca1ae7870430eb088ab9b9a"
+    },
+    {
+      "path": "report_web/media/clips/clip__b34c1a832bb5123d6eb6a6af__0.mp4",
+      "bytes": 3281020,
+      "sha256": "a186a2356952de5f82cf35c803a9b61dbda53c234c9e970e6cbd6db14abedc98"
+    },
+    {
+      "path": "report_web/media/clips/clip__bd5f4382adb568ed22dfca47__0.mp4",
+      "bytes": 2004413,
+      "sha256": "845e6ac55d8eed89308d3e4427f6c0226a013af7c63a64e7d1a03b904d37667c"
+    },
+    {
+      "path": "report_web/media/clips/clip__cb2554914fe8187ac98e9e45__0.mp4",
+      "bytes": 2607466,
+      "sha256": "e4a4f4a3315e660d990e1cc763c2d5283e4b625ca14c51d962cf177ef4e64a26"
+    },
+    {
+      "path": "report_web/media/clips/clip__cbf8658bad76fd96fef01245__1.mp4",
+      "bytes": 1489179,
+      "sha256": "8802c5ffdcc55ab9496429b5caeb6045f6802e36b321bd6d8153bd224561641d"
+    },
+    {
+      "path": "report_web/media/clips/clip__faad002fd6c510f09db4c435__0.mp4",
+      "bytes": 4313235,
+      "sha256": "5a42554ee72bfe334a5fa5271371359644f429aceb96174c2bc7792095913a32"
+    },
+    {
+      "path": "report_web/media/clips/clip__fe2857368ce87ec2ffdcd4ac__0.mp4",
+      "bytes": 1389163,
+      "sha256": "7a3d4d060aa54961bee0dcfe0b607a440014c2de7f002c9f7028c0445939593d"
+    },
+    {
+      "path": "report_web/media/clips/imitate_sorting_sequence_a5_frames_493_1309.mp4",
+      "bytes": 6047117,
+      "sha256": "547f5752a6e06cdf1bec0b4023a60e8b53ee5ff9664d9356886a6c77e32242a2"
+    },
+    {
+      "path": "report_web/media/posters/clip__0138af9ba9629776dbee7d6f__0.jpg",
+      "bytes": 57413,
+      "sha256": "2e8f1e52d933dcd45a6681dc553618d506d32996fa18cb65f3fff1ba776d715e"
+    },
+    {
+      "path": "report_web/media/posters/clip__182f98be14595fc71b02b377__0.jpg",
+      "bytes": 57635,
+      "sha256": "047be297e0b5ad02a0ff91c2c59c2d5d59375d486226b1de9eb4fcfd94bca341"
+    },
+    {
+      "path": "report_web/media/posters/clip__220a8ec7845d68ca73248879__0.jpg",
+      "bytes": 54960,
+      "sha256": "a8e51c84e1a003ab17f75bb450a8444ffdf83c75c36d0762977bbf422df94cd3"
+    },
+    {
+      "path": "report_web/media/posters/clip__4288645ef90dc53de13376eb__0.jpg",
+      "bytes": 54797,
+      "sha256": "e54b0cc853ae7f6e0ba593ff5445ba3b78a22eeefe1082e8d17b0e04d800ece6"
+    },
+    {
+      "path": "report_web/media/posters/clip__5436877e6101be2b23b24fc2__0.jpg",
+      "bytes": 49985,
+      "sha256": "048b07138b4fcb529c57e85359d74ddad344d08fb729f64ee3ae3b5d8957d0bf"
+    },
+    {
+      "path": "report_web/media/posters/clip__54ab2e9592bc1721a111b399__0.jpg",
+      "bytes": 51026,
+      "sha256": "e9a6205ccc5e20c218bea14ea0c56033583a4b81973ad16a9a9d490428f9f339"
+    },
+    {
+      "path": "report_web/media/posters/clip__5b7eb4161fbb1a8e5851cf52__0.jpg",
+      "bytes": 61784,
+      "sha256": "100a130674e260dba6a0af3d2483d7374f1f456d8ce3725e221f2e5c2fd66853"
+    },
+    {
+      "path": "report_web/media/posters/clip__5f52fbae6ce02b95ed5346b2__0.jpg",
+      "bytes": 54469,
+      "sha256": "3cb769b38b85c2a063a821cd13811ae5ee79283e81b7a0c5a544fe1393e450e7"
+    },
+    {
+      "path": "report_web/media/posters/clip__6ba3a538a3405206181aa6c6__0.jpg",
+      "bytes": 61766,
+      "sha256": "bae136eb83e7bf625a87166780bae76682257c0638b2c4e5af92b0eefac9f960"
+    },
+    {
+      "path": "report_web/media/posters/clip__6f1191749b24df72921e800d__0.jpg",
+      "bytes": 60797,
+      "sha256": "58ef8847993beacc322e8aa2660d6d043339a6484f5a3139af9250a713dce9dc"
+    },
+    {
+      "path": "report_web/media/posters/clip__71c12723687a550b770f36c0__0.jpg",
+      "bytes": 46297,
+      "sha256": "3ee9ee1bc09ac17da00fa7b1ff3b8153f0ad851627f25191108a9a5a50530e5c"
+    },
+    {
+      "path": "report_web/media/posters/clip__7ef164f7a8783f3af3eb9090__0.jpg",
+      "bytes": 48663,
+      "sha256": "da9ae967bd260b5de0cb86ca02d51453ead6b4018ce2f8714855cbd6a4dc7f0b"
+    },
+    {
+      "path": "report_web/media/posters/clip__9e40a74ed6b0a356a421f53b__0.jpg",
+      "bytes": 60282,
+      "sha256": "88998e3b611f5c80fc8562a17951090e3bb504c0a121e83890ff307848d115fc"
+    },
+    {
+      "path": "report_web/media/posters/clip__b0b8456f0b4d549bc4d56cfe__0.jpg",
+      "bytes": 47559,
+      "sha256": "37d38c5d90736fe02c10591099565cd3c405fd0ffde3e1848419927167e51399"
+    },
+    {
+      "path": "report_web/media/posters/clip__b34c1a832bb5123d6eb6a6af__0.jpg",
+      "bytes": 50987,
+      "sha256": "003203a8407baf25a18fd1caa5558ed76d6bfa9757e83e5d07c6c4a4a68b5d2d"
+    },
+    {
+      "path": "report_web/media/posters/clip__bd5f4382adb568ed22dfca47__0.jpg",
+      "bytes": 57046,
+      "sha256": "4aa9e9f07c20aa12a869c46e3a0018c583b19091880988875642a14d0b180bd0"
+    },
+    {
+      "path": "report_web/media/posters/clip__cb2554914fe8187ac98e9e45__0.jpg",
+      "bytes": 51501,
+      "sha256": "273a0b6fcfcfebd20b65bc091683691f1b7bf4e7a397dd9f94ae1612c7d9799b"
+    },
+    {
+      "path": "report_web/media/posters/clip__cbf8658bad76fd96fef01245__1.jpg",
+      "bytes": 49257,
+      "sha256": "181ffbc8cd54f3519e7edb742e477f2c95a02da62b645f2826af4a4fb00de862"
+    },
+    {
+      "path": "report_web/media/posters/clip__faad002fd6c510f09db4c435__0.jpg",
+      "bytes": 56721,
+      "sha256": "60bd78c93f031ab9f926a5eaab053742bfd465ed44454ec21b341e41108063b1"
+    },
+    {
+      "path": "report_web/media/posters/clip__fe2857368ce87ec2ffdcd4ac__0.jpg",
+      "bytes": 57920,
+      "sha256": "c517e89e357f4e6015c4d1338f5bc734bf615eebe04dfd7fed566b8728eeac90"
+    },
+    {
+      "path": "report_web/media/posters/imitate_sorting_sequence_a5_frames_493_1309.jpg",
+      "bytes": 54517,
+      "sha256": "c8dee3e884d300e2a1724de54a5176f9f0c5c30e9952edd93a34732994a723a4"
+    },
+    {
+      "path": "report_web/media/tasks/arrange_largest_number.jpg",
+      "bytes": 40159,
+      "sha256": "4d4876e96cda5dc983084d26f6bbae0d804c2ccaffddc4a18bac03f574e76c37"
+    },
+    {
+      "path": "report_web/media/tasks/build_tower.jpg",
+      "bytes": 40519,
+      "sha256": "7425b8283d22df78f279ea70fafd68eead4c48d012db0e4a7a37af6a549400cb"
+    },
+    {
+      "path": "report_web/media/tasks/classify_objects.jpg",
+      "bytes": 44121,
+      "sha256": "6550d597bdf5aaddf18e8633b2b4f0874ee98c393e68233df15f9973d7c060a7"
+    },
+    {
+      "path": "report_web/media/tasks/classify_objects_by_language.jpg",
+      "bytes": 42917,
+      "sha256": "15a5872217c411d7bb7a1bb2a5eb9028e6707914df3ba110d1fa72ec1c01832b"
+    },
+    {
+      "path": "report_web/media/tasks/fold_clothes.jpg",
+      "bytes": 40378,
+      "sha256": "8064a5fb867223f6a2c5aee092f31dce3d268259a07c9387298ca5118dc5c989"
+    },
+    {
+      "path": "report_web/media/tasks/imitate_sorting_sequence.jpg",
+      "bytes": 46608,
+      "sha256": "18435f55d13795c81ff17f0cf26ca54095b267fa145eddfb3ff89fc89f31b6c8"
+    },
+    {
+      "path": "report_web/media/tasks/make_kong.jpg",
+      "bytes": 44350,
+      "sha256": "6afdf41b795b29c70be80c1f4cfc82d0f8808662a904b460a3af85c9d1bd0060"
+    },
+    {
+      "path": "report_web/media/tasks/organize_table.jpg",
+      "bytes": 43946,
+      "sha256": "3b2145875bd5c113ba00c15467a1abdff32c76cd826014a9ca4817ee1743b9d2"
+    },
+    {
+      "path": "report_web/media/tasks/pack_objects_into_box.jpg",
+      "bytes": 40563,
+      "sha256": "e4b1eb3fd7da37864a9114c05f747bcd02b35e1a90a4822827418619479d3655"
+    },
+    {
+      "path": "report_web/media/tasks/put_bottles_into_dustbin.jpg",
+      "bytes": 40394,
+      "sha256": "4583f8ec8ab0af6a8219a2d2f1af8e589e553703d1a80db0bc279d46b4dad813"
+    },
+    {
+      "path": "report_web/media-manifest.json",
+      "bytes": 9670,
+      "sha256": "738df75bcaf5d563f0c3fa89b8d4211c27ce6d1d699ab38b32a15438361e8309"
+    },
+    {
+      "path": "report_web/provenance.json",
+      "bytes": 1383,
+      "sha256": "d8b4550e5225cfcf5c1ede083b0955a8520d42dcaa858d1231e7695ba4d04d8f"
+    },
+    {
+      "path": "report_web/robolab-baselines.json",
+      "bytes": 59186,
+      "sha256": "2f931c6cd982a14baccfbb9d79c46cb778f6a22eca30e356da4a297cd431e48e"
+    },
+    {
+      "path": "report_web/robolab-leaderboard.csv",
+      "bytes": 2583,
+      "sha256": "30827d821c2bd3d6316a5999b78f13bc27ee24f5d4ce2d3601b1e7dec8e30476"
+    },
+    {
+      "path": "report_web/robolab-scores.csv",
+      "bytes": 690,
+      "sha256": "c7cfcd9c774ad66a1579f2531b787715a265cf01dad57f0300e16787f1fd6356"
+    },
+    {
+      "path": "report_web/robolab.json",
+      "bytes": 5750,
+      "sha256": "9cbd12354be634adb68ecaffe93e1ab132b7859935c5e942ca845741ed6916fe"
+    },
+    {
+      "path": "report_web/scores.csv",
+      "bytes": 6817,
+      "sha256": "8042446b354b5c554b1a3ec9a5b145545bce3a98703844297577d25d72fdce99"
+    },
+    {
+      "path": "requirements-tools.txt",
+      "bytes": 250,
+      "sha256": "db6ddf11d47b312ccab5bcda2f489ab9e515f5be06d92f6be0219bf68d75e301"
+    }
+  ],
+  "deployment_path_templates": [
+    "hybrid_rollout/README.md",
+    "hybrid_rollout/annotation_dashboard.py",
+    "hybrid_rollout/report_site/build.py",
+    "hybrid_rollout/robodojo/README.md",
+    "hybrid_rollout/robodojo/SOURCE.json",
+    "hybrid_rollout/robodojo/acp.py",
+    "hybrid_rollout/robodojo/acp_startup.sh",
+    "hybrid_rollout/robodojo/activate_input_recovery.py",
+    "hybrid_rollout/robodojo/audit_idle_handoff.py",
+    "hybrid_rollout/robodojo/batch.py",
+    "hybrid_rollout/robodojo/campaign.py",
+    "hybrid_rollout/robodojo/cluster.env.example",
+    "hybrid_rollout/robodojo/cluster_entrypoint.sh",
+    "hybrid_rollout/robodojo/codex_backend/config.toml",
+    "hybrid_rollout/robodojo/codex_backend/profiles.py",
+    "hybrid_rollout/robodojo/episode_entrypoint.sh",
+    "hybrid_rollout/robodojo/idle_timeout_handoff.py",
+    "hybrid_rollout/robodojo/login_pool15.sh",
+    "hybrid_rollout/robodojo/prepare_v3.py",
+    "hybrid_rollout/robodojo/render_report_batch.py",
+    "hybrid_rollout/robodojo/restore_pinned_codex.py",
+    "hybrid_rollout/robodojo/run_local.sh",
+    "hybrid_rollout/robodojo/runtime_manifest.py",
+    "hybrid_rollout/robodojo/test_contract.py",
+    "hybrid_rollout/robolab/README.md",
+    "hybrid_rollout/robolab/run_local.sh",
+    "hybrid_rollout/run_review_dashboard.sh"
+  ],
+  "source_license": "MIT for project-owned code",
+  "raw_annotations_included": false,
+  "credentials_included": false
+}

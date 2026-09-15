@@ -1,0 +1,121 @@
+task,model,score_100,success_rate_percent,score_n,origin
+organize_table,DM0.5,44.0,4.0,,official
+organize_table,GalaxeaVLA (G0.5),46.33,11.33,,official
+organize_table,Xiaomi-Robotics-1,57.67,14.669999999999998,,official
+organize_table,OpenWAM-α,62.5,13.330000000000002,,official
+organize_table,Meituan-Robotics-0,43.67,4.0,,official
+organize_table,Hy-Embodied-0.5-VLA,42.0,4.67,,official
+organize_table,Spatial Forcing,31.670000000000005,5.33,,official
+organize_table,π0.5,23.33,0.0,,official
+organize_table,InternVLA-A1.5,35.67,2.67,,official
+organize_table,StarVLA-PI_v3,25.17,2.0,,official
+organize_table,π0.5 + GPT,60.0,0,5,local
+organize_table,GPT-only,30.0,0,5,local
+classify_objects_by_language,DM0.5,0.4699999999999999,0.0,,official
+classify_objects_by_language,GalaxeaVLA (G0.5),1.07,0.0,,official
+classify_objects_by_language,Xiaomi-Robotics-1,2.0,0.67,,official
+classify_objects_by_language,OpenWAM-α,1.33,0.0,,official
+classify_objects_by_language,Meituan-Robotics-0,2.47,0.67,,official
+classify_objects_by_language,Hy-Embodied-0.5-VLA,0.53,0.0,,official
+classify_objects_by_language,Spatial Forcing,0.6,0.0,,official
+classify_objects_by_language,π0.5,0.6,0.0,,official
+classify_objects_by_language,InternVLA-A1.5,0.13,0.0,,official
+classify_objects_by_language,StarVLA-PI_v3,0.27,0.0,,official
+classify_objects_by_language,π0.5 + GPT,38.0,20,5,local
+classify_objects_by_language,GPT-only,60.0,40,4,local
+imitate_sorting_sequence,DM0.5,1.8,0.0,,official
+imitate_sorting_sequence,GalaxeaVLA (G0.5),1.67,0.0,,official
+imitate_sorting_sequence,Xiaomi-Robotics-1,2.5,0.67,,official
+imitate_sorting_sequence,OpenWAM-α,2.9,0.67,,official
+imitate_sorting_sequence,Meituan-Robotics-0,1.53,0.0,,official
+imitate_sorting_sequence,Hy-Embodied-0.5-VLA,0.9,0.0,,official
+imitate_sorting_sequence,Spatial Forcing,1.3,0.0,,official
+imitate_sorting_sequence,π0.5,1.6,0.0,,official
+imitate_sorting_sequence,InternVLA-A1.5,0.6,0.0,,official
+imitate_sorting_sequence,StarVLA-PI_v3,0.73,0.0,,official
+imitate_sorting_sequence,π0.5 + GPT,53.0,40,5,local
+imitate_sorting_sequence,GPT-only,0.0,0,5,local
+arrange_largest_number,DM0.5,7.853999999999999,3.2,,official
+arrange_largest_number,GalaxeaVLA (G0.5),4.106,0.532,,official
+arrange_largest_number,Xiaomi-Robotics-1,8.562,3.732,,official
+arrange_largest_number,OpenWAM-α,4.362,0.532,,official
+arrange_largest_number,Meituan-Robotics-0,6.414000000000001,2.668,,official
+arrange_largest_number,Hy-Embodied-0.5-VLA,0.852,0.0,,official
+arrange_largest_number,Spatial Forcing,2.158,0.532,,official
+arrange_largest_number,π0.5,2.2920000000000003,0.532,,official
+arrange_largest_number,InternVLA-A1.5,0.5740000000000001,0.0,,official
+arrange_largest_number,StarVLA-PI_v3,1.762,0.0,,official
+arrange_largest_number,π0.5 + GPT,50.0,40,5,local
+arrange_largest_number,GPT-only,57.0,40,5,local
+pack_objects_into_box,DM0.5,14.719999999999999,1.33,,official
+pack_objects_into_box,GalaxeaVLA (G0.5),17.122,2.93,,official
+pack_objects_into_box,Xiaomi-Robotics-1,18.694,2.398,,official
+pack_objects_into_box,OpenWAM-α,20.830000000000002,3.732,,official
+pack_objects_into_box,Meituan-Robotics-0,13.614,3.198,,official
+pack_objects_into_box,Hy-Embodied-0.5-VLA,12.533999999999999,1.068,,official
+pack_objects_into_box,Spatial Forcing,14.346,1.866,,official
+pack_objects_into_box,π0.5,18.36,2.398,,official
+pack_objects_into_box,InternVLA-A1.5,8.931999999999999,0.0,,official
+pack_objects_into_box,StarVLA-PI_v3,7.69,0.532,,official
+pack_objects_into_box,π0.5 + GPT,50.0,20,5,local
+pack_objects_into_box,GPT-only,50.0,20,4,local
+classify_objects,DM0.5,26.829999999999995,16.67,,official
+classify_objects,GalaxeaVLA (G0.5),10.33,4.0,,official
+classify_objects,Xiaomi-Robotics-1,17.2,8.67,,official
+classify_objects,OpenWAM-α,5.53,1.33,,official
+classify_objects,Meituan-Robotics-0,24.57,13.330000000000002,,official
+classify_objects,Hy-Embodied-0.5-VLA,5.13,0.67,,official
+classify_objects,Spatial Forcing,21.67,9.33,,official
+classify_objects,π0.5,24.67,12.67,,official
+classify_objects,InternVLA-A1.5,5.7,0.0,,official
+classify_objects,StarVLA-PI_v3,5.93,0.67,,official
+classify_objects,π0.5 + GPT,71.0,60,5,local
+classify_objects,GPT-only,100.0,100,5,local
+build_tower,DM0.5,55.2,42.0,,official
+build_tower,GalaxeaVLA (G0.5),82.93,78.67,,official
+build_tower,Xiaomi-Robotics-1,52.6,47.33,,official
+build_tower,OpenWAM-α,52.529999999999994,38.67,,official
+build_tower,Meituan-Robotics-0,32.73,11.33,,official
+build_tower,Hy-Embodied-0.5-VLA,20.87,12.0,,official
+build_tower,Spatial Forcing,43.93,32.67,,official
+build_tower,π0.5,37.73,24.0,,official
+build_tower,InternVLA-A1.5,37.4,28.670000000000005,,official
+build_tower,StarVLA-PI_v3,63.2,55.33,,official
+build_tower,π0.5 + GPT,64.0,60,5,local
+build_tower,GPT-only,12.0,0,5,local
+make_kong,DM0.5,56.67,56.67,,official
+make_kong,GalaxeaVLA (G0.5),90.0,90.0,,official
+make_kong,Xiaomi-Robotics-1,41.33,41.33,,official
+make_kong,OpenWAM-α,32.0,32.0,,official
+make_kong,Meituan-Robotics-0,56.0,56.0,,official
+make_kong,Hy-Embodied-0.5-VLA,18.67,18.67,,official
+make_kong,Spatial Forcing,12.0,12.0,,official
+make_kong,π0.5,26.670000000000005,26.670000000000005,,official
+make_kong,InternVLA-A1.5,26.0,26.0,,official
+make_kong,StarVLA-PI_v3,18.0,18.0,,official
+make_kong,π0.5 + GPT,40.0,40,5,local
+make_kong,GPT-only,0.0,0,5,local
+fold_clothes,DM0.5,28.962,24.534,,official
+fold_clothes,GalaxeaVLA (G0.5),32.75,28.002,,official
+fold_clothes,Xiaomi-Robotics-1,41.49,38.932,,official
+fold_clothes,OpenWAM-α,51.31,49.068,,official
+fold_clothes,Meituan-Robotics-0,19.787999999999997,14.929999999999998,,official
+fold_clothes,Hy-Embodied-0.5-VLA,20.108,17.602,,official
+fold_clothes,Spatial Forcing,36.37,31.729999999999997,,official
+fold_clothes,π0.5,29.118000000000002,21.066000000000003,,official
+fold_clothes,InternVLA-A1.5,16.162000000000003,13.598,,official
+fold_clothes,StarVLA-PI_v3,32.214,28.532,,official
+fold_clothes,π0.5 + GPT,100.0,100,5,local
+fold_clothes,GPT-only,40.0,40,5,local
+put_bottles_into_dustbin,DM0.5,81.7,72.0,,official
+put_bottles_into_dustbin,GalaxeaVLA (G0.5),96.3,94.0,,official
+put_bottles_into_dustbin,Xiaomi-Robotics-1,97.7,96.67,,official
+put_bottles_into_dustbin,OpenWAM-α,94.03,91.33,,official
+put_bottles_into_dustbin,Meituan-Robotics-0,82.5,72.67,,official
+put_bottles_into_dustbin,Hy-Embodied-0.5-VLA,90.0,84.67,,official
+put_bottles_into_dustbin,Spatial Forcing,85.6,78.0,,official
+put_bottles_into_dustbin,π0.5,79.93,69.33,,official
+put_bottles_into_dustbin,InternVLA-A1.5,86.23,79.33,,official
+put_bottles_into_dustbin,StarVLA-PI_v3,68.67,56.67,,official
+put_bottles_into_dustbin,π0.5 + GPT,100.0,100,5,local
+put_bottles_into_dustbin,GPT-only,36.0,20,5,local

@@ -1,0 +1,81 @@
+// Same local, isolated Chromium used by the existing report checks. No credentials.
+const { chromium } = require(process.env.REPORT_PLAYWRIGHT || '/tmp/rollout-review-browser.HpuzaB/node_modules/playwright');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const base = process.argv[2] || 'http://127.0.0.1:8768/';
+const out = path.resolve(process.argv[3] || 'runtime/report_academic_qa');
+fs.mkdirSync(out, {recursive:true});
+(async()=>{
+  const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+  try {
+    const page=await browser.newPage({viewport:{width:1440,height:1050},colorScheme:'dark'});
+    const errors=[]; page.on('pageerror',e=>errors.push(e.message));
+    await page.goto(base,{waitUntil:'domcontentloaded'});
+    await page.locator('.rr-report').waitFor(); await page.evaluate(()=>document.fonts.ready);
+    assert.equal(await page.locator('.rr-hero h1').innerText(),'GPT 6 Astra 具身策略评测');
+    assert.equal(await page.locator('.rr-metrics').count(),0);
+    assert.equal(await page.locator('.rr-reference-list li').count(),11);
+    assert.equal(await page.locator('.rr-clip').count(),12);
+    assert.equal(await page.locator('.rr-report video').count(),13);
+    const white=await page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--background').trim());
+    assert(['#fff','#ffffff'].includes(white),'Requested white theme is not active');
+    await page.screenshot({path:path.join(out,'desktop.png')});
+    const teaser=page.locator('#teaser');
+    await teaser.getByRole('button',{name:'播放',exact:true}).click();
+    await page.waitForFunction(()=>document.querySelector('#teaser video').currentTime>0.15);
+    await teaser.getByRole('button',{name:'暂停',exact:true}).click();
+    await page.waitForFunction(()=>document.querySelector('#teaser video').paused && !document.querySelector('#teaser video').seeking);
+    assert(Math.abs(await teaser.locator('video').evaluate(v=>v.duration)-32.68)<0.002);
+    await teaser.locator('input[type=range]').fill('1');
+    await page.waitForFunction(()=>!document.querySelector('#teaser video').seeking && Math.abs(document.querySelector('#teaser video').currentTime-1)<0.002);
+    const t=await teaser.locator('video').evaluate(v=>v.currentTime);
+    await teaser.getByRole('button',{name:'+1 帧',exact:true}).click();
+    await page.waitForFunction(()=>!document.querySelector('#teaser video').seeking);
+    const advanced=await teaser.locator('video').evaluate(v=>v.currentTime);
+    assert(Math.abs(advanced-t-0.04)<0.002, `Frame advance ${t} -> ${advanced}`);
+    await teaser.locator('select').selectOption('4');
+    assert.equal(await teaser.locator('video').evaluate(v=>v.playbackRate),4);
+    await teaser.locator('input[type=range]').fill('20');
+    await page.waitForFunction(()=>!document.querySelector('#teaser video').seeking);
+    assert(Math.abs(await teaser.locator('video').evaluate(v=>v.currentTime)-20)<0.002);
+    await page.screenshot({path:path.join(out,'teaser-playback.png')});
+    await page.locator('#motivation').scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(out,'article.png')});
+    const ref=page.locator('#motivation a[href="https://github.com/zjwzcx/Awesome-Astra-Embodied-AI"]');
+    assert.equal(await ref.innerText(),'[5]');
+    await ref.hover();
+    await page.getByText('用户推荐的社区索引，区分仿真控制、真机控制、调用预训练策略、Real-to-sim 和环境/RL 构建。作为发现原始案例的入口，不把不同演示的结果混成统一基准。',{exact:true}).waitFor({state:'visible'});
+    await page.screenshot({path:path.join(out,'citation-hover.png')});
+    await page.keyboard.press('Escape');
+    await page.locator('#method').scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(out,'method.png')});
+    await page.getByText('10 个任务：初态与期望终态',{exact:true}).click();
+    assert.equal(await page.locator('.rr-task').count(),10);
+    await page.locator('[data-component-id="panel-score-ranking"]').scrollIntoViewIfNeeded();
+    await page.waitForFunction(()=>document.querySelectorAll('[data-component-id="panel-score-ranking"] .recharts-bar-rectangle').length===12);
+    await page.screenshot({path:path.join(out,'results.png')});
+    await page.getByRole('button',{name:'成功率',exact:true}).click();
+    await page.locator('[data-component-id="panel-sr-ranking"]').waitFor();
+    await page.getByRole('button',{name:'平均 Score',exact:true}).click();
+    assert.equal(await page.locator('#results .rr-table tbody tr').count(),10);
+    await page.locator('#references').scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(out,'references.png')});
+    await page.setViewportSize({width:390,height:844});
+    await page.evaluate(()=>scrollTo(0,0));
+    await page.screenshot({path:path.join(out,'mobile.png')});
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Mobile overflow');
+    await page.locator('#results').scrollIntoViewIfNeeded();
+    await page.screenshot({path:path.join(out,'results-mobile.png')});
+    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Mobile result overflow');
+    assert.deepEqual(errors,[]);
+    const html=await (await page.request.get(base)).body();
+    const result={status:'passed',html_sha256:crypto.createHash('sha256').update(html).digest('hex'),
+      whiteEvenWithDarkOS:true,teaserFrames:817,teaserDuration:32.68,bodyClips:12,
+      references:11,numberedCitationHover:true,playback:true,frameStep:true,seek:true,
+      speed:true,chartToggle:true,desktop:true,mobile:true,pageErrors:errors};
+    fs.writeFileSync(path.join(out,'checks.json'),JSON.stringify(result,null,2));
+    console.log(JSON.stringify(result));
+  } finally { await browser.close(); }
+})().catch(e=>{console.error(e);process.exit(1)});

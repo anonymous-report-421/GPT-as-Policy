@@ -1,0 +1,32 @@
+{
+  "scope": "article-clips-only",
+  "results_sha256": "a200ce90aa19ee13ab83794f6b7885190dbfb3c87f0ebfe628156d4f8c7207d6",
+  "official_sha256": "364aadb9777d369084348b4eca462d77f7f86712f02dbb1eba63b430eb4eea20",
+  "official_source": "https://robodojo-benchmark.com/",
+  "score_missingness": "GPT 6 Astra（direct） mean 37.8125 uses 48 scored episodes; success rate uses all 50.",
+  "official_scope": "Official results are reweighted for the selected ten tasks and scene mix, not paired seed reruns.",
+  "media_manifest": "media-manifest.json",
+  "raw_annotations_included": false,
+  "full_rollout_videos_included": false,
+  "original_media_unchanged": true,
+  "robolab_supplementary": [
+    {
+      "path": "robolab.json",
+      "sha256": "9cbd12354be634adb68ecaffe93e1ab132b7859935c5e942ca845741ed6916fe"
+    },
+    {
+      "path": "robolab-baselines.json",
+      "sha256": "2f931c6cd982a14baccfbb9d79c46cb778f6a22eca30e356da4a297cd431e48e"
+    },
+    {
+      "path": "robolab-leaderboard.csv",
+      "sha256": "30827d821c2bd3d6316a5999b78f13bc27ee24f5d4ce2d3601b1e7dec8e30476"
+    },
+    {
+      "path": "robolab-scores.csv",
+      "sha256": "c7cfcd9c774ad66a1579f2531b787715a265cf01dad57f0300e16787f1fd6356"
+    }
+  ],
+  "presentation": "paper",
+  "correction_arrows": "Projected commanded EEF direction on executed hybrid correction steps; not an achieved-motion guarantee."
+}

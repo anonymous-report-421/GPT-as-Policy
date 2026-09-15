@@ -1,0 +1,12 @@
+{
+  "BlocksInBinTask":{"zh":"将方块放入箱中"},
+  "ClutterPumpkinTask":{"zh":"杂物中的南瓜"},
+  "ButterAboveRaisinTask":{"zh":"将黄油放在葡萄干盒上"},
+  "BlockStackingSpecifiedOrderTask":{"zh":"按指定顺序堆叠方块"},
+  "ReorientRedMugTask":{"zh":"调整红色杯子的朝向"},
+  "LargerObjectRaisinBoxInBinTask":{"zh":"将较大的葡萄干盒放入箱中"},
+  "SauceBottlesCrateTask":{"zh":"将酱料瓶放入筐中"},
+  "CannedFoodInBinTask":{"zh":"将罐头放入箱中"},
+  "YogurtInBowlTask":{"zh":"将酸奶放入碗中"},
+  "RubiksCubeTask":{"zh":"将魔方放入碗中"}
+}

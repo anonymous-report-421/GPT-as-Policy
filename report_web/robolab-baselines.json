@@ -1,0 +1,1662 @@
+{
+  "schema": "robolab.report.first_five_baselines.v1",
+  "selection": "First five ordered by run, episode, env_id; success is not a selection criterion.",
+  "source_cohort": "2026-06-03 historical specific-instruction evaluations",
+  "initial_states_paired": false,
+  "videos_added": false,
+  "methods": [
+    {
+      "source_run": "robolab120_pi05_jointpos_specific_10ep_20260603",
+      "source_file": "episode_results.jsonl",
+      "source_sha256": "02c28bfe20c14fae5fe41ed92e5c06be03d7159523de1056375852bad710bf2d",
+      "source_episodes": 1200,
+      "tasks": [
+        {
+          "task": "BlocksInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env0.json",
+              "log_sha256": "52d550cf7536c295326aa34c30d05642b341ebc2ad06be793acf9087306d59b5"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env1.json",
+              "log_sha256": "734b4c5a4c45c23067118162a71bbbaaac5b88aff18378b87ef2b3fde8c8125f"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env2.json",
+              "log_sha256": "4b2bde007f19b8e3cdbad0fcc4d38d7fb77ef9c09fa78adeaa11e4c83e668a51"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env3.json",
+              "log_sha256": "1393dda5f0f0f50e0138e392d58a4cf7db582a71186d50b5cda0c6a72b3e6591"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env4.json",
+              "log_sha256": "5c0b59ee36bac33bc7d8650cd70e7f27bfa1b6a47eadc3e02f237db5947fe38d"
+            }
+          ],
+          "env_cfg_sha256": "6b4031bf52a6ae04ef9619beaee00a88df454b829c496a9a3f8d0755d183378c"
+        },
+        {
+          "task": "ClutterPumpkinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env0.json",
+              "log_sha256": "980f4c86da53d0947cefb9dc8ef7fef9967e23fa4d41d1fb2b304cc7b20bd4bd"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env1.json",
+              "log_sha256": "f5b0dd0990387d80bf76b1d21bac66c67496bc3c6dab7ff42d149c5cb74853bf"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env2.json",
+              "log_sha256": "46037b9650f63451ea91633ff94d95b5a5a3f2f0b317c0d61d7ac3fdf7caabf2"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env3.json",
+              "log_sha256": "05ebbc40ee16b0ee2bbf47d37d54ba28a4cccc2448537c1fa92931cdd3349bb7"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env4.json",
+              "log_sha256": "3d48e2369dd2a2676330d750f45263206b6cd2c0ea3c1279ae3e84a6444bd144"
+            }
+          ],
+          "env_cfg_sha256": "c57c7d90d199459152d775eae42b857387c4ece92dcc4486e095b2129576a7bd"
+        },
+        {
+          "task": "ButterAboveRaisinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env0.json",
+              "log_sha256": "4ec66eab60e858b0c0118c6fa5eef9d5d2d911f85b76a69f3056326694000082"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env1.json",
+              "log_sha256": "c1584da9dc05a86d9c92128b7a31e67c386d4263248d0c9ae43abe26eb8c0ab2"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env2.json",
+              "log_sha256": "32d955e95d85e71acec7aa383b9119346fc3bfe376662ce2038692479ea19a28"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env3.json",
+              "log_sha256": "99bedfd97b6bba7580e6046f854a505f53291e78a5e2ad35e6ebff7b7df764e5"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env4.json",
+              "log_sha256": "cbd370c07da636f70cac2d18c7c0570eb9067d88b25878f53d2159c4636057d6"
+            }
+          ],
+          "env_cfg_sha256": "c57271799660ade932a479ef16c8c8bb57500cf041840f5f869c91bd24a7dc97"
+        },
+        {
+          "task": "BlockStackingSpecifiedOrderTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env0.json",
+              "log_sha256": "e0428b1c331e716dfa5ff81b975f09cb23e75a5189c4b20d48837bf3a5e5a2a7"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env1.json",
+              "log_sha256": "c68292cb44943639255590a808974a85825875c0876c988cc1591a654ef49c99"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env2.json",
+              "log_sha256": "9dea14adc7485d7883de29ccfcc5a7c843a29c1ce6813b6e5dbaa21ee7d9efbb"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env3.json",
+              "log_sha256": "cd7499824731987d230a63f89fae69f8a32b7bddaa3b7802470845333b372185"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env4.json",
+              "log_sha256": "70b35bc0f7c221208e93d6cf4b828059fbc02af3a281f12eafe491698598706e"
+            }
+          ],
+          "env_cfg_sha256": "59f77c21cd149089007047678d786bd1c462274ca7fef9979b5fa8e201cf8ffe"
+        },
+        {
+          "task": "ReorientRedMugTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 2,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 385,
+              "log_file": "ReorientRedMugTask/log_0_env0.json",
+              "log_sha256": "50030f9f44ddb75f881bf7dc9f2a2fcff28f6ef6bc3d6485f3c44ecb9aa81454"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env1.json",
+              "log_sha256": "deb0b6196547d10c11d175023c31ff0ceffee48ec76a7ab240c5de1aa0c4a5b8"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env2.json",
+              "log_sha256": "c1f4a6274b483d8fadef0eb8664a5a27a77c5026f8a96b3bb699e3dd4394a476"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env3.json",
+              "log_sha256": "5b0fe45b154f45fd7590cf97c0191056d99a56ca7ede68ac1c7809f63ea9b6d5"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 665,
+              "log_file": "ReorientRedMugTask/log_0_env4.json",
+              "log_sha256": "593116237e35ebec0667b26d502eeeea3742e399109e957bdb07dd77f01a1fe8"
+            }
+          ],
+          "env_cfg_sha256": "6fdd937408bfef8f5233fbdedb28005218cce0d0cdb007d013e206c2db4718b0"
+        },
+        {
+          "task": "LargerObjectRaisinBoxInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 3,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env0.json",
+              "log_sha256": "5a4431ba641e38b7b941937ce983e602e83f2e40f87705ae194b9edc164e8578"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 358,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env1.json",
+              "log_sha256": "dcba3a18d441f92a28094f12525037ab408f68fa124c2a2e4def7337b910c299"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 116,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env2.json",
+              "log_sha256": "cdb96b105d2183f54943cb0ce90e5a2837d811f9692500c848acccc50489e229"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env3.json",
+              "log_sha256": "d1eef9d2ca7765f19383dcf289b036804f8b723bae3c404f09cd726ec22f0f9f"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 121,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env4.json",
+              "log_sha256": "610d47d40b4bb085833f9fa967d311f0d15984fe1e5a6bd0497e539e401d546e"
+            }
+          ],
+          "env_cfg_sha256": "df68b0f05d3adea6ddf3b075cbae64e496f18e110f2423be0f1d9d46ecce0edf"
+        },
+        {
+          "task": "SauceBottlesCrateTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 2,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 600,
+              "log_file": "SauceBottlesCrateTask/log_0_env0.json",
+              "log_sha256": "c1505d322f833d99dbb9bc4e691478ecd35ce3342b5bf418679fa423bdbd8c5e"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 282,
+              "log_file": "SauceBottlesCrateTask/log_0_env1.json",
+              "log_sha256": "4f0ad6e5fa4c315d48bd6d1301e2825540fdd5b8ddc7190256522287c8ee5c39"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 600,
+              "log_file": "SauceBottlesCrateTask/log_0_env2.json",
+              "log_sha256": "6ad7b10630c6c19e3ecdbd9e2dddcd3354e915031261e9bfd6b1756784b1614c"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 273,
+              "log_file": "SauceBottlesCrateTask/log_0_env3.json",
+              "log_sha256": "35ffc89d3220d56efeddf34a92306fcee8a5d9b271f5a17c3bb061477b11afe8"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 600,
+              "log_file": "SauceBottlesCrateTask/log_0_env4.json",
+              "log_sha256": "9fdd6a38fb35c07190a535201735457ea0c7bb144ae499a2c9a88244ce136446"
+            }
+          ],
+          "env_cfg_sha256": "221dcd6cc1e465cd547d8c654e00705fd4737c2812edff4c4ab77ddd75b0c665"
+        },
+        {
+          "task": "CannedFoodInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 4,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 301,
+              "log_file": "CannedFoodInBinTask/log_0_env0.json",
+              "log_sha256": "cd1e218f414ef64db76fa5ab916f34342a40b02b14a59695b950f26c24855a39"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 395,
+              "log_file": "CannedFoodInBinTask/log_0_env1.json",
+              "log_sha256": "7e26ecf26b7f7b46d90c8340d9ecc1b2c7217bb553e12d5127d91c5d293217db"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 211,
+              "log_file": "CannedFoodInBinTask/log_0_env2.json",
+              "log_sha256": "9dada2a675a077889fb29ed215ce9380427b0cb892f6f6f65eb57e0d919a217c"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 496,
+              "log_file": "CannedFoodInBinTask/log_0_env3.json",
+              "log_sha256": "cd98388a1defb240f6611c30d398980e8e6314e7a65ca04b4bcd3f7090face82"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 900,
+              "log_file": "CannedFoodInBinTask/log_0_env4.json",
+              "log_sha256": "4a920ff591c98101e336a42666e145215d7e2a65e2545452d3c15dd505887230"
+            }
+          ],
+          "env_cfg_sha256": "1c4c97323b3430bdec160a8b93c93bcb4d9cb10125e9fdbd8621a34bcb88be49"
+        },
+        {
+          "task": "YogurtInBowlTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 2,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 101,
+              "log_file": "YogurtInBowlTask/log_0_env0.json",
+              "log_sha256": "d4cc46e15aab333ab9c231a64ad888ef7663d38edd2b4154fc10f62868bf2a6d"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env1.json",
+              "log_sha256": "f38fcbb121b14f05fe19ac52173d43742e11e458035bd4f8901bd72943b35003"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env2.json",
+              "log_sha256": "455fea4619e3e2f55f1e06069d230417674a0826d15bb681f04e19ce5cb6ebda"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env3.json",
+              "log_sha256": "59d7019d7897e5fc016ac8c8625457b6e395bae83c91ec5801645c342a6bb0c9"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 118,
+              "log_file": "YogurtInBowlTask/log_0_env4.json",
+              "log_sha256": "52987f9ec0b29050dbf9951d634286309116bab5182d1ea9ac211c337b78e730"
+            }
+          ],
+          "env_cfg_sha256": "82ae20709d6ebea095f9d2d7d4aae80b8496f4172d11547bd0d985d2d0f3f4b5"
+        },
+        {
+          "task": "RubiksCubeTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 5,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 122,
+              "log_file": "RubiksCubeTask/log_0_env0.json",
+              "log_sha256": "aa17c873eb260a6552c577bdadcac85a5ef1c66bd03c2f68c03b769bbac8c968"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 180,
+              "log_file": "RubiksCubeTask/log_0_env1.json",
+              "log_sha256": "8891fccb45f34ba85ed77cbb00bf68f5c15751cbec36cdba47f610a09a19e4f3"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 136,
+              "log_file": "RubiksCubeTask/log_0_env2.json",
+              "log_sha256": "16e674f5492e3c47e2bdadd22145cccad6d3414f0ffbea5d9477f4c65d5ea29f"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 308,
+              "log_file": "RubiksCubeTask/log_0_env3.json",
+              "log_sha256": "0a9d0f3614c07bb9614d716770a1e9ff185d265ed72a775904b50a98a0b713f9"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 137,
+              "log_file": "RubiksCubeTask/log_0_env4.json",
+              "log_sha256": "a8b2546f35110744c82e5a10ad192b020e4e5adb82530f9e730a74e2bfde10c7"
+            }
+          ],
+          "env_cfg_sha256": "afa3911755740204767e76e95b30644a8fc67b33673b40db1f32b26f93cf0a63"
+        }
+      ],
+      "method": "pi05_only",
+      "label": "π0.5 only",
+      "policy": "pi05"
+    },
+    {
+      "source_run": "robolab120_cosmos3_official_specific_10ep_20260603",
+      "source_file": "episode_results.jsonl",
+      "source_sha256": "a4e7ab29d53eff05f61e42c03c267f86dfca2afe23c71f9e325639770d2818de",
+      "source_episodes": 1200,
+      "tasks": [
+        {
+          "task": "BlocksInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 2,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 2178,
+              "log_file": "BlocksInBinTask/log_0_env0.json",
+              "log_sha256": "1370fa67b244a40fa94339e631248418d79192f8963ec2300baa289b7ec6538c"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env1.json",
+              "log_sha256": "734b4c5a4c45c23067118162a71bbbaaac5b88aff18378b87ef2b3fde8c8125f"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 2180,
+              "log_file": "BlocksInBinTask/log_0_env2.json",
+              "log_sha256": "93c7bf0cb169d444a734e5d0e219d0191baa511f0eeb27461abde70f7d0ab872"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env3.json",
+              "log_sha256": "1393dda5f0f0f50e0138e392d58a4cf7db582a71186d50b5cda0c6a72b3e6591"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env4.json",
+              "log_sha256": "5c0b59ee36bac33bc7d8650cd70e7f27bfa1b6a47eadc3e02f237db5947fe38d"
+            }
+          ],
+          "env_cfg_sha256": "f710d8035d9f61018b8661b91d352ca6c0d464bf3cca57cb3f843d9a25396dec"
+        },
+        {
+          "task": "ClutterPumpkinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env0.json",
+              "log_sha256": "980f4c86da53d0947cefb9dc8ef7fef9967e23fa4d41d1fb2b304cc7b20bd4bd"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env1.json",
+              "log_sha256": "f5b0dd0990387d80bf76b1d21bac66c67496bc3c6dab7ff42d149c5cb74853bf"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env2.json",
+              "log_sha256": "46037b9650f63451ea91633ff94d95b5a5a3f2f0b317c0d61d7ac3fdf7caabf2"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env3.json",
+              "log_sha256": "05ebbc40ee16b0ee2bbf47d37d54ba28a4cccc2448537c1fa92931cdd3349bb7"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env4.json",
+              "log_sha256": "3d48e2369dd2a2676330d750f45263206b6cd2c0ea3c1279ae3e84a6444bd144"
+            }
+          ],
+          "env_cfg_sha256": "7517984d0c6632259dbee9e8cfe39b02ff713a14879cff6bb183241709f32123"
+        },
+        {
+          "task": "ButterAboveRaisinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 1,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env0.json",
+              "log_sha256": "4ec66eab60e858b0c0118c6fa5eef9d5d2d911f85b76a69f3056326694000082"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env1.json",
+              "log_sha256": "c1584da9dc05a86d9c92128b7a31e67c386d4263248d0c9ae43abe26eb8c0ab2"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 219,
+              "log_file": "ButterAboveRaisinTask/log_0_env2.json",
+              "log_sha256": "e65abeef98e4944d3ae4f074fbbb1ffa69c4b5efe0e2a67f9c0450d7fdeff726"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env3.json",
+              "log_sha256": "99bedfd97b6bba7580e6046f854a505f53291e78a5e2ad35e6ebff7b7df764e5"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env4.json",
+              "log_sha256": "cbd370c07da636f70cac2d18c7c0570eb9067d88b25878f53d2159c4636057d6"
+            }
+          ],
+          "env_cfg_sha256": "7118711e48e4045b5f551c6bcbc1c10d10c790077d095bdc66dce8a1970e76d3"
+        },
+        {
+          "task": "BlockStackingSpecifiedOrderTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env0.json",
+              "log_sha256": "e0428b1c331e716dfa5ff81b975f09cb23e75a5189c4b20d48837bf3a5e5a2a7"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env1.json",
+              "log_sha256": "c68292cb44943639255590a808974a85825875c0876c988cc1591a654ef49c99"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env2.json",
+              "log_sha256": "9dea14adc7485d7883de29ccfcc5a7c843a29c1ce6813b6e5dbaa21ee7d9efbb"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env3.json",
+              "log_sha256": "cd7499824731987d230a63f89fae69f8a32b7bddaa3b7802470845333b372185"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env4.json",
+              "log_sha256": "70b35bc0f7c221208e93d6cf4b828059fbc02af3a281f12eafe491698598706e"
+            }
+          ],
+          "env_cfg_sha256": "7150e085bfdb0ca1ef8def370d167a8d21e38a3b5c87d267f557e9a5b3b951f7"
+        },
+        {
+          "task": "ReorientRedMugTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 1,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env0.json",
+              "log_sha256": "150765cfcbe8a15b3d3f8f49f760b438a41e9b5441294365c2b922e1a0d566ca"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env1.json",
+              "log_sha256": "deb0b6196547d10c11d175023c31ff0ceffee48ec76a7ab240c5de1aa0c4a5b8"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env2.json",
+              "log_sha256": "c1f4a6274b483d8fadef0eb8664a5a27a77c5026f8a96b3bb699e3dd4394a476"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env3.json",
+              "log_sha256": "5b0fe45b154f45fd7590cf97c0191056d99a56ca7ede68ac1c7809f63ea9b6d5"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 830,
+              "log_file": "ReorientRedMugTask/log_0_env4.json",
+              "log_sha256": "8f1a493726073f0f754e5cf6183f69f4280d5755a27fb400174ce933711f8704"
+            }
+          ],
+          "env_cfg_sha256": "778fc34d1f58101739a28abf52d214e0cf183f9be885d26eb4d205cfece0386a"
+        },
+        {
+          "task": "LargerObjectRaisinBoxInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env0.json",
+              "log_sha256": "5a4431ba641e38b7b941937ce983e602e83f2e40f87705ae194b9edc164e8578"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env1.json",
+              "log_sha256": "665b29733111593463676e40fb409fbe42a002be5d14dc8f3cd7b3479254ab1b"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env2.json",
+              "log_sha256": "4d49e3c67105ca8142ec125a6825b549426f66fb35dca0ddfd7112cf36140860"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env3.json",
+              "log_sha256": "d1eef9d2ca7765f19383dcf289b036804f8b723bae3c404f09cd726ec22f0f9f"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env4.json",
+              "log_sha256": "8dd7056863185678bfaa671d826ff6f7cb10718f3db6c1bfb12fb30c370c7691"
+            }
+          ],
+          "env_cfg_sha256": "108702271145f50daf80feeb0146bbee99c09e32f7f45208948f7ea69703db33"
+        },
+        {
+          "task": "SauceBottlesCrateTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 5,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 141,
+              "log_file": "SauceBottlesCrateTask/log_0_env0.json",
+              "log_sha256": "e5165caa4ea2153fcbe52ae6830cc35ac6d36b41e9111bb56512f96aaf2ce31f"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 120,
+              "log_file": "SauceBottlesCrateTask/log_0_env1.json",
+              "log_sha256": "f6184b6b2ffec240e40993ce146b6d1db5e9b9d8a8051775af7631586f5611c9"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 126,
+              "log_file": "SauceBottlesCrateTask/log_0_env2.json",
+              "log_sha256": "c557bbb6c25e8085164c3f918a30b0ec3a2aab99a0a9583d90f071807164c0b2"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 338,
+              "log_file": "SauceBottlesCrateTask/log_0_env3.json",
+              "log_sha256": "d071ca965208dae0aec2754464e9850008b3fd4dfeda2cc05e500369d4275883"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 126,
+              "log_file": "SauceBottlesCrateTask/log_0_env4.json",
+              "log_sha256": "4374fd01d30dbfd90a2b2c20b295b7e7ac9eb0cb017a1f57f61d3080714ac657"
+            }
+          ],
+          "env_cfg_sha256": "7dc0a01d12c58630b6143a8039b07e65ec02f698fb5b224e424e0c737c05623c"
+        },
+        {
+          "task": "CannedFoodInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 4,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 298,
+              "log_file": "CannedFoodInBinTask/log_0_env0.json",
+              "log_sha256": "3e185ccd64bcd7c78b3a01f049319613f16be737637ad542cf50255959382ae0"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 653,
+              "log_file": "CannedFoodInBinTask/log_0_env1.json",
+              "log_sha256": "607929ef866ecdecf052fb6828bb05dbd9c810fba0506a25661cfc42f66365ee"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 180,
+              "log_file": "CannedFoodInBinTask/log_0_env2.json",
+              "log_sha256": "98b78dbae6746baa5a8dce09ceda1a5eb44461206ba31a603931eae396dac203"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 254,
+              "log_file": "CannedFoodInBinTask/log_0_env3.json",
+              "log_sha256": "6ce04b13649271fc4206e48d310ffd19011711160bebaa723e105d74fbd9419f"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 900,
+              "log_file": "CannedFoodInBinTask/log_0_env4.json",
+              "log_sha256": "4a920ff591c98101e336a42666e145215d7e2a65e2545452d3c15dd505887230"
+            }
+          ],
+          "env_cfg_sha256": "f10be752f2a69396a2d28acb65fdc681d1e729f35ea283bc16c5dad462934319"
+        },
+        {
+          "task": "YogurtInBowlTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env0.json",
+              "log_sha256": "ec31688c59f61001bf0d4e325ae819938c0985fbedbaefc5f1c5608c9f9d6056"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env1.json",
+              "log_sha256": "f38fcbb121b14f05fe19ac52173d43742e11e458035bd4f8901bd72943b35003"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env2.json",
+              "log_sha256": "455fea4619e3e2f55f1e06069d230417674a0826d15bb681f04e19ce5cb6ebda"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env3.json",
+              "log_sha256": "59d7019d7897e5fc016ac8c8625457b6e395bae83c91ec5801645c342a6bb0c9"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env4.json",
+              "log_sha256": "2b907c28a96d6fef12bec8fffe8cea9a65b957f2525dababf98e0623618fff26"
+            }
+          ],
+          "env_cfg_sha256": "9bba0f9844b8de336e55842a13618a3d4c6f81b0865c73dad071fc62dfc42e27"
+        },
+        {
+          "task": "RubiksCubeTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 5,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 155,
+              "log_file": "RubiksCubeTask/log_0_env0.json",
+              "log_sha256": "d6a3ba60994a048c742c913a046bf1534de38eccb47c0a80657f61a3e29b7ec6"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 130,
+              "log_file": "RubiksCubeTask/log_0_env1.json",
+              "log_sha256": "323598c8e4ce3cf2f2cd873fa6c8b54eff5cb9e1e25407d977737a5c4e771acf"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 157,
+              "log_file": "RubiksCubeTask/log_0_env2.json",
+              "log_sha256": "a1719d97a6018b99b7bf12dadc74da73fd653ce957989ee79365c5dace8b2e0b"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 161,
+              "log_file": "RubiksCubeTask/log_0_env3.json",
+              "log_sha256": "41d8f5172aef679f3097ad2ea772e8e5e81bf04c5e0f397b9d25fcb5e52466b3"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 156,
+              "log_file": "RubiksCubeTask/log_0_env4.json",
+              "log_sha256": "2d17282c7d4044677ac8c20a6378ca5a6704b83bdabc553a28c49614af54fe2b"
+            }
+          ],
+          "env_cfg_sha256": "5f8c0e12cd77208bb83c55c31b5fd422f4841b5dd21eda7c154a36d5a83acd6d"
+        }
+      ],
+      "method": "cosmos_nano_policy",
+      "label": "Cosmos3-Nano-Policy",
+      "policy": "cosmos3"
+    },
+    {
+      "source_run": "robolab120_dreamzero_specific_10ep_torchattn_20260603",
+      "source_file": "episode_results.jsonl",
+      "source_sha256": "e2e8b70be9d934df9ca75d6c6ef1c8beb21486c4296f0d1be2d065c9d542ef3f",
+      "source_episodes": 1200,
+      "tasks": [
+        {
+          "task": "BlocksInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env0.json",
+              "log_sha256": "52d550cf7536c295326aa34c30d05642b341ebc2ad06be793acf9087306d59b5"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env1.json",
+              "log_sha256": "734b4c5a4c45c23067118162a71bbbaaac5b88aff18378b87ef2b3fde8c8125f"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env2.json",
+              "log_sha256": "4b2bde007f19b8e3cdbad0fcc4d38d7fb77ef9c09fa78adeaa11e4c83e668a51"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env3.json",
+              "log_sha256": "1393dda5f0f0f50e0138e392d58a4cf7db582a71186d50b5cda0c6a72b3e6591"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 2250,
+              "log_file": "BlocksInBinTask/log_0_env4.json",
+              "log_sha256": "5c0b59ee36bac33bc7d8650cd70e7f27bfa1b6a47eadc3e02f237db5947fe38d"
+            }
+          ],
+          "env_cfg_sha256": "070d4720eaa09a5d90ce9b1ff89407cd95076180689955d002c5fa924e9974b3"
+        },
+        {
+          "task": "ClutterPumpkinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env0.json",
+              "log_sha256": "980f4c86da53d0947cefb9dc8ef7fef9967e23fa4d41d1fb2b304cc7b20bd4bd"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env1.json",
+              "log_sha256": "f5b0dd0990387d80bf76b1d21bac66c67496bc3c6dab7ff42d149c5cb74853bf"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env2.json",
+              "log_sha256": "46037b9650f63451ea91633ff94d95b5a5a3f2f0b317c0d61d7ac3fdf7caabf2"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env3.json",
+              "log_sha256": "05ebbc40ee16b0ee2bbf47d37d54ba28a4cccc2448537c1fa92931cdd3349bb7"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 1350,
+              "log_file": "ClutterPumpkinTask/log_0_env4.json",
+              "log_sha256": "3d48e2369dd2a2676330d750f45263206b6cd2c0ea3c1279ae3e84a6444bd144"
+            }
+          ],
+          "env_cfg_sha256": "af39cb0ca49c1ebb3713ea590db240ebf102bc249f7fee3db1cad8c79f1bc255"
+        },
+        {
+          "task": "ButterAboveRaisinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 2,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 323,
+              "log_file": "ButterAboveRaisinTask/log_0_env0.json",
+              "log_sha256": "f02b6023f6db7c6a00ec2650c7dcc1bb5265c6e2433e09c3be9e346777ccd981"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env1.json",
+              "log_sha256": "c1584da9dc05a86d9c92128b7a31e67c386d4263248d0c9ae43abe26eb8c0ab2"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 267,
+              "log_file": "ButterAboveRaisinTask/log_0_env2.json",
+              "log_sha256": "db10fbbed9e36eb1314d978a1f601936fa52171c50560972d0e54f1437eff691"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env3.json",
+              "log_sha256": "99bedfd97b6bba7580e6046f854a505f53291e78a5e2ad35e6ebff7b7df764e5"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 600,
+              "log_file": "ButterAboveRaisinTask/log_0_env4.json",
+              "log_sha256": "cbd370c07da636f70cac2d18c7c0570eb9067d88b25878f53d2159c4636057d6"
+            }
+          ],
+          "env_cfg_sha256": "52d263cb3a48591b5f38db2229e3952ffffd1b9c1cc895231272a708145ebc9d"
+        },
+        {
+          "task": "BlockStackingSpecifiedOrderTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env0.json",
+              "log_sha256": "e0428b1c331e716dfa5ff81b975f09cb23e75a5189c4b20d48837bf3a5e5a2a7"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env1.json",
+              "log_sha256": "c68292cb44943639255590a808974a85825875c0876c988cc1591a654ef49c99"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env2.json",
+              "log_sha256": "9dea14adc7485d7883de29ccfcc5a7c843a29c1ce6813b6e5dbaa21ee7d9efbb"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env3.json",
+              "log_sha256": "cd7499824731987d230a63f89fae69f8a32b7bddaa3b7802470845333b372185"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 1350,
+              "log_file": "BlockStackingSpecifiedOrderTask/log_0_env4.json",
+              "log_sha256": "70b35bc0f7c221208e93d6cf4b828059fbc02af3a281f12eafe491698598706e"
+            }
+          ],
+          "env_cfg_sha256": "a3b17ce50d9b9c486ee76f23070c12800c696176c7425f49f87798b36ec9d82d"
+        },
+        {
+          "task": "ReorientRedMugTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 1,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env0.json",
+              "log_sha256": "150765cfcbe8a15b3d3f8f49f760b438a41e9b5441294365c2b922e1a0d566ca"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env1.json",
+              "log_sha256": "deb0b6196547d10c11d175023c31ff0ceffee48ec76a7ab240c5de1aa0c4a5b8"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 475,
+              "log_file": "ReorientRedMugTask/log_0_env2.json",
+              "log_sha256": "b8d60548f875486f6219c7c69c66bd8b5c4ad44ab2afb647f4c60f7dc5ad1bd2"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env3.json",
+              "log_sha256": "5b0fe45b154f45fd7590cf97c0191056d99a56ca7ede68ac1c7809f63ea9b6d5"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 900,
+              "log_file": "ReorientRedMugTask/log_0_env4.json",
+              "log_sha256": "21479d3fc17921e06b0213de02b06ab946c2d9102245f6bfd65c122b4b56fca7"
+            }
+          ],
+          "env_cfg_sha256": "5246df11c201e34efd3477e1dd109efed27589bc1299e9422e3a8cc0f7b7fa8f"
+        },
+        {
+          "task": "LargerObjectRaisinBoxInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env0.json",
+              "log_sha256": "5a4431ba641e38b7b941937ce983e602e83f2e40f87705ae194b9edc164e8578"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env1.json",
+              "log_sha256": "665b29733111593463676e40fb409fbe42a002be5d14dc8f3cd7b3479254ab1b"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env2.json",
+              "log_sha256": "4d49e3c67105ca8142ec125a6825b549426f66fb35dca0ddfd7112cf36140860"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env3.json",
+              "log_sha256": "d1eef9d2ca7765f19383dcf289b036804f8b723bae3c404f09cd726ec22f0f9f"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 450,
+              "log_file": "LargerObjectRaisinBoxInBinTask/log_0_env4.json",
+              "log_sha256": "8dd7056863185678bfaa671d826ff6f7cb10718f3db6c1bfb12fb30c370c7691"
+            }
+          ],
+          "env_cfg_sha256": "ccd285a2790a9daf3ca8ae0095debf395615309823737a80398f32b6dd16ad2d"
+        },
+        {
+          "task": "SauceBottlesCrateTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 5,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 381,
+              "log_file": "SauceBottlesCrateTask/log_0_env0.json",
+              "log_sha256": "c6b5aefc563eaab0d1505bbdd34391e8ffcb9bd4230b23edeac3b97ee4138e37"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 183,
+              "log_file": "SauceBottlesCrateTask/log_0_env1.json",
+              "log_sha256": "7c04ce82ea4447aa5c2ca8dcb63015b5b7467785f181a5220e9ee644c5b0f116"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 343,
+              "log_file": "SauceBottlesCrateTask/log_0_env2.json",
+              "log_sha256": "17390313ae158c0d9a9c524bdd75b5b8bbff809f4436640c8d1422e47f5c5d43"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 284,
+              "log_file": "SauceBottlesCrateTask/log_0_env3.json",
+              "log_sha256": "7547dc972abeb904615a8303e25e486f9111970c60da6d35ea77edfda7369d8d"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 320,
+              "log_file": "SauceBottlesCrateTask/log_0_env4.json",
+              "log_sha256": "284ba9793330744b40a97ee17e4b830f016f8f9b9a704b82a71efbfdae44195d"
+            }
+          ],
+          "env_cfg_sha256": "6888838ce4757fa5caf4f559841453afb30951a5c3ad55e8389e35cafe3797d9"
+        },
+        {
+          "task": "CannedFoodInBinTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 4,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 192,
+              "log_file": "CannedFoodInBinTask/log_0_env0.json",
+              "log_sha256": "ae46e2b6bed3f17006ec2e3ed7a6c52ee39e3d43b797fcf54d61a7e5ca65cf7f"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 278,
+              "log_file": "CannedFoodInBinTask/log_0_env1.json",
+              "log_sha256": "febaa2d26553a0b972879cf0950b82633630fddf9ccdc489d9e7aa651db5a40c"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 900,
+              "log_file": "CannedFoodInBinTask/log_0_env2.json",
+              "log_sha256": "eb0b715fb1f97798c9b7761fb656c146361907e6f04c8ce06765f8bb6a55490f"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 193,
+              "log_file": "CannedFoodInBinTask/log_0_env3.json",
+              "log_sha256": "d2127656994356086b26e12ee733715ddd825dfed5424558545272d57396a5fe"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 204,
+              "log_file": "CannedFoodInBinTask/log_0_env4.json",
+              "log_sha256": "8dd3b94da007f6828a41320846b9d1ace50fabd76afa88c81807b75a98b7a5f4"
+            }
+          ],
+          "env_cfg_sha256": "91811bdecca30ccb7b57d1ffe04de0034447e96f3aea423139b0f40a4d7ee000"
+        },
+        {
+          "task": "YogurtInBowlTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 0,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env0.json",
+              "log_sha256": "ec31688c59f61001bf0d4e325ae819938c0985fbedbaefc5f1c5608c9f9d6056"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env1.json",
+              "log_sha256": "f38fcbb121b14f05fe19ac52173d43742e11e458035bd4f8901bd72943b35003"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env2.json",
+              "log_sha256": "455fea4619e3e2f55f1e06069d230417674a0826d15bb681f04e19ce5cb6ebda"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env3.json",
+              "log_sha256": "59d7019d7897e5fc016ac8c8625457b6e395bae83c91ec5801645c342a6bb0c9"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": false,
+              "steps": 600,
+              "log_file": "YogurtInBowlTask/log_0_env4.json",
+              "log_sha256": "2b907c28a96d6fef12bec8fffe8cea9a65b957f2525dababf98e0623618fff26"
+            }
+          ],
+          "env_cfg_sha256": "2139dd424954804691f713d4a74012058cdc3a11915774cda4f93ac7eb17aa6b"
+        },
+        {
+          "task": "RubiksCubeTask",
+          "episodes": 5,
+          "available_episodes": 10,
+          "successes": 5,
+          "trials": [
+            {
+              "run": 0,
+              "episode": 0,
+              "env_id": 0,
+              "success": true,
+              "steps": 195,
+              "log_file": "RubiksCubeTask/log_0_env0.json",
+              "log_sha256": "f61072f17f2e2bcb8f324fb012b49a8b1a140400c2d66dee85a825d596380d5a"
+            },
+            {
+              "run": 0,
+              "episode": 1,
+              "env_id": 1,
+              "success": true,
+              "steps": 183,
+              "log_file": "RubiksCubeTask/log_0_env1.json",
+              "log_sha256": "ba5e4a9f9b4585a1f8d062f97a6ecd7dc75d2173cafc294267a7faf5d0def640"
+            },
+            {
+              "run": 0,
+              "episode": 2,
+              "env_id": 2,
+              "success": true,
+              "steps": 195,
+              "log_file": "RubiksCubeTask/log_0_env2.json",
+              "log_sha256": "4809c507c77327716aa7c6795ec5fc8e73a75933e1001b0ca9c765635e624410"
+            },
+            {
+              "run": 0,
+              "episode": 3,
+              "env_id": 3,
+              "success": true,
+              "steps": 190,
+              "log_file": "RubiksCubeTask/log_0_env3.json",
+              "log_sha256": "a86130b62dad84d2ef2678f0f0c7787524a536281f6605031d5b5cb1a664135d"
+            },
+            {
+              "run": 0,
+              "episode": 4,
+              "env_id": 4,
+              "success": true,
+              "steps": 135,
+              "log_file": "RubiksCubeTask/log_0_env4.json",
+              "log_sha256": "d73e59f242fedeea13151e39c719ff996ca119fdf4bc8e0cbb11f86c3496d3f4"
+            }
+          ],
+          "env_cfg_sha256": "41d4e0d29877e3f294c4ec3f4fea3c251719cf19e428e4668286c1a2e6729101"
+        }
+      ],
+      "method": "dreamzero",
+      "label": "DreamZero",
+      "policy": "dreamzero"
+    }
+  ]
+}

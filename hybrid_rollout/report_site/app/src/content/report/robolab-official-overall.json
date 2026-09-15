@@ -1,0 +1,20 @@
+{
+  "source_url": "https://research.nvidia.com/labs/srl/projects/robolab/leaderboard.html",
+  "source_data_url": "https://research.nvidia.com/labs/srl/projects/robolab/static/data/leaderboard.json",
+  "source_sha256": "62d93c2e12ab06f287647468a1853499061ba6d26dc758f230359b1091690a91",
+  "source_version": 33,
+  "source_generated_at": "2026-09-12T01:01:59Z",
+  "retrieved_on": "2026-09-14",
+  "benchmark": "RoboLab-120",
+  "instruction_variant": "default",
+  "tasks": 120,
+  "episodes_per_task": 10,
+  "initial_states_paired": false,
+  "selection": "Official overall results, not recomputed for the report's ten-task subset. Success rates retain the website's one-decimal display precision.",
+  "rows": [
+    {"id": "official_cosmos3_edge", "source_entry_id": "cosmos3-edge", "name": "Cosmos3-Edge-Policy", "logo_key": "Cosmos3-Nano-Policy", "successes": 275, "episodes": 1200, "sr": 22.9},
+    {"id": "official_pi0_fast", "source_entry_id": "pi0-fast", "name": "Pi-0-FAST", "logo_key": "Pi-05", "successes": 186, "episodes": 1200, "sr": 15.5},
+    {"id": "official_gr00t", "source_entry_id": "gr00t", "name": "GR00T N1.6", "logo_key": "Cosmos3-Nano-Policy", "successes": 87, "episodes": 1200, "sr": 7.2},
+    {"id": "official_pi0", "source_entry_id": "pi0", "name": "Pi-0", "logo_key": "Pi-05", "successes": 60, "episodes": 1200, "sr": 5.0}
+  ]
+}

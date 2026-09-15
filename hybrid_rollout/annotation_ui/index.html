@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rollout Review · 视频与行为标注</title><link rel="stylesheet" href="/style.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+<header><div><h1>Rollout Review</h1><p>Debug 视频 · 行为片段 · 报告候选</p></div>
+  <div class="header-actions"><span id="catalogStatus">读取中…</span><button id="refresh">刷新列表</button>
+    <button id="exportOpen">导出标注</button></div></header>
+<div id="notice" role="status" aria-live="polite"></div>
+<main>
+  <aside>
+    <input id="search" type="search" placeholder="搜索任务、case、标签、评论…" aria-label="搜索 rollout">
+    <div class="filter-grid">
+      <select id="taskFilter" aria-label="任务"><option value="">全部任务</option></select>
+      <label>Context 版本 <select id="versionFilter" aria-label="版本"><option value="">全部版本</option><option value="v1">v1</option><option value="v2">v2</option><option value="v3" selected>v3</option></select></label>
+      <select id="stateFilter" aria-label="结果"><option value="">全部结果</option></select>
+      <select id="methodFilter" aria-label="方法"><option value="">全部方法</option></select>
+      <select id="reviewFilter" aria-label="标注状态"><option value="">全部标注状态</option><option value="selected">报告候选</option><option value="reviewed">已标注完成</option><option value="unreviewed">未标注完成</option><option value="clips">有分段标注</option></select>
+      <select id="videoFilter" aria-label="视频"><option value="ready">有 debug 视频</option><option value="">全部 attempt</option></select>
+    </div>
+    <p id="listCount" class="muted"></p><nav id="runs" aria-label="Rollout 列表"></nav>
+    <p class="muted small">默认只看 v3，版本选择会记住。切换 v1/v2 或全部版本可查看旧轨迹与原标注；它们不会合入 v3 成功率。无效场景、中断不算原生失败。</p>
+  </aside>
+  <section id="workspace">
+    <div id="empty" class="empty"><h2>选择一条 rollout 开始查看</h2><p>筛选视频 → 拖选片段 → 添加标注 → 保存 → 导出报告候选</p></div>
+    <div id="detail" hidden>
+      <div class="titlebar"><div><h2 id="runTitle"></h2><p id="runIdentity" class="muted"></p></div>
+        <button id="previous" title="上一条">← 上一条</button><button id="next" title="下一条">下一条 →</button></div>
+      <div id="runFacts" class="facts"></div>
+      <div id="viewer" class="viewer">
+        <div class="viewer-head"><label>Debug 版本 <select id="videoSelect"></select></label>
+          <a id="downloadVideo" download>下载视频</a><button id="fullscreen">全屏 F</button></div>
+        <video id="video" playsinline preload="metadata" muted disableremoteplayback tabindex="-1"></video>
+        <p id="videoError" class="warning" hidden></p>
+        <div class="player-controls">
+          <button id="play">播放 / 暂停 K</button><button id="back5" title="后退5秒 J">−5s</button>
+          <button id="prevFrame" title="上一帧：逗号键 ," aria-keyshortcuts=",">−1 帧（,）</button><button id="nextFrame" title="下一帧：句号键 ." aria-keyshortcuts=".">+1 帧（.）</button>
+          <button id="forward5" title="前进5秒 L">+5s</button>
+          <label>倍速 <select id="speed"><option>0.25</option><option>0.5</option><option>0.75</option><option selected>1</option><option>1.25</option><option>1.5</option><option>2</option><option>3</option><option>4</option><option>8</option></select></label>
+          <label>显示 <select id="zoom"><option value="fit">完整画面</option><option value="1.5">1.5× 放大</option><option value="2">2× 放大</option></select></label>
+          <button id="pip">画中画</button>
+        </div>
+        <div class="time-controls"><strong id="clock">00:00.000 / —</strong><span id="frameInfo" class="muted"></span>
+          <label>秒 <input id="seekSeconds" type="number" min="0" step="0.04" value="0"></label><button id="seekTime">跳转</button>
+          <label>step <input id="seekStep" type="number" min="0" step="1" value="0"></label><button id="seekStepGo">跳转</button></div>
+        <div id="videoViewportHint" class="muted small">仅使用页面按钮或快捷键控制。拖选下方时间轴时画面跟随鼠标，松手停在当前帧；, 上一帧 / . 下一帧。</div>
+      </div>
+      <section class="card" aria-labelledby="clipHeading">
+        <div class="section-title"><h3 id="clipHeading">分段标注</h3><span id="selectionInfo" class="muted">拖动时间轴选片段，或按 I / O 标记</span></div>
+        <div id="timeline" tabindex="0" role="group" aria-label="拖动选择视频片段，画面同步跟随鼠标；松手停帧，也可使用下方起止时间输入框">
+          <div id="clipMarkers"></div><div id="selectionBand"></div><div id="playhead"></div>
+        </div>
+        <div class="clip-range">
+          <label>起点（秒）<input id="clipStart" type="number" min="0" step="0.001" value="0"></label><button id="markIn">设为当前 I</button>
+          <label>终点（秒）<input id="clipEnd" type="number" min="0" step="0.001" value="0"></label><button id="markOut">设为当前 O</button>
+          <button id="previewClip">播放选段</button><label><input id="loop" type="checkbox">循环选段</label>
+        </div>
+        <label class="block">片段评论<textarea id="clipComment" rows="3" placeholder="这一段发生了什么？GPT 的判断 / π0.5 的动作 / 纠错或失败的原因…"></textarea></label>
+        <div class="row"><input id="clipTags" placeholder="片段标签，以逗号分隔：纠错成功, 错误抓取" aria-label="片段标签">
+          <button id="addClip" class="primary">添加片段到草稿</button><button id="cancelClip" hidden>取消编辑片段</button></div>
+        <p class="muted small">起止点相同可作单帧标注。片段先进入草稿，点击下方“保存全部标注”后才持久保存到共享存储。</p>
+        <div id="clips"></div>
+      </section>
+      <section class="card">
+        <div class="section-title"><h3>整条 rollout 标注</h3><span id="saveState" role="status">未修改</span></div>
+        <div class="row"><label><input id="selected" type="checkbox">★ 作为报告候选</label><label><input id="reviewed" type="checkbox">已完成查看与标注</label></div>
+        <label class="block">标签<input id="tags" placeholder="标签以逗号分隔，例如：规划有效, 重复尝试, 视觉误判"></label>
+        <div id="tagSuggestions" class="tag-suggestions"></div>
+        <label class="block">整体评论<textarea id="comment" rows="5" placeholder="整体行为分析、值得放进报告的结论、还需核查的问题…"></textarea></label>
+        <div class="row"><button id="save" class="primary">保存全部标注 Ctrl / ⌘ + Enter</button><button id="reloadAnnotation">重新读取服务器标注</button><button id="history">修改历史</button></div>
+      </section>
+      <section class="card"><details><summary>公开决策时间线（非私有推理）</summary><p class="muted small">读取 controller/history.json 中已记录的控制段及公开 reason；点击跳到对应 step。这里不读取原始 Codex RPC 日志。</p><div id="decisions"></div></details></section>
+      <section class="card"><details><summary>任务指令、seed 与原始轨迹路径</summary><p id="instruction"></p><pre id="metadata"></pre></details></section>
+      <p class="muted small" id="storage"></p>
+    </div>
+  </section>
+</main>
+<dialog id="historyDialog"><h2>已保存的修改历史</h2><p>历史版本保留，不覆盖原生结果。需要恢复时可复制旧评论后重新保存。</p><pre id="historyContent"></pre><button id="closeHistory">关闭</button></dialog>
+<dialog id="exportDialog"><h2>导出标注与行为分析</h2><p>包含任务、case、seed、版本、attempt、原生结果和片段评论。不会导出凭据或 Codex 私有日志。</p>
+  <label><input id="exportVersion" type="checkbox" checked>仅导出当前选定的 context 版本（取消可包含旧版 clip）</label>
+  <label><input id="exportSelected" type="checkbox" checked>仅导出“报告候选”</label><div class="row">
+    <button data-export="md">Markdown 报告素材</button><button data-export="csv">CSV 表格</button><button data-export="json">JSON 完整标注</button></div>
+  <p class="muted">只导出已保存的标注；未保存草稿不会包含在内。</p><button id="closeExport">关闭</button></dialog>
+<footer>快捷键：Space / K 播放暂停 · J/L ±5 秒 · ←/→ ±1 秒 · ,/. 逐帧 · [/] 倍速 · I/O 片段起止 · F 全屏。输入框内不触发播放快捷键。</footer>
+</body></html>

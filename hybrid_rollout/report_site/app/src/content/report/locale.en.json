@@ -1,0 +1,231 @@
+{
+  "ui": {
+    "在 GitHub 查看代码": "View code on GitHub",
+    "## 引用本文\n\n如果本文或代码对您的研究有所帮助，欢迎使用以下 BibTeX 引用。": "## Citation\n\nIf you find this report or code useful for your research, please consider citing it using the following BibTeX entry.",
+    "下载 BibTeX": "Download BibTeX",
+    "作者信息": "Authors",
+    "作者姓名": "Author names",
+    "轨迹视频库": "Trajectory videos",
+    "评测数据": "Evaluation data",
+    "参考文献": "References",
+    "十任务平均 Score": "Mean Score Across Ten Tasks",
+    "## 十任务平均 Score": "## Mean Score Across Ten Tasks",
+    "RoboDojo-Sim · 10 个任务": "RoboDojo-Sim · 10 tasks",
+    "**图 1. 所选十任务的平均 Score。**": "**Figure 1. Mean Score on the ten selected tasks.**",
+    "**图 1. 所选十任务的平均 Score。** 十个任务按 π0.5 的公开成功率分层选取，偏向低成功率任务。官方模型成绩按相同任务子集及标准/随机场景配比重新汇总，因此与官网全任务总榜的数值不同。": "**Figure 1. Mean Score on the ten selected tasks.** Tasks are selected by stratifying the published π0.5 success rates, with an emphasis on lower-success tasks. Official model results are recomputed for the same task subset and standard/randomized scene mix, so the values differ from the official full-benchmark leaderboard.",
+    "平均 Score（0–100）": "Mean Score (0–100)",
+    "成功率（%）": "Success rate (%)",
+    "成功率 (%)": "Success rate (%)",
+    "图像": "Images",
+    "本体状态": "Proprioception",
+    "指令": "Instruction",
+    "关节空间候选动作段": "Candidate joint-space action segment",
+    "审核": "review",
+    "二选一，不同时执行": "Choose one branch; never execute both",
+    "二选一 · OR": "Choose one · OR",
+    "沿用": "Accept",
+    "执行 1–15 步": "Execute 1–15 steps",
+    "EEF 修正": "EEF correction",
+    "执行 1–5 步": "Execute 1–5 steps",
+    "执行": "Execute",
+    "步": "steps",
+    "执行历史": "Execution history",
+    "工具 · 持久笔记": "Tools · Persistent notes",
+    "双臂 EEF 目标": "Bimanual EEF targets",
+    "位置 · 姿态 · 夹爪；执行 1–5 步": "Position · Orientation · Gripper; execute 1–5 steps",
+    "10 个任务：初态与期望终态": "Ten tasks: initial conditions and target outcomes",
+    "任务说明": "Task descriptions",
+    "初态示例": "example initial state",
+    "最多": "Up to",
+    "目标：": "Goal: ",
+    "查看完整过程 ↗": "View the full episode ↗",
+    "表一指标": "Table 1 metric",
+    "Score 热力表": "Score heatmap",
+    "成功率热力表": "Success-rate heatmap",
+    "逐任务 Score（0–100）": "Per-task Score (0–100)",
+    "逐任务成功率（%）": "Per-task success rate (%)",
+    "任务": "Task",
+    "总体": "Overall",
+    "混合策略 · 实际执行控制步": "Hybrid policy · Executed control steps",
+    "反馈驱动的非抓取操作": "Feedback-driven non-prehensile manipulation",
+    "行为片段": "Behavioral clips",
+    "视频": "Video",
+    "混合控制": "Hybrid control",
+    "独立控制": "Direct control",
+    "行为分析：": "Clip takeaway: ",
+    "在视频库查看 ↗": "View in the video library ↗",
+    "放大观看：": "Enlarge video: ",
+    "视频暂时无法加载，点击查看。": "Video could not be loaded. Click to open it.",
+    "关闭视频": "Close video",
+    "关闭": "Close",
+    "执行与用量": "Execution and usage",
+    "指标": "Metric",
+    "实际控制步": "Executed control steps",
+    "已执行动作段": "Executed action segments",
+    "平均物理时长（秒）": "Mean physical duration (s)",
+    "总 token（含缓存输入）": "Total tokens (including cached input)",
+    "其中：缓存输入 token": "Of which: cached input tokens",
+    "未缓存输入 token": "Uncached input tokens",
+    "输出 token": "Output tokens",
+    "查看完整 Skill 与基础设施流程": "Full Skills and infrastructure workflow",
+    "混合架构：完整 Skill": "Hybrid architecture: full Skill",
+    "Direct 架构：完整 Skill": "Direct architecture: full Skill",
+    "混合架构：Outcome / Intent 审核规则": "Hybrid architecture: Outcome / Intent review rules",
+    "混合架构：双臂 EEF 合同": "Hybrid architecture: bimanual EEF contract",
+    "Direct 架构：双臂 EEF 合同": "Direct architecture: bimanual EEF contract",
+    "混合架构：任务与先验上下文": "Hybrid architecture: task and prior context",
+    "Direct 架构：任务与先验上下文": "Direct architecture: task and prior context",
+    "完整轨迹视频库": "Full trajectory video library",
+    "来源与校验记录": "Sources and validation records",
+    "RoboLab 十任务成功率": "RoboLab success rates on ten tasks",
+    "RoboLab（zero-shot）": "RoboLab (zero-shot)",
+    "十任务成功率": "Success rates on ten tasks",
+    "## 十任务平均成功率": "## Mean Success Rate Across Ten Tasks",
+    "RoboLab 成功率概览": "RoboLab success-rate overview",
+    "## 成功率概览": "## Success Rate Overview",
+    "## 成功率": "## Success Rates",
+    "本文十任务评测与官方总榜参考": "Ten-task evaluation and official benchmark references",
+    "† [官方总榜](https://research.nvidia.com/labs/srl/projects/robolab/leaderboard.html)：RoboLab-120 / Default，1,200 次；其余为本文 10 任务 × 5 次。口径不同，非同条件排名。": "† [Official leaderboard](https://research.nvidia.com/labs/srl/projects/robolab/leaderboard.html): RoboLab-120 / Default, 1,200 trials. Other bars: 10 tasks × 5 trials; not a matched ranking.",
+    "RoboDojo 视频库": "RoboDojo Video Gallery",
+    "RoboLab 视频库": "RoboLab Video Gallery",
+    "**RoboLab · 所选十任务的平均成功率。**": "**RoboLab · Mean success rate on the ten selected tasks.**",
+    "单臂 Franka · 每策略 10 任务 × 5 次": "Single-arm Franka · 10 tasks × 5 trials per policy",
+    "表 2. RoboLab 逐任务成功率（每任务 5 次）": "Table 2. Per-task RoboLab success rates (5 trials per task)",
+    "总体结果 CSV": "Overall results CSV",
+    "逐任务 CSV": "Per-task CSV",
+    "Baseline 选取记录": "Baseline selection records"
+  },
+  "tasks": {
+    "organize_table": {
+      "label": "Organize the table",
+      "category": "Long-horizon organization",
+      "initial": "A mouse, keyboard, ornament, alarm clock, and miscellaneous objects are scattered across the table.",
+      "goal": "Put the specified items in their designated positions, then open the drawer to store the remaining objects, and finally return both arms home."
+    },
+    "classify_objects_by_language": {
+      "label": "Classify by language",
+      "category": "Semantic understanding",
+      "initial": "Objects from several categories are mixed together; the current instruction specifies the corresponding baskets.",
+      "goal": "Place every object according to the category-to-basket mapping in the current instruction, then return both arms home."
+    },
+    "imitate_sorting_sequence": {
+      "label": "Imitate a sorting sequence",
+      "category": "Observation and memory",
+      "initial": "The scene first presents a demonstration of an object-sorting sequence.",
+      "goal": "Observe and remember the demonstration, then place the corresponding objects in the same order and return both arms home."
+    },
+    "arrange_largest_number": {
+      "label": "Arrange the largest number",
+      "category": "Semantics and placement",
+      "initial": "Number blocks are scattered near the target mat.",
+      "goal": "Arrange the blocks from left to right to form the largest number, correct their orientations on the target mat, and return both arms home."
+    },
+    "pack_objects_into_box": {
+      "label": "Pack objects into a box",
+      "category": "Container manipulation",
+      "initial": "Objects of different shapes are distributed around a box.",
+      "goal": "Pack all objects into the box in the orientations required by the instruction, then return both arms home."
+    },
+    "classify_objects": {
+      "label": "Classify objects",
+      "category": "Sorting and transport",
+      "initial": "Various objects and three sorting baskets are placed on the table.",
+      "goal": "Sort every object into the three baskets by category, then return both arms home."
+    },
+    "build_tower": {
+      "label": "Build a tower",
+      "category": "Contact and stability",
+      "initial": "Blocks and boards have not yet been assembled into a tower.",
+      "goal": "Build the required supported, layered structure and keep it stable after returning both arms home."
+    },
+    "make_kong": {
+      "label": "Make a Kong in Mahjong",
+      "category": "Sequencing and fine manipulation",
+      "initial": "The hand and discard areas are arranged, awaiting the task's discard.",
+      "goal": "Reveal the matching tiles and complete the required Kong sequence without disturbing the other tiles. This task does not use returning both arms home as its completion criterion."
+    },
+    "fold_clothes": {
+      "label": "Fold clothes",
+      "category": "Deformable objects",
+      "initial": "A garment is spread on the table, with its sleeves and hem not yet folded.",
+      "goal": "Fold the sleeves inward, then fold the hem upward to achieve the required folded shape, and finally return both arms home."
+    },
+    "put_bottles_into_dustbin": {
+      "label": "Put bottles in a bin",
+      "category": "Grasping and transport",
+      "initial": "Several bottles are scattered across the table, with a bin nearby.",
+      "goal": "Put every bottle into the bin and return both arms home."
+    }
+  },
+  "captions": {
+    "clip__fe2857368ce87ec2ffdcd4ac__0": "Language-based classification: realigning actions with the target object",
+    "clip__6f1191749b24df72921e800d__0": "Number arrangement: correcting the target position",
+    "clip__54ab2e9592bc1721a111b399__0": "Object classification: correcting target selection",
+    "clip__0138af9ba9629776dbee7d6f__0": "Clothes folding: correcting the grasp target",
+    "imitate_sorting_sequence_a5_frames_493_1309": "Sorting imitation: assessing 3D relationships, nudging, and subsequent transport",
+    "clip__182f98be14595fc71b02b377__0": "Nudging the object before completing the grasp",
+    "clip__220a8ec7845d68ca73248879__0": "Nudging an object out, then handing it back to π0.5 for grasping",
+    "clip__4288645ef90dc53de13376eb__0": "Adjusting the approach direction and grasp orientation",
+    "clip__cbf8658bad76fd96fef01245__1": "Number arrangement: noticing non-termination, rechecking, and fine-tuning",
+    "clip__5436877e6101be2b23b24fc2__0": "Packing: finding an overlooked object behind the box and adjusting its orientation",
+    "clip__5f52fbae6ce02b95ed5346b2__0": "Number arrangement: continuing corrections based on termination feedback",
+    "clip__b0b8456f0b4d549bc4d56cfe__0": "Tower building: a second correction for an unmet final-state requirement",
+    "clip__cb2554914fe8187ac98e9e45__0": "Insufficient container-rim clearance causes a collision during transport",
+    "clip__7ef164f7a8783f3af3eb9090__0": "Slipping within an action segment delays corrective feedback",
+    "clip__5b7eb4161fbb1a8e5851cf52__0": "Repeated failures on a difficult grasp consume the remaining steps",
+    "clip__bd5f4382adb568ed22dfca47__0": "A Mahjong manipulation error is not recognized promptly",
+    "clip__b34c1a832bb5123d6eb6a6af__0": "A zero-shot plan: attempting to sweep bottles into a bin with the arm",
+    "clip__71c12723687a550b770f36c0__0": "A zero-shot plan: grasping a board one-handed results in unstable construction",
+    "clip__9e40a74ed6b0a356a421f53b__0": "A zero-shot plan: stability problems in single-arm manipulation",
+    "clip__faad002fd6c510f09db4c435__0": "Ineffective use of proprioception repeatedly blocks control",
+    "clip__6ba3a538a3405206181aa6c6__0": "Number arrangement: a striking recovery after interpreting control feedback"
+  },
+  "references": {
+    "robodojo": {
+      "type": "Project and public results",
+      "summary": "RoboDojo provides robot-manipulation tasks, native scoring, public leaderboards, and per-episode videos, covering semantic understanding, spatial manipulation, temporal reasoning, and other capabilities."
+    },
+    "pi05": {
+      "type": "Research blog",
+      "summary": "Physical Intelligence describes the training approach, vision–language–action modeling, and open-world generalization capabilities of π₀.₅."
+    },
+    "robolab": {
+      "type": "2026. arXiv:2604.09860 / Robotics: Science and Systems (RSS)",
+      "summary": "RoboLab uses high-fidelity simulation to evaluate generalist robot policies' visual, procedural, and relational understanding. Its paper evaluates a DROID-style single-arm Franka Panda. This report selects 10 tasks and 5 final evaluation slots per policy and task; it does not reproduce the full RoboLab-120 leaderboard."
+    },
+    "astra": {
+      "type": "Official model documentation",
+      "summary": "OpenAI's GPT-6 Astra documentation describes the model identifier and interface capabilities, including image input and reasoning."
+    },
+    "awesome": {
+      "author": "zjwzcx / community contributors",
+      "type": "GitHub collection of examples",
+      "summary": "Awesome Astra Embodied AI collects community explorations in simulated control, physical robots, agentic policy invocation, real-to-sim workflows, and robot learning, linking related projects and demonstrations."
+    },
+    "robocurve": {
+      "type": "Independent experimental report · 2026-09-04",
+      "summary": "Robocurve evaluates GPT-6 Astra on a YAM robot arm, recording operations such as placing a block in a bowl and precise puzzle insertion, with success in 19/20 and 2/20 trials, respectively."
+    },
+    "axel": {
+      "type": "X post · 2026-09-11",
+      "summary": "The Axel team explores in-context learning through robot demonstrations, using previous execution examples to guide new mobile-manipulation tasks."
+    },
+    "innate-code": {
+      "type": "Open-source implementation notes",
+      "summary": "Innate's demonstration-imitation implementation organizes recorded frames, robot state, live cameras, execution history, and action validation into a continuing control loop."
+    },
+    "gpt-policy-eval": {
+      "type": "Project demonstration",
+      "summary": "GPT-Policy-Eval demonstrates physical-robot manipulation driven by a single video demonstration, including plug insertion and placing objects after removing an occlusion, and provides execution code."
+    },
+    "realsee": {
+      "type": "Practical blog · 2026-09-11",
+      "summary": "Realsee demonstrates a workflow from spatial scans to editable 3D scenes, using the model and tools such as Blender to create environment assets for further processing."
+    },
+    "fallingwater": {
+      "type": "Personal project blog",
+      "summary": "AIMortals demonstrates reconstructing Fallingwater using the model and 3D tools, illustrating multi-step spatial modeling and tool orchestration."
+    }
+  },
+  "infrastructure": "### Infrastructure and Execution Workflow\n\n1. **Isolated instances and initialization.** Each container runs a single evaluation instance with a fixed task, scene, random seeds, and output directory. Python owns the sole simulator connection. After initialization, it records three RGB views, the 14-dimensional proprioceptive state, measured bimanual EEF poses, the original task instruction, and the step budget.\n2. **Candidate or direct actions.** The hybrid architecture first calls an independent OpenPI/JAX service to obtain 50×14 candidate actions and bimanual forward-kinematics trajectories, then passes them to GPT 6 Astra for review. Direct neither starts nor calls this policy service, and generates bimanual EEF targets directly.\n3. **Tool protocol.** The hybrid architecture uses robodojo_start → pi05_infer → robodojo_execute; Direct uses robodojo_start → robodojo_act. Every control call is bound to the current observation, request_id, and a fresh output path to prevent stale-observation use or duplicate actions.\n4. **Validation and low-level execution.** Python validates actions, step counts, coordinate frames, and bimanual targets. Each EEF target is subject to the 5 cm / 0.35 rad safeguards. Local damped least-squares IK is recomputed after every actual control ACK. A model-generated target is not evidence that it has been reached; subsequent decisions still check images and measured state.\n5. **Ongoing observation and reasoning.** Control runs at 25 Hz, with the model receiving new observations at action-segment boundaries. Image previews typically have a longest side of 480 pixels; the original 640×480 images are retained, and policy inputs are not downsampled. Codex retains tools for viewing images, reading files, computation, cropping, and persistent notes; these capabilities do not replace the model's action decisions.\n6. **Success assessment.** Context includes the task procedure, current and maximum control steps, partial-credit rules, and termination state. Most tasks also require both arms to return home safely after manipulating the objects. While the simulator has not terminated, the model continues checking unmet conditions; its subjective judgment of completion cannot replace the native result.\n7. **Recording and termination.** Raw observations and actions are saved for every executed control step. Each decision records the request, result, brief rationale, and execution history. Videos, results, and records are written to separate persistent directories. At the end of an instance, the simulator connection, policy service, and Codex subprocesses are released. Correctable parameter errors are returned to the model without executing an action.\n\nThe full Skills, review rules, and contexts for both architectures follow. Tool names, parameter keys, and source-file contents are reproduced unchanged."
+}

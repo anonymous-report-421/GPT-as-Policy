@@ -1,0 +1,22 @@
+# Secret-free rollout-only Codex configuration. cluster_entrypoint.sh copies
+# this file into a fresh per-episode private CODEX_HOME on shared storage.
+model_provider = "LiteLLM"
+model = "gpt-6-astra"
+model_reasoning_effort = "xhigh"
+model_reasoning_summary = "auto"
+
+[analytics]
+enabled = false
+
+[model_providers.LiteLLM]
+name = "LiteLLM"
+base_url = "https://gateway.example.invalid"
+env_key = "OPENAI_API_KEY"
+wire_api = "responses"
+
+[features]
+fast_mode = false
+codex_hooks = true
+hooks = true
+# Other capabilities retain Codex defaults. Backend isolation is not a tool
+# allowlist; plugins/connectors still need their own installation/authentication.

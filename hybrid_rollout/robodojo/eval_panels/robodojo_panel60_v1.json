@@ -1,0 +1,1910 @@
+{
+  "schema": "hybrid_rollout.robodojo.evaluation_panel.v1",
+  "panel_id": "robodojo_panel60_v1",
+  "scope": "60_episode_official_layout_subset",
+  "selection": "Group fixed before evaluation; native numerical layout order; no outcome selection",
+  "eval_seed": 0,
+  "native_source_commit": "ee67a1468510da7624a089164402359f2afc72c8",
+  "native_source_files": [
+    {
+      "path": "env/camera_manager/camera_manager.py",
+      "sha256": "1a4250cb3bdc7305fe362a7c6b113f57e6f3e9e4983b69bd61e2c84e8e995471"
+    },
+    {
+      "path": "env/camera_manager/capture/camera_view.py",
+      "sha256": "364cd10dfd2be164efb4adf7a52adf2e7b38e49f4da90e70575d2ceaa7a6cada"
+    },
+    {
+      "path": "env/camera_manager/capture/tiled_capture_manager.py",
+      "sha256": "9e70ba9165130d6adf4b63989a447db269b741597bcff7f9095a577f084ff126"
+    },
+    {
+      "path": "env/description_manager/desc_manager.py",
+      "sha256": "bb566028b523a4cc27363cee2e526c2d3e008e671c9773d4f0b8401f58f0388e"
+    },
+    {
+      "path": "env/environment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "env/environment/base_env.py",
+      "sha256": "ade58ebc19c79bdbf720def30786a0c397b1c7d2141fb6a1bfd63c80f8a3db8e"
+    },
+    {
+      "path": "env/environment/isaac/__init__.py",
+      "sha256": "123023ddc75a0f9b1139c7322bee64a27f0e756b6e84242f43a1481428596126"
+    },
+    {
+      "path": "env/environment/isaac/direct_rl_env.py",
+      "sha256": "151096897a8da352aed474dc840a74a02164af422af7fa9cae38a9681871b0ca"
+    },
+    {
+      "path": "env/environment/isaac/isaac_rl_env.py",
+      "sha256": "144af40adc2113751bc1bd72caadab145e918b316de53ef3e4e42358c01a1fbb"
+    },
+    {
+      "path": "env/environment/task_env.py",
+      "sha256": "ac816cf26efabbb8ac4276d2a2a09fbd557e3db805514db0c3dd7ac22b58e931"
+    },
+    {
+      "path": "env/global_configs.py",
+      "sha256": "e96f6141b42e635d69bba5b4727fb1fec54f8965431b3a70d95fe5dcd3d0ee45"
+    },
+    {
+      "path": "env/observation_manager/obs_manager.py",
+      "sha256": "28dd0450643042b1bd2a2ae8f7e9defdf92b4ad7938e00829e37273553d54d13"
+    },
+    {
+      "path": "env/planner_manager/curobo_planner.py",
+      "sha256": "3cd830c002901959409ef6f64d54106d8106b48471b266409abc2199f3cb33e1"
+    },
+    {
+      "path": "env/reward_manager/func_parser.py",
+      "sha256": "eb928a05c3eb6bae429a922c59e64272c2c3851c22d779143d45627e47b3a504"
+    },
+    {
+      "path": "env/reward_manager/reward_manager.py",
+      "sha256": "bc56efd3aaa861b4b38960dc4fb7778a9b4da9cf131f815ac3170300dd233a41"
+    },
+    {
+      "path": "env/robot_manager/control_manager.py",
+      "sha256": "81b7ecc3bed8248c16aa1517e686682d8e28ccfa9e550d45011b579a9219caab"
+    },
+    {
+      "path": "env/robot_manager/robot_class/franka.py",
+      "sha256": "1f8ed55431863fd633baa8dbe67bd7ba3a0e85c9c4bbbb7ff2d31f436691caf7"
+    },
+    {
+      "path": "env/robot_manager/robot_class/x5.py",
+      "sha256": "107274d0944a4416a1b5216b3ebf05e5f6e96c17eb8a50e4bcd3e134db20ce0f"
+    },
+    {
+      "path": "env/robot_manager/robot_config/franka.py",
+      "sha256": "8bf57a07913573e74dad97aec6c50e58b67746fa90875915d74ce213856ce35a"
+    },
+    {
+      "path": "env/robot_manager/robot_config/x5.py",
+      "sha256": "13d35630f833d1b0a1e3df0bea05f843e88aae1248b59af8aadfefa9cad29bbb"
+    },
+    {
+      "path": "env/robot_manager/robot_manager.py",
+      "sha256": "1306cb6d17b58a04ad8fc298edb6eb9122469048dbc9717dcf246f4f985d9974"
+    },
+    {
+      "path": "env/scene_manager/layout_manager.py",
+      "sha256": "7f244bec972e09236a94d8b4761b248ba19ec3f61c631d3c83c00b82912a14b8"
+    },
+    {
+      "path": "env/scene_manager/objects/articulation.py",
+      "sha256": "c3a1aff5ab15b915e29f66d9ef679fd9bf7f9bc328a2d4177f87e9eb0bca1d73"
+    },
+    {
+      "path": "env/scene_manager/objects/background.py",
+      "sha256": "04afea9b5c4e21a105ba3b08ce0e5b6692c082cf17ec1053fdffd5dba1c9511b"
+    },
+    {
+      "path": "env/scene_manager/objects/dynamic.py",
+      "sha256": "7a4652c649f503681914e37c50c959c7ca8457918bb00628413f4288993f8ea7"
+    },
+    {
+      "path": "env/scene_manager/objects/fluid.py",
+      "sha256": "12b183d4d798d6b7188fd42747ee1927747318c386a91135551d1fa0561c41b5"
+    },
+    {
+      "path": "env/scene_manager/objects/garment.py",
+      "sha256": "85f38bd85b52da8dd2ce34ce3692d45848016a9f0f14ecf13114705d4a1ff46a"
+    },
+    {
+      "path": "env/scene_manager/objects/geometry.py",
+      "sha256": "3100d61b152b894b3b59be0b3be1d2708f2d8f363ddb8311dabfb5411c731f3d"
+    },
+    {
+      "path": "env/scene_manager/objects/ground.py",
+      "sha256": "12dd51addae6f5b7c6ad410b4ae7248231d216cf63513c564057d577a09a2972"
+    },
+    {
+      "path": "env/scene_manager/objects/light.py",
+      "sha256": "ba8c8529c6608592d4d0eb9638820b70ae6b3c0cd616631bc6dabdb1c20e421a"
+    },
+    {
+      "path": "env/scene_manager/objects/physics_material.py",
+      "sha256": "a1ac0dc9928e9253e644ceb9a604aed262514aaad0473aff303bfae448e76c29"
+    },
+    {
+      "path": "env/scene_manager/objects/primitives.py",
+      "sha256": "848f4ab08d86307812ebaea18cc86a51638395f0e6ea194b412d45a699ced926"
+    },
+    {
+      "path": "env/scene_manager/objects/rigid.py",
+      "sha256": "ac50a7792b43be99e2f4362b946e9319a6aeb9c26be2766ebca6b780296cfa9b"
+    },
+    {
+      "path": "env/scene_manager/objects/room.py",
+      "sha256": "946aa1afc23ab9b8fd17394517a5f54605bbbc609582d0854fed2078b3b2d8ee"
+    },
+    {
+      "path": "env/scene_manager/objects/table.py",
+      "sha256": "c0e71396b0d53a250f74c75490e91086d67962237400a49f886a13ec07875308"
+    },
+    {
+      "path": "env/scene_manager/scene_manager.py",
+      "sha256": "87776a7803ec5b1666dd3478295978986f8ecec7ef989aa45e697da9854556df"
+    },
+    {
+      "path": "env/seed_manager/seed_manager.py",
+      "sha256": "292eee4003de1c22b288ec3bc1d04d95c7aee5368f30991679ea1cc4c37247b3"
+    },
+    {
+      "path": "env/seeding.py",
+      "sha256": "2d7286b78c8060c6e838b55be025f51d09262a4a63bcb3884077a1492e66400a"
+    },
+    {
+      "path": "env_cfg/arx_x5.yml",
+      "sha256": "7691350159fdeca92fd1b0b2da36913464ccdea3f3251eefb0176aa51db0807f"
+    },
+    {
+      "path": "env_cfg/camera/camera_config.yml",
+      "sha256": "c1752170da855e735beba27fddbf78dad16f2395e4ef8b24e9827a768e616a62"
+    },
+    {
+      "path": "env_cfg/camera/template.py",
+      "sha256": "68287ed1daec3b8ed7f053bf97a4d48bbddeb8b5757b53e438ac3c4240a9e61b"
+    },
+    {
+      "path": "env_cfg/robot/dual_x5.yml",
+      "sha256": "4eefaccc75c5f83443b7bb85ef1de68ee7a3772e27af2b04a5e8d8769ab9baa1"
+    },
+    {
+      "path": "env_cfg/robot/dual_x5_and_franka_competition.yml",
+      "sha256": "ec893f9fde577d0d1209e7dcb85ec2dd74288b636d0c68316cb07bc817b743ab"
+    },
+    {
+      "path": "env_cfg/scene/conveyor.yml",
+      "sha256": "c1dfd27faf978f90dfc4825cd83bd203823547c46793f4f9201ce9f4b43beee7"
+    },
+    {
+      "path": "env_cfg/scene/default.yml",
+      "sha256": "729df024b9707a55449da94f980c1ca116035e09a1284e2fe071f1b38efd061a"
+    },
+    {
+      "path": "env_cfg/sim/sim_config.yml",
+      "sha256": "e442ede1c3d90fcfb50b9461c854d31b22dad9bfbb23397db228b27a6a486963"
+    },
+    {
+      "path": "src/eval_client/eval_env.py",
+      "sha256": "d49bc0318a7c65a5f0f57778e7032977b9222efb210092c60cbe50c7e31f793c"
+    },
+    {
+      "path": "src/eval_client/main.py",
+      "sha256": "03faefcbcb6f08fad59217d527e0e38b3b6f066ab135f2ee636d4d907320d991"
+    },
+    {
+      "path": "src/eval_client/physx_warning_monitor.py",
+      "sha256": "6a9f8e8d75b1031d2cf2feb6dd72d37370d85d5bd80c4bea798622e23ce8dae6"
+    },
+    {
+      "path": "task/RoboDojo/config/_task.yml",
+      "sha256": "655a87cd59fa6272bf352d32deb8ade162737b49a9824e16d428fecf0803380b"
+    },
+    {
+      "path": "task/RoboDojo/config/align_blocks.yml",
+      "sha256": "082c9d7a32968052b8ce954bee212c7ec0a96b756150701d4b531abdea59be2b"
+    },
+    {
+      "path": "task/RoboDojo/config/arrange_largest_number.yml",
+      "sha256": "3bf6b7e286ea328fb1e4a994a8d30af9afb4b0b4dcd7ceafed43cc6160c9978f"
+    },
+    {
+      "path": "task/RoboDojo/config/arrange_largest_number_random.yml",
+      "sha256": "145b26eb5c8ed7d084a4ddc6e21694c542f4a86150756188ea38dcf66e565603"
+    },
+    {
+      "path": "task/RoboDojo/config/build_tower.yml",
+      "sha256": "e1bab8756bbc5664e3171e2389c060a79a3fbbf92a6af4ef555dcaf59fce275c"
+    },
+    {
+      "path": "task/RoboDojo/config/classify_objects.yml",
+      "sha256": "80a754d2aedd6a89f58185eae36f5b2eb1a28250f40a67325f576fde34650384"
+    },
+    {
+      "path": "task/RoboDojo/config/classify_objects_by_language.yml",
+      "sha256": "ac6c739ca82a64b53c799af79b44363db1a88246f76d867f8830729e5613507b"
+    },
+    {
+      "path": "task/RoboDojo/config/cover_blocks.yml",
+      "sha256": "68f90c85fad2b152cf7853cf48888d09ce74bb27a692ff2feacd11160771c5a7"
+    },
+    {
+      "path": "task/RoboDojo/config/deposit_coin.yml",
+      "sha256": "f547b12216fb9a5dfe2e7d7e882d89e1e53ee1a805c943ba09a3c2cdea8c17a3"
+    },
+    {
+      "path": "task/RoboDojo/config/fasten_screws.yml",
+      "sha256": "5fbe4cf5b3ee2eafc2771137b13176f01617f8b2131f02503e676a7b62e2eabf"
+    },
+    {
+      "path": "task/RoboDojo/config/fill_egg_holder.yml",
+      "sha256": "d79129278c9a5488d63bb1d3865f2c6b39f21f85957ec94ace091af9ae29e31f"
+    },
+    {
+      "path": "task/RoboDojo/config/fill_pen_holder.yml",
+      "sha256": "ac72e5582495e8757c547997b317e2fe990370009527b1faa6bfbf4e1275537c"
+    },
+    {
+      "path": "task/RoboDojo/config/fold_clothes.yml",
+      "sha256": "56447e3f592e0db388ebb7482ec758ecd5485ec81b9227c2dffe5390bd7d8c8e"
+    },
+    {
+      "path": "task/RoboDojo/config/fold_clothes_random.yml",
+      "sha256": "eafe52c0abcc1889069383b008cbe95c6af2d18ceafb1aecc78f0fae3b491b04"
+    },
+    {
+      "path": "task/RoboDojo/config/general_pickup.yml",
+      "sha256": "35de68117cb0ed596b30db1c62f1f9090f2cd1237242a03d5aaeb7186e791d93"
+    },
+    {
+      "path": "task/RoboDojo/config/hang_mugs.yml",
+      "sha256": "0086d374d3f7e82abb85e43a17cdfa437e1ac645a0171fb47496c2b81427dce9"
+    },
+    {
+      "path": "task/RoboDojo/config/hang_mugs_random.yml",
+      "sha256": "847dfd39059275a671b5beff0243bf7bbaeebd9e5c0612a1877cdf12b9007dc6"
+    },
+    {
+      "path": "task/RoboDojo/config/imitate_sorting_sequence.yml",
+      "sha256": "d9e194d8c742288601c641ccb75052a67da46e536c0b06c7fb7311d9e2c61a42"
+    },
+    {
+      "path": "task/RoboDojo/config/insert_key.yml",
+      "sha256": "c0b409d5c020e0ad706c378b6f63b39dfe7bed4682d978907c40e1cfa7623335"
+    },
+    {
+      "path": "task/RoboDojo/config/insert_tubes.yml",
+      "sha256": "5c070e5c764a2ea93f8de0b52e6a664a23c717963fe09fe3af17918a4a1ee9ef"
+    },
+    {
+      "path": "task/RoboDojo/config/make_kong.yml",
+      "sha256": "8a33c9e57b6e6c719c4800911c37272ba055ad0f4cda2f1de9d531ee2910351a"
+    },
+    {
+      "path": "task/RoboDojo/config/make_toast.yml",
+      "sha256": "d190a26233db174538ff0052b4c2958a3b107f0ccc63d0fdfe28da4c7f5dc57b"
+    },
+    {
+      "path": "task/RoboDojo/config/make_toast_random.yml",
+      "sha256": "ca2c1e55a0975c8b019523710e90131504d8d2afeb829be362e4d7927fe97b48"
+    },
+    {
+      "path": "task/RoboDojo/config/match_and_pick_from_conveyor.yml",
+      "sha256": "0ae1c2537d9b1880748316928cfd7ba4c6421ecccfedb85c4c5395a7a86c5361"
+    },
+    {
+      "path": "task/RoboDojo/config/organize_table.yml",
+      "sha256": "9ffa15dd279060d4f042285a2c53a341c7208e2f89a2f3dd36ee08b22aa453fa"
+    },
+    {
+      "path": "task/RoboDojo/config/pack_objects_into_box.yml",
+      "sha256": "e232962b8394d08c04c5da14deb88d7b233afa00ab99af8001c084218951d7ca"
+    },
+    {
+      "path": "task/RoboDojo/config/pack_objects_into_box_random.yml",
+      "sha256": "7ac7f034fcb169e33a7f0a03b2b77e54d0206ed715409359b579055a701196ef"
+    },
+    {
+      "path": "task/RoboDojo/config/pick_from_conveyor_by_image.yml",
+      "sha256": "6b310b70a0ead9d09e7c221c6bbc952140a44b1d43034613bf02e954eebcf9dd"
+    },
+    {
+      "path": "task/RoboDojo/config/play_Xylophone.yml",
+      "sha256": "28adedb0f03c49693af32cea37855f3f95ec3f76f031bfd571fb8bfffb2ec59c"
+    },
+    {
+      "path": "task/RoboDojo/config/play_stacking_toy.yml",
+      "sha256": "a09afc106161064a2ea6a40882d717f7872bd4875309a97431d6863a9b7ffa1c"
+    },
+    {
+      "path": "task/RoboDojo/config/play_tic_tac_toe.yml",
+      "sha256": "63f863a7fb81a040f65803c64f97c4e9577d4fe32cd0f92563bdc72d1aa336d2"
+    },
+    {
+      "path": "task/RoboDojo/config/plug_in_charger.yml",
+      "sha256": "2046b47112049e038ecfa24a8c8044fb1db84f629a4a32eeb24822157d2d4dcb"
+    },
+    {
+      "path": "task/RoboDojo/config/pour_balls_into_vase.yml",
+      "sha256": "084a707af61d24123912777b417fe0c0b230eb9653e686af42570791e924ff8b"
+    },
+    {
+      "path": "task/RoboDojo/config/pour_by_language.yml",
+      "sha256": "efb2e3c3cb08dd6d2d2ae011b3e9a218b5f1f0a92f025b8e3b9e8abd7011c250"
+    },
+    {
+      "path": "task/RoboDojo/config/pour_liquid_into_cup.yml",
+      "sha256": "32092b11667b3306579b04225303610c061585ace28531fa9996afc339c5a2ba"
+    },
+    {
+      "path": "task/RoboDojo/config/pour_liquid_into_cup_random.yml",
+      "sha256": "1603feeab6f0f7dc9c4897e7f40f322b86112b6ab987dad0598f42ac1b35db69"
+    },
+    {
+      "path": "task/RoboDojo/config/press_by_number.yml",
+      "sha256": "b784643495bcbca933f5a5fbc91b7dad3465fe888239b358d516977c78c38f63"
+    },
+    {
+      "path": "task/RoboDojo/config/push_T.yml",
+      "sha256": "b55ea11002ff3e5dc63982ca8c1247fd7bee4f4a607f4d674e220b86cf120a25"
+    },
+    {
+      "path": "task/RoboDojo/config/push_T_random.yml",
+      "sha256": "07609ec20cea40afa1d5720e895fb1b445411f261b2e5b6850e75d0f1930d32d"
+    },
+    {
+      "path": "task/RoboDojo/config/put_bottles_into_dustbin.yml",
+      "sha256": "7eddf43e287b6e8aea686c6d686fb87e13ac1be1cb5aac16a8a2b0d2e9eb976e"
+    },
+    {
+      "path": "task/RoboDojo/config/solve_equation.yml",
+      "sha256": "bdaad2ff1cc8b7ec6413a3715d49ea9cefd664e7e204544977832e18785f1e75"
+    },
+    {
+      "path": "task/RoboDojo/config/sort_nesting_dolls_by_size.yml",
+      "sha256": "8927cb2ebb18449554d851e629bd7d568e12e46c5c3c636c8e7122f4fab1ed1f"
+    },
+    {
+      "path": "task/RoboDojo/config/sort_nesting_dolls_by_size_random.yml",
+      "sha256": "f895d3ce7eaae99454706afccd09011f56d077998bcc1e95840116658b78f139"
+    },
+    {
+      "path": "task/RoboDojo/config/stack_blocks.yml",
+      "sha256": "2802e88ebc3e2d3d05ce345d75e9ad6151a6690e4ef1e0021a5223d291a402d2"
+    },
+    {
+      "path": "task/RoboDojo/config/stack_blocks_by_language.yml",
+      "sha256": "4fbfed4f7fc49120831087e709a8dbdfdb4504eb143196000d5790b54eb3bc40"
+    },
+    {
+      "path": "task/RoboDojo/config/stack_blocks_random.yml",
+      "sha256": "e25d2a096601da30abdcfe1256a464eaf48c0c8f844eb2c737232626d49639d5"
+    },
+    {
+      "path": "task/RoboDojo/config/stack_bowls.yml",
+      "sha256": "4e2aaa12b8b0f58ca801f1a93638c46d3b49ebad809c5a8011382ccda846dcb1"
+    },
+    {
+      "path": "task/RoboDojo/config/stack_bowls_random.yml",
+      "sha256": "5c08af1bcc925d958d53de51e8ebd336006203f1bc81e4ef68f3719eadfabb49"
+    },
+    {
+      "path": "task/RoboDojo/config/store_laptop_and_headphones.yml",
+      "sha256": "0fdaab803a9370a9e2d1fc8d86a5788daa3940c08fd6f767334f625642fca3e2"
+    },
+    {
+      "path": "task/RoboDojo/config/store_laptop_and_headphones_random.yml",
+      "sha256": "93f0ca39bc8bb32df94e84a02f22ed4d7860f37cdc0b9dd17e44721445849576"
+    },
+    {
+      "path": "task/RoboDojo/config/store_tools_in_toolbox.yml",
+      "sha256": "641c8ef92393bd986e408d26a84b1cfcdac27466a5ac5f0b3ebe4bb84430c527"
+    },
+    {
+      "path": "task/RoboDojo/config/swap_T.yml",
+      "sha256": "1daf769911e13714b4aeabd208292931e32f4dd39968893152bb7bb477c46c9b"
+    },
+    {
+      "path": "task/RoboDojo/config/swap_blocks.yml",
+      "sha256": "b6bb2a9df494719f26c6b1aab2e7576107ae76e2fbac8b63a5770f21e0e9f05f"
+    },
+    {
+      "path": "task/RoboDojo/config/sweep_blocks.yml",
+      "sha256": "98aa25ac39be9d335c71b2b586bbba372789e9d61e652e1147152c87febbf1f5"
+    },
+    {
+      "path": "task/RoboDojo/config/sweep_blocks_random.yml",
+      "sha256": "4ebff5e2cad07f958dc4b2793b86b1aa803c0809394818ee3752d300e58b6187"
+    },
+    {
+      "path": "task/RoboDojo/task_registry.py",
+      "sha256": "11218028f772d9253ee709a7d85aa72d1e1fd87e4f8d33ee3787d6064438f9ab"
+    },
+    {
+      "path": "task/RoboDojo/tasks/align_blocks.py",
+      "sha256": "c8597e96132cd7c9d30f3ae101f7bbe8ac28597b629599d75d442bbea4c6e74c"
+    },
+    {
+      "path": "task/RoboDojo/tasks/arrange_largest_number.py",
+      "sha256": "277acd20ae4345dc71267762e588b7b0343387c71685183890f044a4808b7a20"
+    },
+    {
+      "path": "task/RoboDojo/tasks/arrange_largest_number_random.py",
+      "sha256": "01757509978663bf7c0c95059e8ae18d45b8fe0953f6b54540e2bd6bf141182e"
+    },
+    {
+      "path": "task/RoboDojo/tasks/build_tower.py",
+      "sha256": "814cf6ffb459871e5cf49f4e127903dbfbc30926f33db71de0b84a71ab235d6e"
+    },
+    {
+      "path": "task/RoboDojo/tasks/classify_objects.py",
+      "sha256": "aef4333c088766375e21a928d53a9a93aaee285fecae41e22385acdc74dd11ac"
+    },
+    {
+      "path": "task/RoboDojo/tasks/classify_objects_by_language.py",
+      "sha256": "242a8f048f487eb174ef246be78613bbb5f153549ee11a2650412718cf3b36c9"
+    },
+    {
+      "path": "task/RoboDojo/tasks/cover_blocks.py",
+      "sha256": "9d14931b16842b93bea8abf9a07991a93a7e663b93c5fd1695108c8b922ab862"
+    },
+    {
+      "path": "task/RoboDojo/tasks/deposit_coin.py",
+      "sha256": "f9868ef827ec17b8db6c4650cc5d9a9e593d20d00ee822e2212ce229ec01fb61"
+    },
+    {
+      "path": "task/RoboDojo/tasks/fasten_screws.py",
+      "sha256": "2e187a28e33e44efb87baae6463b3ec35264ccd41e35c21a1be44f6361675185"
+    },
+    {
+      "path": "task/RoboDojo/tasks/fill_egg_holder.py",
+      "sha256": "506dfb772f8882ae53966e3580affde19c3c0f11591c78cc5f5b1d997ba04f7e"
+    },
+    {
+      "path": "task/RoboDojo/tasks/fill_pen_holder.py",
+      "sha256": "8706dce239487e078b21af0b95bcc5cd4eabdcdadcdcbc6400d6b138d982f1e6"
+    },
+    {
+      "path": "task/RoboDojo/tasks/fold_clothes.py",
+      "sha256": "ecea9c287d0579605330168e6f36734704fb14a6b1e5dec82b6f2ee3a56ec20a"
+    },
+    {
+      "path": "task/RoboDojo/tasks/fold_clothes_random.py",
+      "sha256": "9e40abe3f7201a8c13961edc1ca8075260c315584d3d6b93fa1df966d13d1e88"
+    },
+    {
+      "path": "task/RoboDojo/tasks/general_pickup.py",
+      "sha256": "1a9eef7fe518f9d2c6805ad1a8f97c1045fa83726f84b9c63f67ffdfabbc40a7"
+    },
+    {
+      "path": "task/RoboDojo/tasks/hang_mugs.py",
+      "sha256": "4bc6586bd87de030b9c580fea2a45e7977c3b6a4d75cf3c43b546d349d42e906"
+    },
+    {
+      "path": "task/RoboDojo/tasks/hang_mugs_random.py",
+      "sha256": "ebfa4a95deb954aa7a9063a07fe366cb5ea1835d3f52342b10d531225dfeee92"
+    },
+    {
+      "path": "task/RoboDojo/tasks/imitate_sorting_sequence.py",
+      "sha256": "18400cb3c5f5103492819df2dcdf05a77916106e8a503cb62b4ee6cdbaa9305b"
+    },
+    {
+      "path": "task/RoboDojo/tasks/insert_key.py",
+      "sha256": "180978a2915744f0596fbca4ea0ad6dcb47dce005d43f06807249bc8b4d1a828"
+    },
+    {
+      "path": "task/RoboDojo/tasks/insert_tubes.py",
+      "sha256": "9a68795ddbd0b816ffd7627e673390ecd83594c0e9d374d4e3abf3435ad439e1"
+    },
+    {
+      "path": "task/RoboDojo/tasks/make_kong.py",
+      "sha256": "b9266689d65f9213b05219ad952344f9fd63be8892097ec0103af99791b245d5"
+    },
+    {
+      "path": "task/RoboDojo/tasks/make_toast.py",
+      "sha256": "1047f484a73d1f92304393879b51f87e33d661b6ad7937198352fe37a0d3233d"
+    },
+    {
+      "path": "task/RoboDojo/tasks/make_toast_random.py",
+      "sha256": "69fb879b89e98f7369971834eb6d1b95c5a65f5ffe978b2cffae0b12c6b756ca"
+    },
+    {
+      "path": "task/RoboDojo/tasks/match_and_pick_from_conveyor.py",
+      "sha256": "53110b8a0c971bd3ae8878bfb7d0dcd9626bd9b610d4e7fc91772313b435a5c0"
+    },
+    {
+      "path": "task/RoboDojo/tasks/organize_table.py",
+      "sha256": "aceb298e78f3f39e4cf9a9f4c5a4f747b2c55f1a6006de2065e110a05f4295d6"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pack_objects_into_box.py",
+      "sha256": "84a1cf1dd5e166f36291130f9d8cb5dfe4b3f4732a46674bef6374a7ea2d66be"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pack_objects_into_box_random.py",
+      "sha256": "4db259a1b97cdcc39ebc9794244fadc79d31c4ae64069c9b11a233356fcb655c"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pick_from_conveyor_by_image.py",
+      "sha256": "a0d29576d0aab8232d2fd3ebcc8c510e81c70b4cc04602a5be3e99ee2275e01d"
+    },
+    {
+      "path": "task/RoboDojo/tasks/play_Xylophone.py",
+      "sha256": "b7a4b0bc0457bcf55d714ca1867476fc4aabc53084adfc78d3ff5d1437bf7847"
+    },
+    {
+      "path": "task/RoboDojo/tasks/play_stacking_toy.py",
+      "sha256": "23361329ee7efe330da1f1c241415205bafed2b6c082a913659d868a80d338c3"
+    },
+    {
+      "path": "task/RoboDojo/tasks/play_tic_tac_toe.py",
+      "sha256": "8f75ebfe55c997ad9bd3b342db46e843e87397db94356f31cadcbe0cb483bca7"
+    },
+    {
+      "path": "task/RoboDojo/tasks/plug_in_charger.py",
+      "sha256": "aaa59ade46dc54f430e1148e3f6fae487970cd29eb2c07b5ff7b4045edb831b6"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pour_balls_into_vase.py",
+      "sha256": "eae388b93ec196c401f76bbab3b0119cb2164f90bece0225d4fb925d3f2b73ab"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pour_by_language.py",
+      "sha256": "f7a15a7fca2c649a7918d68960ede27e667f409a339b668dd9876db890724cfb"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pour_liquid_into_cup.py",
+      "sha256": "73f8c91b57c352fdc1e7ba3fe5354b3c10e4156d8e5ba777762ad0fa1aff5663"
+    },
+    {
+      "path": "task/RoboDojo/tasks/pour_liquid_into_cup_random.py",
+      "sha256": "a1c4097b6e34b2c62885b3a9c7d2584a93d9e296dc41d311a80c2e6d541d53af"
+    },
+    {
+      "path": "task/RoboDojo/tasks/press_by_number.py",
+      "sha256": "006f969087c00c417a63875a9de153f698c52d1f1ca0caf0aa16076aa15059c5"
+    },
+    {
+      "path": "task/RoboDojo/tasks/push_T.py",
+      "sha256": "a01d753bc320ffbf492ccc29e5f7ab3b39e6c7d255cd25804db1934a30fa5b41"
+    },
+    {
+      "path": "task/RoboDojo/tasks/push_T_random.py",
+      "sha256": "dc8d9c8e0d2e8dfffa2b7d433a8278c0eaf707cc4861b15035364c2e70061dab"
+    },
+    {
+      "path": "task/RoboDojo/tasks/put_bottles_into_dustbin.py",
+      "sha256": "3ba6e19df0c5ff19ba961092f031ce14e91e72a9a4a5934eece6000a1ffa1c48"
+    },
+    {
+      "path": "task/RoboDojo/tasks/solve_equation.py",
+      "sha256": "e287a2f36b82b28e8ca7824f63b1b723b02972ea6dfc115ff32b2882729751f7"
+    },
+    {
+      "path": "task/RoboDojo/tasks/sort_nesting_dolls_by_size.py",
+      "sha256": "1838fa6b515bad3796895cb5c1883c6a42789b7dada5434765764600e70beb49"
+    },
+    {
+      "path": "task/RoboDojo/tasks/sort_nesting_dolls_by_size_random.py",
+      "sha256": "b793ab5bd32bd2c10bd46874440904837f9c4e290e7508b06426e2e96425709a"
+    },
+    {
+      "path": "task/RoboDojo/tasks/stack_blocks.py",
+      "sha256": "50bd388f9e47002966fbb0146742467a820295b8686e0f86379f0efbcfffcc1b"
+    },
+    {
+      "path": "task/RoboDojo/tasks/stack_blocks_by_language.py",
+      "sha256": "68fc05bf1534a400e6dc93aab04e7561fa43485a226e3a74b4560ac154c1b6fb"
+    },
+    {
+      "path": "task/RoboDojo/tasks/stack_blocks_random.py",
+      "sha256": "19d4e5cd693e068ad64de75cbcd24977ab8d39e22fa17362a391dcd733bc9bb5"
+    },
+    {
+      "path": "task/RoboDojo/tasks/stack_bowls.py",
+      "sha256": "022c129ec3493183b1a26688a0402f5a00a1546ae011999e9c19f4c0029e2b7d"
+    },
+    {
+      "path": "task/RoboDojo/tasks/stack_bowls_random.py",
+      "sha256": "a0e20469eb44a9ee98650d09386814c1df5264c68ec139f06aabf0c86f092514"
+    },
+    {
+      "path": "task/RoboDojo/tasks/store_laptop_and_headphones.py",
+      "sha256": "2bee4e31f0594900629fe7f43266e16fecb310b152930ce51524507136809a92"
+    },
+    {
+      "path": "task/RoboDojo/tasks/store_laptop_and_headphones_random.py",
+      "sha256": "58c3c5113054a379214d64ae406ed8dde99603cf684ce9cd8c7bcb72ed334382"
+    },
+    {
+      "path": "task/RoboDojo/tasks/store_tools_in_toolbox.py",
+      "sha256": "2969fc3eb171560b3c0bcea62b9f38b8b35f3aecc9bcc7085c3b1cec365b48fc"
+    },
+    {
+      "path": "task/RoboDojo/tasks/swap_T.py",
+      "sha256": "57fc289b3957caa454e1d8e005e3a57c973d6ab40121845c94799e61e4bfafdf"
+    },
+    {
+      "path": "task/RoboDojo/tasks/swap_blocks.py",
+      "sha256": "08ed24ae9dff27f4e5c850161a02f62ce237859c096d9b06a853a7890e0ad4ed"
+    },
+    {
+      "path": "task/RoboDojo/tasks/sweep_blocks.py",
+      "sha256": "65786217e199c1e2b26ec8e2c232bf98ecb304a20939d0908fe12bc41e990614"
+    },
+    {
+      "path": "task/RoboDojo/tasks/sweep_blocks_random.py",
+      "sha256": "68b6127038322cf001d5f614060b8a1d96e64a49efddfcdcae91127d5c206bc5"
+    },
+    {
+      "path": "utils/cluttered_generator.py",
+      "sha256": "f59cfcfed2b4cce5ae9aeaf3339c86d17e237874e3526bded3cb05136dbcbd50"
+    },
+    {
+      "path": "utils/ensure_usd_path.py",
+      "sha256": "7c8e71cf91636e630b1b174098fe0b38740857daeaf207e2fae772c4727b11bf"
+    },
+    {
+      "path": "utils/load_file.py",
+      "sha256": "ef3a6dc96aa1a7442cfd24f7be9671052a98d2f20783c3e71032332704132943"
+    },
+    {
+      "path": "utils/path.py",
+      "sha256": "1d427c7cf33e748e01d0d083c9432d8be8b5c3a1f35c5fb0f6ebb0714098f1d1"
+    },
+    {
+      "path": "utils/pipeline_utils.py",
+      "sha256": "d5d8da29e6ca84ab04323a2f79130f930572785b4399634e06a42834ed4087ae"
+    },
+    {
+      "path": "utils/rotations.py",
+      "sha256": "8e814f79938bdb9e85f1c024825617cc08d281b61728c6410b23ef1bd852c340"
+    },
+    {
+      "path": "utils/save_file.py",
+      "sha256": "6cff5950f73bf7a1ed404f804d6f08af712974f22c3955de4cdf142f211aaf00"
+    },
+    {
+      "path": "utils/transformer.py",
+      "sha256": "73de4f5e1e0ff60d4f2e1aaf6104368e8f919269facb68b4fa0344d35bc08cbe"
+    },
+    {
+      "path": "utils/update_embodiment_config_path.py",
+      "sha256": "6a8252e1dcb3fa7aba15fbbecf4408a908beb324f11624d979e867d2ea332259"
+    },
+    {
+      "path": "utils/usd_schema.py",
+      "sha256": "260d30b0ada2976136cad3e49e810b4409304eb4a2bc60bd9ed710864d3953ac"
+    }
+  ],
+  "seed_semantics": {
+    "eval_seed": "published layout group",
+    "layout_id": "native sorted layout index",
+    "reset_seed": "layout_id, passed to native reset",
+    "simulator_initial_seed": "native startup seed",
+    "policy_rng_seed": "OpenPI JAX initial key; fresh process, no warmup inference"
+  },
+  "pairing": "Reuse this manifest unchanged across methods; compare observed initial fingerprints too",
+  "invalid_layout_policy": "Record and exclude native-invalid cases; no automatic replacement or retry",
+  "cases": [
+    {
+      "case_id": "organize_table__standard__g0__l0",
+      "task": "organize_table",
+      "runtime_task": "organize_table",
+      "variant": "standard",
+      "replica_id": 0,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/organize_table_0.json",
+        "sha256": "e55e5cffef73b1967ad26dc0c7c8933ce05e68f329450ae0ac933abf386fa5ba"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "organize_table__standard__g0__l1",
+      "task": "organize_table",
+      "runtime_task": "organize_table",
+      "variant": "standard",
+      "replica_id": 0,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/organize_table_1.json",
+        "sha256": "cc44fde5d0d4461123b2ec469d6bb02f47a621ee2f6b2bc81269213b82b2342d"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "organize_table__standard__g0__l2",
+      "task": "organize_table",
+      "runtime_task": "organize_table",
+      "variant": "standard",
+      "replica_id": 0,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/organize_table_2.json",
+        "sha256": "2b995768c4dfada0ac4c313fa20e467e645f6ff700e81fe05ef513d61ed0e343"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "organize_table__standard__g0__l3",
+      "task": "organize_table",
+      "runtime_task": "organize_table",
+      "variant": "standard",
+      "replica_id": 0,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/organize_table_3.json",
+        "sha256": "12e2492a1f688b800774543f2e9805bc1e4b7a0950c1037f59e7dfe073e43711"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "organize_table__standard__g0__l4",
+      "task": "organize_table",
+      "runtime_task": "organize_table",
+      "variant": "standard",
+      "replica_id": 0,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/organize_table_4.json",
+        "sha256": "82764ab142f4748fe581b4993460743ae59ba08c7d6aea3770d4bf61844dc20a"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "organize_table__standard__g0__l5",
+      "task": "organize_table",
+      "runtime_task": "organize_table",
+      "variant": "standard",
+      "replica_id": 0,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/organize_table_5.json",
+        "sha256": "d870df53b37e0f80f7ebfad3161d1cde2b0a87073dd5e89591602afe5c5e6752"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects_by_language__standard__g0__l0",
+      "task": "classify_objects_by_language",
+      "runtime_task": "classify_objects_by_language",
+      "variant": "standard",
+      "replica_id": 1,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_by_language_0.json",
+        "sha256": "eb7bc205a8e5f3acad8fdada3bf7a26b8e11fc39d7944f434aa4989356044eb2"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects_by_language__standard__g0__l1",
+      "task": "classify_objects_by_language",
+      "runtime_task": "classify_objects_by_language",
+      "variant": "standard",
+      "replica_id": 1,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_by_language_1.json",
+        "sha256": "a8dfaa02ceec29c527c2ef4d98beb5862c31cc8ffe01bc978ea63987f696500b"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects_by_language__standard__g0__l2",
+      "task": "classify_objects_by_language",
+      "runtime_task": "classify_objects_by_language",
+      "variant": "standard",
+      "replica_id": 1,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_by_language_2.json",
+        "sha256": "224acdad14e9087fe1c488537960aa4edc63d19167e2a41fef124e745fc1217c"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects_by_language__standard__g0__l3",
+      "task": "classify_objects_by_language",
+      "runtime_task": "classify_objects_by_language",
+      "variant": "standard",
+      "replica_id": 1,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_by_language_3.json",
+        "sha256": "c986ce753c840a80d83e706b3ddebd56f2fa7c5dd569eb015febacc9e4ce330c"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects_by_language__standard__g0__l4",
+      "task": "classify_objects_by_language",
+      "runtime_task": "classify_objects_by_language",
+      "variant": "standard",
+      "replica_id": 1,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_by_language_4.json",
+        "sha256": "14018986e7d50443a084a961998a11e3cc3415cec04447d4bab7d0b3fd872046"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects_by_language__standard__g0__l5",
+      "task": "classify_objects_by_language",
+      "runtime_task": "classify_objects_by_language",
+      "variant": "standard",
+      "replica_id": 1,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_by_language_5.json",
+        "sha256": "7913a7c2fd6f12dc09d24a5af9d6ead0849ce568125626d84b385c0c77efae9e"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "imitate_sorting_sequence__standard__g0__l0",
+      "task": "imitate_sorting_sequence",
+      "runtime_task": "imitate_sorting_sequence",
+      "variant": "standard",
+      "replica_id": 2,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/imitate_sorting_sequence_0.json",
+        "sha256": "3f49325bc7198569671b2e6a478460d9ea3a323edb38a5da4da389c7a29b2f27"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/imitate_sorting_sequence/0/0.pkl",
+          "sha256": "e87b1a5d7d76eb39c165f904a3f382929dae846488d30fd95cc505fb9f66711b"
+        }
+      ]
+    },
+    {
+      "case_id": "imitate_sorting_sequence__standard__g0__l1",
+      "task": "imitate_sorting_sequence",
+      "runtime_task": "imitate_sorting_sequence",
+      "variant": "standard",
+      "replica_id": 2,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/imitate_sorting_sequence_1.json",
+        "sha256": "a9d1637fa0a50433be91e360bc1d25d7b95ce2b485ec055a04b4b01ed7f15038"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/imitate_sorting_sequence/0/1.pkl",
+          "sha256": "d365a2e9365517d91e5d7f091faaf02162b45d64784eb2c367e07d6589c96010"
+        }
+      ]
+    },
+    {
+      "case_id": "imitate_sorting_sequence__standard__g0__l2",
+      "task": "imitate_sorting_sequence",
+      "runtime_task": "imitate_sorting_sequence",
+      "variant": "standard",
+      "replica_id": 2,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/imitate_sorting_sequence_2.json",
+        "sha256": "1b0fc859dbc088411be7eee6ee1985f07384fdce11dd903ae59a5af1d0a3834a"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/imitate_sorting_sequence/0/2.pkl",
+          "sha256": "8cea316ad803e28839e8e6c5f330aac4bc29d00e2c12045547a1d7fe71551254"
+        }
+      ]
+    },
+    {
+      "case_id": "imitate_sorting_sequence__standard__g0__l3",
+      "task": "imitate_sorting_sequence",
+      "runtime_task": "imitate_sorting_sequence",
+      "variant": "standard",
+      "replica_id": 2,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/imitate_sorting_sequence_3.json",
+        "sha256": "6135752298d155b0f2cb591da3199bd98a5349c013196fd5ed2e714e87592171"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/imitate_sorting_sequence/0/3.pkl",
+          "sha256": "14821c325e3cc7ea9fc187f979a27a70f34703a3815c015284189d400dfd7889"
+        }
+      ]
+    },
+    {
+      "case_id": "imitate_sorting_sequence__standard__g0__l4",
+      "task": "imitate_sorting_sequence",
+      "runtime_task": "imitate_sorting_sequence",
+      "variant": "standard",
+      "replica_id": 2,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/imitate_sorting_sequence_4.json",
+        "sha256": "822665f497405d86cd25fb43d18abb2d51a3335dc049339d1bd303d70546f4a1"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/imitate_sorting_sequence/0/4.pkl",
+          "sha256": "27eca96475f60a02d5540dd7d6293d0bdb9caa9313e0c8665a07d330a904d94a"
+        }
+      ]
+    },
+    {
+      "case_id": "imitate_sorting_sequence__standard__g0__l5",
+      "task": "imitate_sorting_sequence",
+      "runtime_task": "imitate_sorting_sequence",
+      "variant": "standard",
+      "replica_id": 2,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/imitate_sorting_sequence_5.json",
+        "sha256": "3f8f849ceced13527bfd31c342ea3c88d036b40b16d04c32d53c683beb7b2e91"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/imitate_sorting_sequence/0/5.pkl",
+          "sha256": "9a8ec9ba0938a38656706eff4367ae54cf2e411b87feee0c6f5964a359a466d7"
+        }
+      ]
+    },
+    {
+      "case_id": "arrange_largest_number__standard__g0__l0",
+      "task": "arrange_largest_number",
+      "runtime_task": "arrange_largest_number",
+      "variant": "standard",
+      "replica_id": 3,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/arrange_largest_number_0.json",
+        "sha256": "8d45b23010c950c35d5618c8701c6b8203036abaaf20a228db067ec3b1e30617"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "arrange_largest_number__standard__g0__l1",
+      "task": "arrange_largest_number",
+      "runtime_task": "arrange_largest_number",
+      "variant": "standard",
+      "replica_id": 3,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/arrange_largest_number_1.json",
+        "sha256": "46bc75b456018bb220962d0c7d0403b9495aa05c5c0b947a72fbf1a6bd5b08fa"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "arrange_largest_number__standard__g0__l2",
+      "task": "arrange_largest_number",
+      "runtime_task": "arrange_largest_number",
+      "variant": "standard",
+      "replica_id": 3,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/arrange_largest_number_2.json",
+        "sha256": "d9c569e557aee3c808a38a9e3461611b8119505dee3a56654752285a2af5c65f"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "arrange_largest_number__random__g0__l0",
+      "task": "arrange_largest_number",
+      "runtime_task": "arrange_largest_number_random",
+      "variant": "random",
+      "replica_id": 3,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/arrange_largest_number_random_0.json",
+        "sha256": "c7897e5204ca76bbd7c6cb3c93a794a4e5218c0c17a4312f047930f5e7e822d5"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "arrange_largest_number__random__g0__l1",
+      "task": "arrange_largest_number",
+      "runtime_task": "arrange_largest_number_random",
+      "variant": "random",
+      "replica_id": 3,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/arrange_largest_number_random_1.json",
+        "sha256": "f24eb21ce320f29577217f7cf9fa44e9213435964038ed481bb99e99bb7ae370"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "arrange_largest_number__random__g0__l2",
+      "task": "arrange_largest_number",
+      "runtime_task": "arrange_largest_number_random",
+      "variant": "random",
+      "replica_id": 3,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/arrange_largest_number_random_2.json",
+        "sha256": "b3e22d7d04bdcdbbf00dd498b177ff2b2f463a59df568fc38963009ac6f4707a"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "pack_objects_into_box__standard__g0__l0",
+      "task": "pack_objects_into_box",
+      "runtime_task": "pack_objects_into_box",
+      "variant": "standard",
+      "replica_id": 4,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/pack_objects_into_box_0.json",
+        "sha256": "d529ff309408abf0270efa996832d3e70dcc9e070c2e90c9824fba60f396d2b2"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "pack_objects_into_box__standard__g0__l1",
+      "task": "pack_objects_into_box",
+      "runtime_task": "pack_objects_into_box",
+      "variant": "standard",
+      "replica_id": 4,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/pack_objects_into_box_1.json",
+        "sha256": "4166accd9642b354d1dbe9d9dd4a7b37fbf52f2e749485bc38f66ca554a797a6"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "pack_objects_into_box__standard__g0__l2",
+      "task": "pack_objects_into_box",
+      "runtime_task": "pack_objects_into_box",
+      "variant": "standard",
+      "replica_id": 4,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/pack_objects_into_box_2.json",
+        "sha256": "3809779f3c4dbf1440cda55d8e6db00a46fae3cb46b3772f842b0c1d3508b26f"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "pack_objects_into_box__random__g0__l0",
+      "task": "pack_objects_into_box",
+      "runtime_task": "pack_objects_into_box_random",
+      "variant": "random",
+      "replica_id": 4,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/pack_objects_into_box_random_0.json",
+        "sha256": "f51946657574f10da34a6760128dd5701ec948a3ce638b6168f5ceb6478166c4"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "pack_objects_into_box__random__g0__l1",
+      "task": "pack_objects_into_box",
+      "runtime_task": "pack_objects_into_box_random",
+      "variant": "random",
+      "replica_id": 4,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/pack_objects_into_box_random_1.json",
+        "sha256": "afd36f32cca5734104502a24c2085bf415315da85aad4b81800d9eb5bf0f019f"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "pack_objects_into_box__random__g0__l2",
+      "task": "pack_objects_into_box",
+      "runtime_task": "pack_objects_into_box_random",
+      "variant": "random",
+      "replica_id": 4,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/pack_objects_into_box_random_2.json",
+        "sha256": "a55c44608c7ea8ae11c1206d0fdc24e595b8650e7b14a86da9a0a536445c8b01"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects__standard__g0__l0",
+      "task": "classify_objects",
+      "runtime_task": "classify_objects",
+      "variant": "standard",
+      "replica_id": 5,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_0.json",
+        "sha256": "5ceb9e18e6d8490a7db85dd001462d63265c297ea6fad0d7438364deb2de3ece"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects__standard__g0__l1",
+      "task": "classify_objects",
+      "runtime_task": "classify_objects",
+      "variant": "standard",
+      "replica_id": 5,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_1.json",
+        "sha256": "013d7141ffc9865d7cccf650301f642e6b83b3eb59f78cf5b1d0caf47158e17a"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects__standard__g0__l2",
+      "task": "classify_objects",
+      "runtime_task": "classify_objects",
+      "variant": "standard",
+      "replica_id": 5,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_2.json",
+        "sha256": "6b3a30251bd92a465ffdc82436e14dde84879906eeab3b0e8944865b9eef38f7"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects__standard__g0__l3",
+      "task": "classify_objects",
+      "runtime_task": "classify_objects",
+      "variant": "standard",
+      "replica_id": 5,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_3.json",
+        "sha256": "d11ac5e14ab8fd9c8eee0c1cc827d7827b86b3cec4b97e496ef384470f171ff5"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects__standard__g0__l4",
+      "task": "classify_objects",
+      "runtime_task": "classify_objects",
+      "variant": "standard",
+      "replica_id": 5,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_4.json",
+        "sha256": "49c99299e632b60fde270fb69ce6421739d6e517971654ae5566ef213a754aa3"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "classify_objects__standard__g0__l5",
+      "task": "classify_objects",
+      "runtime_task": "classify_objects",
+      "variant": "standard",
+      "replica_id": 5,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/classify_objects_5.json",
+        "sha256": "47f798976a13ed807c02ca4889c2ad3ca07fd6a0a1b38b1941c707e590a22473"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "build_tower__standard__g0__l0",
+      "task": "build_tower",
+      "runtime_task": "build_tower",
+      "variant": "standard",
+      "replica_id": 6,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/build_tower_0.json",
+        "sha256": "afcf896086392357a8826f84bebe4910dcb7a5f1b84e7be435e16e3d5c3607a4"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "build_tower__standard__g0__l1",
+      "task": "build_tower",
+      "runtime_task": "build_tower",
+      "variant": "standard",
+      "replica_id": 6,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/build_tower_1.json",
+        "sha256": "c4c67f1c1c2abe8ae32d2686048e61eb6e4396c79025b30779091f14705db18c"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "build_tower__standard__g0__l2",
+      "task": "build_tower",
+      "runtime_task": "build_tower",
+      "variant": "standard",
+      "replica_id": 6,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/build_tower_2.json",
+        "sha256": "8d6bff06259a8ae1dbaf982639c3febabccc9e681a34e18acc368647deced338"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "build_tower__standard__g0__l3",
+      "task": "build_tower",
+      "runtime_task": "build_tower",
+      "variant": "standard",
+      "replica_id": 6,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/build_tower_3.json",
+        "sha256": "2baf81cf370a985354a616bc965938e8d3d685ebd11c1372e79a22276ac95db2"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "build_tower__standard__g0__l4",
+      "task": "build_tower",
+      "runtime_task": "build_tower",
+      "variant": "standard",
+      "replica_id": 6,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/build_tower_4.json",
+        "sha256": "bd298ba59bcdc04051c63251c3b0fefda7eb5536a30a220bcd9a8c8dd8fa6b61"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "build_tower__standard__g0__l5",
+      "task": "build_tower",
+      "runtime_task": "build_tower",
+      "variant": "standard",
+      "replica_id": 6,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/build_tower_5.json",
+        "sha256": "631664dbc10c2bf72e43559906e0488a75163ce40d6d87626f04ddc34ae8bf03"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "make_kong__standard__g0__l0",
+      "task": "make_kong",
+      "runtime_task": "make_kong",
+      "variant": "standard",
+      "replica_id": 7,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/make_kong_0.json",
+        "sha256": "4e13e55934b1b3bdab5f3697f7b997080e4f7652fa265f24a6b05cbb761a7228"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/0.pkl",
+          "sha256": "a2b66eb5b5d4b5a3b4cf51c0a5b44358aa701433331caf9aa3763f636a1f6cb2"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/1.pkl",
+          "sha256": "c7f171a586b56fd2cd78b26a58a87e0ed4bc9b49d6b5605c7b17263fd30a4e90"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/2.pkl",
+          "sha256": "16b40a4c9d646e403a25a40d4d4840a6d534dd86fb6f4c7048c5b6a4fbefd683"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/3.pkl",
+          "sha256": "4a8561ea07549f6f105b21acab991e3c90bb4f60f1cd05c30bfb87e4a5cbb30c"
+        }
+      ]
+    },
+    {
+      "case_id": "make_kong__standard__g0__l1",
+      "task": "make_kong",
+      "runtime_task": "make_kong",
+      "variant": "standard",
+      "replica_id": 7,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/make_kong_1.json",
+        "sha256": "e609adadc84a75aa78afc6893abb5fcc12c51d2c1d2f4535cda36544478edf12"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/0.pkl",
+          "sha256": "a2b66eb5b5d4b5a3b4cf51c0a5b44358aa701433331caf9aa3763f636a1f6cb2"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/1.pkl",
+          "sha256": "c7f171a586b56fd2cd78b26a58a87e0ed4bc9b49d6b5605c7b17263fd30a4e90"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/2.pkl",
+          "sha256": "16b40a4c9d646e403a25a40d4d4840a6d534dd86fb6f4c7048c5b6a4fbefd683"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/3.pkl",
+          "sha256": "4a8561ea07549f6f105b21acab991e3c90bb4f60f1cd05c30bfb87e4a5cbb30c"
+        }
+      ]
+    },
+    {
+      "case_id": "make_kong__standard__g0__l2",
+      "task": "make_kong",
+      "runtime_task": "make_kong",
+      "variant": "standard",
+      "replica_id": 7,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/make_kong_2.json",
+        "sha256": "09af2487241bf330bb495da875a0f812630db5de4ed2e8621aeefdf297a625cf"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/0.pkl",
+          "sha256": "a2b66eb5b5d4b5a3b4cf51c0a5b44358aa701433331caf9aa3763f636a1f6cb2"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/1.pkl",
+          "sha256": "c7f171a586b56fd2cd78b26a58a87e0ed4bc9b49d6b5605c7b17263fd30a4e90"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/2.pkl",
+          "sha256": "16b40a4c9d646e403a25a40d4d4840a6d534dd86fb6f4c7048c5b6a4fbefd683"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/3.pkl",
+          "sha256": "4a8561ea07549f6f105b21acab991e3c90bb4f60f1cd05c30bfb87e4a5cbb30c"
+        }
+      ]
+    },
+    {
+      "case_id": "make_kong__standard__g0__l3",
+      "task": "make_kong",
+      "runtime_task": "make_kong",
+      "variant": "standard",
+      "replica_id": 7,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/make_kong_3.json",
+        "sha256": "4e24a48c7ee599fc50c04c174f3d1e49802b1c3cd33f539ec4ff2878021ebc58"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/0.pkl",
+          "sha256": "a2b66eb5b5d4b5a3b4cf51c0a5b44358aa701433331caf9aa3763f636a1f6cb2"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/1.pkl",
+          "sha256": "c7f171a586b56fd2cd78b26a58a87e0ed4bc9b49d6b5605c7b17263fd30a4e90"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/2.pkl",
+          "sha256": "16b40a4c9d646e403a25a40d4d4840a6d534dd86fb6f4c7048c5b6a4fbefd683"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/3.pkl",
+          "sha256": "4a8561ea07549f6f105b21acab991e3c90bb4f60f1cd05c30bfb87e4a5cbb30c"
+        }
+      ]
+    },
+    {
+      "case_id": "make_kong__standard__g0__l4",
+      "task": "make_kong",
+      "runtime_task": "make_kong",
+      "variant": "standard",
+      "replica_id": 7,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/make_kong_4.json",
+        "sha256": "c0cbfe6e11a00ebb75a445d335c92607faa74d844e06a114a0f0c33b2f308ae7"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/0.pkl",
+          "sha256": "a2b66eb5b5d4b5a3b4cf51c0a5b44358aa701433331caf9aa3763f636a1f6cb2"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/1.pkl",
+          "sha256": "c7f171a586b56fd2cd78b26a58a87e0ed4bc9b49d6b5605c7b17263fd30a4e90"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/2.pkl",
+          "sha256": "16b40a4c9d646e403a25a40d4d4840a6d534dd86fb6f4c7048c5b6a4fbefd683"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/3.pkl",
+          "sha256": "4a8561ea07549f6f105b21acab991e3c90bb4f60f1cd05c30bfb87e4a5cbb30c"
+        }
+      ]
+    },
+    {
+      "case_id": "make_kong__standard__g0__l5",
+      "task": "make_kong",
+      "runtime_task": "make_kong",
+      "variant": "standard",
+      "replica_id": 7,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/make_kong_5.json",
+        "sha256": "7a7956b1a005acf78f0757bc7fe4caf043fdb600657099f4a92d58e5716f6816"
+      },
+      "native_support_trajectories": [
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/0.pkl",
+          "sha256": "a2b66eb5b5d4b5a3b4cf51c0a5b44358aa701433331caf9aa3763f636a1f6cb2"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/1.pkl",
+          "sha256": "c7f171a586b56fd2cd78b26a58a87e0ed4bc9b49d6b5605c7b17263fd30a4e90"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/2.pkl",
+          "sha256": "16b40a4c9d646e403a25a40d4d4840a6d534dd86fb6f4c7048c5b6a4fbefd683"
+        },
+        {
+          "path": "Assets/Traj/RoboDojo/make_kong/3.pkl",
+          "sha256": "4a8561ea07549f6f105b21acab991e3c90bb4f60f1cd05c30bfb87e4a5cbb30c"
+        }
+      ]
+    },
+    {
+      "case_id": "fold_clothes__standard__g0__l0",
+      "task": "fold_clothes",
+      "runtime_task": "fold_clothes",
+      "variant": "standard",
+      "replica_id": 8,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_0.json",
+        "sha256": "53de16e28978c71cfaa0620712633a0e07ed9d4bb79cdb63c5a953fa26f1b5ba"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "fold_clothes__standard__g0__l1",
+      "task": "fold_clothes",
+      "runtime_task": "fold_clothes",
+      "variant": "standard",
+      "replica_id": 8,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_1.json",
+        "sha256": "c43d694499bdb86c1ec3b8c6f2362893e0cfbbb5d00921378fc8c6fec2f79583"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "fold_clothes__standard__g0__l2",
+      "task": "fold_clothes",
+      "runtime_task": "fold_clothes",
+      "variant": "standard",
+      "replica_id": 8,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_2.json",
+        "sha256": "064e6a528a0f4042d2fc1ad76441cd2341eb9a5c0592ea776de28a950512138c"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "fold_clothes__random__g0__l0",
+      "task": "fold_clothes",
+      "runtime_task": "fold_clothes_random",
+      "variant": "random",
+      "replica_id": 8,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_0.json",
+        "sha256": "91ca045a523167ea32cf84551db921862b49d107995586a853c6b9eff1db10f0"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "fold_clothes__random__g0__l1",
+      "task": "fold_clothes",
+      "runtime_task": "fold_clothes_random",
+      "variant": "random",
+      "replica_id": 8,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_1.json",
+        "sha256": "d6ccfa56ee655613306344c2c4ad493bc54588ff082d961604da322929089658"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "fold_clothes__random__g0__l2",
+      "task": "fold_clothes",
+      "runtime_task": "fold_clothes_random",
+      "variant": "random",
+      "replica_id": 8,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/fold_clothes_random_2.json",
+        "sha256": "cdaab145fbadb25e0b452ae5ece2d384c8fe2201e8decb646db67c08f6723384"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "put_bottles_into_dustbin__standard__g0__l0",
+      "task": "put_bottles_into_dustbin",
+      "runtime_task": "put_bottles_into_dustbin",
+      "variant": "standard",
+      "replica_id": 9,
+      "rollout_index": 0,
+      "eval_seed": 0,
+      "layout_id": 0,
+      "reset_seed": 0,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_0.json",
+        "sha256": "3c2168f460d48dde2d72d55429f1af7e850725b642dfcb8c8d5e31ed2ec25537"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "put_bottles_into_dustbin__standard__g0__l1",
+      "task": "put_bottles_into_dustbin",
+      "runtime_task": "put_bottles_into_dustbin",
+      "variant": "standard",
+      "replica_id": 9,
+      "rollout_index": 1,
+      "eval_seed": 0,
+      "layout_id": 1,
+      "reset_seed": 1,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_1.json",
+        "sha256": "baf037612b844efdcf660d2f6f6ea064fb288e064a9d2d944c4c75ef0396968b"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "put_bottles_into_dustbin__standard__g0__l2",
+      "task": "put_bottles_into_dustbin",
+      "runtime_task": "put_bottles_into_dustbin",
+      "variant": "standard",
+      "replica_id": 9,
+      "rollout_index": 2,
+      "eval_seed": 0,
+      "layout_id": 2,
+      "reset_seed": 2,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_2.json",
+        "sha256": "7110decf67ccb6d77942719bf2f79d567c5d1d080413d2c713d3b41e691c11fe"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "put_bottles_into_dustbin__standard__g0__l3",
+      "task": "put_bottles_into_dustbin",
+      "runtime_task": "put_bottles_into_dustbin",
+      "variant": "standard",
+      "replica_id": 9,
+      "rollout_index": 3,
+      "eval_seed": 0,
+      "layout_id": 3,
+      "reset_seed": 3,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_3.json",
+        "sha256": "659a6fc1bffc692e8e61d07544d1c5145a3c17e8d8e75fc4af543b1a9fba41f5"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "put_bottles_into_dustbin__standard__g0__l4",
+      "task": "put_bottles_into_dustbin",
+      "runtime_task": "put_bottles_into_dustbin",
+      "variant": "standard",
+      "replica_id": 9,
+      "rollout_index": 4,
+      "eval_seed": 0,
+      "layout_id": 4,
+      "reset_seed": 4,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_4.json",
+        "sha256": "79fdd9de9ace106330d3a338380beb9fde98ee37ad87e7ee76a0b08684f2c695"
+      },
+      "native_support_trajectories": []
+    },
+    {
+      "case_id": "put_bottles_into_dustbin__standard__g0__l5",
+      "task": "put_bottles_into_dustbin",
+      "runtime_task": "put_bottles_into_dustbin",
+      "variant": "standard",
+      "replica_id": 9,
+      "rollout_index": 5,
+      "eval_seed": 0,
+      "layout_id": 5,
+      "reset_seed": 5,
+      "simulator_initial_seed": 0,
+      "policy_rng_seed": 0,
+      "layout": {
+        "path": "Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_5.json",
+        "sha256": "162b60992166837897e336103c93dec2d49936c305dc0d312a26c903d17dba11"
+      },
+      "native_support_trajectories": []
+    }
+  ],
+  "panel_sha256": "9641fa252856c5ffc07b269c9fef4fed7f5bbc91b45ea0e93fe2a39fa73944b7"
+}

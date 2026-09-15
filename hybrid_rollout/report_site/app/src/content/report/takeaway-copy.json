@@ -1,0 +1,4 @@
+{
+  "zh": "## GPT 6 Astra 在具身任务中展现出强大的 System 2 推理能力，但仅靠推理并不能保证及时响应，也不能保证连贯、稳健的运动轨迹。将 Astra 与 $\\pi_{0.5}$ 配对，通过结合 System 2 的审慎推理与 System 1 的感知运动技能提升任务表现，凸显了将习得的动作能力与推理相结合的价值，同时延迟仍是尚未解决的挑战。",
+  "en": "## GPT 6 Astra demonstrates strong System 2 reasoning for embodied tasks, but reasoning alone does not guarantee timely responses or coherent, robust trajectories. Pairing Astra with $\\pi_{0.5}$ improves performance by combining System 2 deliberation with System 1 sensorimotor skills—highlighting the value of learned action alongside reasoning, while latency remains an unresolved challenge."
+}

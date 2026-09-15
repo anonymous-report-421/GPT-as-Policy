@@ -1,0 +1,4 @@
+{
+  "repository": "https://github.com/anonymous-report-421/eval-of-gpt-6-astra-as-policy",
+  "bibtex": "@misc{su2026astra,\n  title        = {{GPT 6 Astra} as an Embodied Policy},\n  author       = {Su, Jiayi and Zheng, Yixin and Yan, Mi and Yi, Li and Zhang, Zhizheng and Wang, He},\n  year         = {2026},\n  howpublished = {Technical report and code},\n  url          = {https://github.com/anonymous-report-421/eval-of-gpt-6-astra-as-policy}\n}"
+}
