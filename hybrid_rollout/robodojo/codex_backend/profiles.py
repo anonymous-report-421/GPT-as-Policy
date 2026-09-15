@@ -16,9 +16,17 @@ from pathlib import Path
 import subprocess
 
 DEFAULT_SHARED = '/mnt/rollout/robodojo_mixed_control'
+ORCAROUTER_BASE_URL = 'https://api.orcarouter.ai/v1'
 PROFILES = {
     'galbot': ('api', 'LiteLLM', 'https://gateway.example.invalid'),
     'koozhan': ('api', 'Koozhan', 'https://relay.example.invalid/v1'),
+    # OrcaRouter is a first-class provider with two explicit authentication
+    # choices that share one inference identity: a pasted API key, and a PKCE
+    # sign-in that issues the same kind of key. Their credentials live in the
+    # private rollout store as private/orcarouter.key and
+    # private/orcarouter_oauth.key. See codex_backend/orcarouter/.
+    'orcarouter': ('api', 'orcarouter', ORCAROUTER_BASE_URL),
+    'orcarouter_oauth': ('api', 'orcarouter_oauth', ORCAROUTER_BASE_URL),
     'codex_a': ('chatgpt', 'openai', 'https://chatgpt.com/backend-api/codex'),
     'codex_a_2': ('chatgpt', 'openai', 'https://chatgpt.com/backend-api/codex'),
     'codex_a_3': ('chatgpt', 'openai', 'https://chatgpt.com/backend-api/codex'),
@@ -238,6 +246,28 @@ def main():
                    help='Read a private authenticated proxy only into the login child environment')
     p = sub.add_parser('config')
     p.add_argument('--output', required=True, type=Path)
+    # OrcaRouter is a first-class provider with two explicit authentication
+    # choices. Both are reachable from here so neither is a hidden path:
+    #   orcarouter-set-key   -> OrcaRouter - API   (paste an sk-orca-… key)
+    #   orcarouter-connect   -> OrcaRouter - Auth  (OAuth 2.0 + PKCE sign-in)
+    sub.add_parser('orcarouter-status', help='Show the OrcaRouter credential status')
+    p = sub.add_parser('orcarouter-set-key', help='OrcaRouter - API: store an sk-orca-… key')
+    p.add_argument('--key-file', type=Path,
+                   help='Read the key from a private file instead of the ORCA_KEY environment')
+    p = sub.add_parser('orcarouter-clear', help='Remove a stored OrcaRouter credential')
+    p.add_argument('--auth', choices=('api', 'oauth'), required=True)
+    p = sub.add_parser('orcarouter-connect', help='OrcaRouter - Auth: sign in with PKCE')
+    p.add_argument('--flow', choices=('loopback', 'oob', 'device'), default='oob',
+                   help='loopback receives the redirect; oob prints a code to paste; '
+                        'device polls (optional extra, never a substitute for PKCE)')
+    p = sub.add_parser('orcarouter-models', help='List the live OrcaRouter model catalog')
+    p.add_argument('--capability', default='chat',
+                   choices=('chat', 'embedding', 'image', 'video', 'rerank'))
+    p.add_argument('--modality', choices=('image', 'audio', 'video'),
+                   help='Require this input modality (multimodal entry points)')
+    p = sub.add_parser('orcarouter-console', help='Serve the local OrcaRouter provider console')
+    p.add_argument('--host', default='127.0.0.1')
+    p.add_argument('--port', type=int, default=8770)
     p = sub.add_parser('lease')
     p.add_argument('command', nargs=argparse.REMAINDER)
     args = parser.parse_args()
@@ -275,8 +305,66 @@ def main():
     elif args.action == 'check-pool15':
         validate_campaign_sessions(args.shared_root, POOL15_PROFILES)
         print('Three different accounts; five independent sessions each. Local check only; no rollout launched.')
+    elif args.action.startswith('orcarouter-'):
+        orcarouter_command(args)
     else:
         login_session(args.name, args.codex, args.shared_root, args.https_proxy_file, args.browser)
+
+
+def orcarouter_command(args):
+    """OrcaRouter CLI entry points; no credential value is ever printed."""
+    from .orcarouter import catalog, console, origins, provider
+    from .orcarouter.credentials import CredentialError, CredentialStore
+    store = CredentialStore(shared=args.shared_root)
+    if args.action == 'orcarouter-status':
+        print(json.dumps(dict(
+            inference_base=origins.api_v1(), auth_base=origins.auth_base(),
+            providers=[provider.describe(provider.API_PROVIDER, store),
+                       provider.describe(provider.OAUTH_PROVIDER, store)],
+            credential_value_exposed=False), indent=1))
+    elif args.action == 'orcarouter-set-key':
+        if args.key_file:
+            path = Path(args.key_file)
+            if path.is_symlink() or not path.is_file():
+                raise ValueError('Key file missing or symlink')
+            if path.stat().st_mode & 0o077:
+                raise ValueError('Key file must be mode 0600 or stricter')
+            key = path.read_text().strip()
+        else:
+            key = os.environ.get('ORCA_KEY', '')
+        credential = provider.adapter_for(provider.API_PROVIDER, store).acquire(key)
+        print(f'OrcaRouter - API: stored {credential.masked}; manage keys at '
+              f'{provider.KEY_DASHBOARD_URL}')
+    elif args.action == 'orcarouter-clear':
+        source = provider.provider_source(
+            provider.API_PROVIDER if args.auth == 'api' else provider.OAUTH_PROVIDER)
+        removed = store.clear(source)
+        print(f'OrcaRouter - {args.auth}: ' + ('removed the stored credential.'
+                                               if removed else 'nothing was stored.'))
+    elif args.action == 'orcarouter-connect':
+        provider.adapter_for(provider.OAUTH_PROVIDER, store).acquire(flow=args.flow)
+        print('OrcaRouter - Auth: signed in; the key is stored and reused until revoked.')
+    elif args.action == 'orcarouter-models':
+        required = (args.modality,) if args.modality else ()
+        credential = store.load_any()
+        if credential is None:
+            raise CredentialError('No OrcaRouter credential is configured; run '
+                                  'orcarouter-set-key or orcarouter-connect first')
+        result = catalog.catalog(credential.reveal(), args.capability, required)
+        print(json.dumps(dict(capability=args.capability,
+                              required_modalities=list(required),
+                              source=result['source'], degraded=result['degraded'],
+                              catalog_url=catalog.discovery_url(args.capability),
+                              count=len(result['models']),
+                              models=[model['id'] for model in result['models']],
+                              reason=result.get('reason')), indent=1))
+    elif args.action == 'orcarouter-console':
+        server = console.serve(store, args.host, args.port)
+        print(json.dumps(dict(event='orcarouter_console',
+                              url=f'http://{args.host}:{server.server_port}/',
+                              inference_base=origins.api_v1(),
+                              credential_value_exposed=False)))
+        server.serve_forever(poll_interval=1)
 
 
 if __name__ == '__main__':
