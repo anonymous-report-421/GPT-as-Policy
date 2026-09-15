@@ -57,6 +57,19 @@ The integrations depend on externally installed simulator and policy environment
 
 The model is fixed to `gpt-6-astra` with `xhigh` reasoning. No provider fallback is implied. You need your own authorized account or gateway access. Policy/model execution can incur costs. Read the skills and action contract before launching; no simulation or model calls are made by the preview or offline tests.
 
+### OrcaRouter provider
+
+OrcaRouter is available as a first-class provider with two explicit
+authentication choices that share one inference identity:
+`ROLLOUT_AUTH_PROFILE=orcarouter` (`OrcaRouter - API`, paste an `sk-orca-…` key)
+and `ROLLOUT_AUTH_PROFILE=orcarouter_oauth` (`OrcaRouter - Auth`, sign in with
+OAuth 2.0 + PKCE). Both route inference to `https://api.orcarouter.ai/v1` with
+`wire_api = "responses"`; authentication uses the separate
+`https://www.orcarouter.ai` origin. Credentials are stored in the existing
+private rollout store under `private/`, and a local console shows both choices
+side by side with a model picker built from the live catalog. See
+[`hybrid_rollout/robodojo/codex_backend/orcarouter/README.md`](hybrid_rollout/robodojo/codex_backend/orcarouter/README.md).
+
 ### Deployment and security boundaries
 
 Gateway URLs in `codex_backend/profiles.py` and `codex_backend/config.toml` use reserved `.invalid` placeholders. Configure your own authorized endpoint explicitly in the selected profile and matching configuration, and set `ROLLOUT_GATEWAY_NO_PROXY` for your network if needed. Historical profile identifiers are retained only for compatibility; no company or relay service is configured by this release. The optional SenseCore adapter uses that platform's public control-plane endpoints, not credentials.
